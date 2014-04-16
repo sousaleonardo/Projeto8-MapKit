@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9D9FD112-E236-4B1C-AA79-3179457E6475</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Projeto8-MapKit</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>9AF411BA-D05E-4969-8E06-695C656F9B6B</key>
+		<string>https://github.com/sousaleonardo/Projeto8-MapKit.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Projeto8-MapKit/Projeto8-MapKit.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>9AF411BA-D05E-4969-8E06-695C656F9B6B</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/sousaleonardo/Projeto8-MapKit.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>9AF411BA-D05E-4969-8E06-695C656F9B6B</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>9AF411BA-D05E-4969-8E06-695C656F9B6B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Projeto8 MapKit</string>
+		</dict>
+	</array>
+</dict>
+</plist>
