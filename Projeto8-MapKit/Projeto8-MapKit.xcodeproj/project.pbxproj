@@ -35,7 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		941DC21518FF18060049799C /* Projeto8-MapKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Projeto8-MapKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		941DC21518FF18060049799C /* Turistando.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Turistando.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		941DC21818FF18060049799C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		941DC21A18FF18060049799C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		941DC21C18FF18060049799C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -94,7 +94,7 @@
 		941DC21618FF18060049799C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				941DC21518FF18060049799C /* Projeto8-MapKit.app */,
+				941DC21518FF18060049799C /* Turistando.app */,
 				941DC23918FF18060049799C /* Projeto8-MapKitTests.xctest */,
 			);
 			name = Products;
@@ -172,7 +172,7 @@
 			);
 			name = "Projeto8-MapKit";
 			productName = "Projeto8-MapKit";
-			productReference = 941DC21518FF18060049799C /* Projeto8-MapKit.app */;
+			productReference = 941DC21518FF18060049799C /* Turistando.app */;
 			productType = "com.apple.product-type.application";
 		};
 		941DC23818FF18060049799C /* Projeto8-MapKitTests */ = {
@@ -395,7 +395,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Projeto8-MapKit/Projeto8-MapKit-Prefix.pch";
 				INFOPLIST_FILE = "Projeto8-MapKit/Projeto8-MapKit-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Turistando;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -408,7 +408,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Projeto8-MapKit/Projeto8-MapKit-Prefix.pch";
 				INFOPLIST_FILE = "Projeto8-MapKit/Projeto8-MapKit-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Turistando;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -474,6 +474,7 @@
 				941DC24C18FF18060049799C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		941DC24D18FF18060049799C /* Build configuration list for PBXNativeTarget "Projeto8-MapKitTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +483,7 @@
 				941DC24F18FF18060049799C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
