@@ -23,6 +23,7 @@
 		941DC24518FF18060049799C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 941DC24318FF18060049799C /* InfoPlist.strings */; };
 		941DC24718FF18060049799C /* Projeto8_MapKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 941DC24618FF18060049799C /* Projeto8_MapKitTests.m */; };
 		CDFB5E471900678500B1246D /* ControleRoleta.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB5E461900678500B1246D /* ControleRoleta.m */; };
+		CDFB5E491900722C00B1246D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFB5E481900722C00B1246D /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		CDFB5E43190066B700B1246D /* RoletaProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RoletaProtocol.h; path = ../RoletaProtocol.h; sourceTree = "<group>"; };
 		CDFB5E451900678500B1246D /* ControleRoleta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControleRoleta.h; sourceTree = "<group>"; };
 		CDFB5E461900678500B1246D /* ControleRoleta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControleRoleta.m; sourceTree = "<group>"; };
+		CDFB5E481900722C00B1246D /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDFB5E491900722C00B1246D /* QuartzCore.framework in Frameworks */,
 				941DC21B18FF18060049799C /* CoreGraphics.framework in Frameworks */,
 				941DC21D18FF18060049799C /* UIKit.framework in Frameworks */,
 				941DC21918FF18060049799C /* Foundation.framework in Frameworks */,
@@ -107,6 +110,7 @@
 		941DC21718FF18060049799C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CDFB5E481900722C00B1246D /* QuartzCore.framework */,
 				941DC21818FF18060049799C /* Foundation.framework */,
 				941DC21A18FF18060049799C /* CoreGraphics.framework */,
 				941DC21C18FF18060049799C /* UIKit.framework */,
