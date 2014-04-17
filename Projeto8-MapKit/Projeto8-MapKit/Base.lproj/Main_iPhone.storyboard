@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4510" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--View Controller - Login-->
@@ -15,8 +15,62 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i5A-tS-9OW" customClass="FBLoginView">
+                                <rect key="frame" x="39" y="458" width="235" height="56"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="235" id="OHT-XB-DAO"/>
+                                    <constraint firstAttribute="height" constant="56" id="PQH-4X-dk1"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="bse-Zf-TXB"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bUI-IL-5W6" customClass="FBProfilePictureView">
+                                <rect key="frame" x="33" y="317" width="112" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="87" id="pQL-5x-SdA"/>
+                                    <constraint firstAttribute="width" constant="112" id="ukV-Fj-215"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k4q-Tf-cdc">
+                                <rect key="frame" x="183" y="350" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHP-FD-0B4">
+                                <rect key="frame" x="33" y="246" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="i5A-tS-9OW" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="39" id="7cd-2V-Jjs"/>
+                            <constraint firstItem="bUI-IL-5W6" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="33" id="7rV-hj-lMt"/>
+                            <constraint firstItem="k4q-Tf-cdc" firstAttribute="leading" secondItem="bUI-IL-5W6" secondAttribute="trailing" constant="38" id="A1a-xl-AqG"/>
+                            <constraint firstItem="bUI-IL-5W6" firstAttribute="leading" secondItem="eHP-FD-0B4" secondAttribute="leading" id="XXI-H4-MY9"/>
+                            <constraint firstItem="i5A-tS-9OW" firstAttribute="top" secondItem="k4q-Tf-cdc" secondAttribute="bottom" constant="87" id="dzL-80-lYc"/>
+                            <constraint firstAttribute="trailing" secondItem="i5A-tS-9OW" secondAttribute="trailing" constant="46" id="eWk-XE-44a"/>
+                            <constraint firstItem="i5A-tS-9OW" firstAttribute="top" secondItem="bUI-IL-5W6" secondAttribute="bottom" constant="54" id="iTl-AK-bti"/>
+                            <constraint firstItem="bUI-IL-5W6" firstAttribute="top" secondItem="eHP-FD-0B4" secondAttribute="bottom" constant="8" id="jhh-z0-I91"/>
+                            <constraint firstItem="mJq-B0-nno" firstAttribute="top" secondItem="i5A-tS-9OW" secondAttribute="bottom" constant="54" id="zOn-2V-DVR"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginView" destination="i5A-tS-9OW" id="7Ds-bI-8eD"/>
+                        <outlet property="nameLabel" destination="k4q-Tf-cdc" id="WiE-HV-bse"/>
+                        <outlet property="profilePictureView" destination="bUI-IL-5W6" id="4xa-XL-Go9"/>
+                        <outlet property="statusLabel" destination="eHP-FD-0B4" id="I2r-7c-RJl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -111,6 +165,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vZA-Du-dVH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="694" y="-276"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gSs-0E-emo">
+            <objects>
+                <viewController id="vIb-go-kJj" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k8u-fg-Nge"/>
+                        <viewControllerLayoutGuide type="bottom" id="ljp-5y-OFQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gBE-4e-HRd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Vl-3I-80E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
