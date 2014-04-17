@@ -22,6 +22,7 @@
 		941DC23D18FF18060049799C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941DC21C18FF18060049799C /* UIKit.framework */; };
 		941DC24518FF18060049799C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 941DC24318FF18060049799C /* InfoPlist.strings */; };
 		941DC24718FF18060049799C /* Projeto8_MapKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 941DC24618FF18060049799C /* Projeto8_MapKitTests.m */; };
+		CDFB5E471900678500B1246D /* ControleRoleta.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB5E461900678500B1246D /* ControleRoleta.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,9 @@
 		941DC24218FF18060049799C /* Projeto8-MapKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Projeto8-MapKitTests-Info.plist"; sourceTree = "<group>"; };
 		941DC24418FF18060049799C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		941DC24618FF18060049799C /* Projeto8_MapKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Projeto8_MapKitTests.m; sourceTree = "<group>"; };
+		CDFB5E43190066B700B1246D /* RoletaProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RoletaProtocol.h; path = ../RoletaProtocol.h; sourceTree = "<group>"; };
+		CDFB5E451900678500B1246D /* ControleRoleta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControleRoleta.h; sourceTree = "<group>"; };
+		CDFB5E461900678500B1246D /* ControleRoleta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControleRoleta.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,7 @@
 				941DC22D18FF18060049799C /* Main_iPad.storyboard */,
 				941DC23018FF18060049799C /* ViewController.h */,
 				941DC23118FF18060049799C /* ViewController.m */,
+				CDFB5E44190066BC00B1246D /* Roleta Desafio */,
 				941DC23318FF18060049799C /* Images.xcassets */,
 				941DC21F18FF18060049799C /* Supporting Files */,
 			);
@@ -153,6 +158,16 @@
 				941DC24318FF18060049799C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CDFB5E44190066BC00B1246D /* Roleta Desafio */ = {
+			isa = PBXGroup;
+			children = (
+				CDFB5E43190066B700B1246D /* RoletaProtocol.h */,
+				CDFB5E451900678500B1246D /* ControleRoleta.h */,
+				CDFB5E461900678500B1246D /* ControleRoleta.m */,
+			);
+			name = "Roleta Desafio";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDFB5E471900678500B1246D /* ControleRoleta.m in Sources */,
 				941DC23218FF18060049799C /* ViewController.m in Sources */,
 				941DC22918FF18060049799C /* AppDelegate.m in Sources */,
 				941DC22518FF18060049799C /* main.m in Sources */,
