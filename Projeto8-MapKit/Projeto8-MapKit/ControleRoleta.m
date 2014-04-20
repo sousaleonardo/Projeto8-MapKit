@@ -75,7 +75,7 @@
     container.transform = t;
 }
 
-//calcula a distância do ponto clicado até o centro.
+//calcula a distância do ponto clicado até o centro. - NÃO USADO
 -(float)calculaDistanciaDoCentro: (CGPoint) pontoDeToque
 {
     //grava as coordenadas do centro da tela
@@ -94,16 +94,6 @@
 {
     //armazena onde o usuário tocou
     CGPoint pontoDeToque = [touch locationInView:self];
-    
-    //calcula a distancia até o centro
-    float distanciaAteCentro = [self calculaDistanciaDoCentro:pontoDeToque];
-    
-    if(distanciaAteCentro < 40 || distanciaAteCentro > 100)
-    {
-        //ignora o toque
-        NSLog(@"ignorando toque: (%.2f, %.2f)", pontoDeToque.x, pontoDeToque.y);
-        return NO;
-    }
     
     //calcula a distância até o centro do container da roleta
     float distanciaX = pontoDeToque.x - container.center.x;
@@ -124,16 +114,6 @@
 {
     //armazena até onde o usuário tocou
     CGPoint pontoDeToque = [touch locationInView:self];
-    
-    //calcula a distancia até o centro
-    float distanciaAteCentro = [self calculaDistanciaDoCentro:pontoDeToque];
-    
-    if(distanciaAteCentro < 40 || distanciaAteCentro > 100)
-    {
-        //ignora o toque
-        NSLog(@"ignorando toque: (%.2f, %.2f)", pontoDeToque.x, pontoDeToque.y);
-        return NO;
-    }
     
     //calcula a distância até o centro do container da roleta
     float distanciaX = pontoDeToque.x - container.center.x;
