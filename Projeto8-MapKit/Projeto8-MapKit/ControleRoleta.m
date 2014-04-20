@@ -112,6 +112,10 @@
 //método armazena as informações finais e intermediárias, enquanto o usuário faz movimentos tocando na tela
 -(BOOL)continueTrackingWithTouch:(UITouch *)touch withEvent:(UIEvent *)event
 {
+    //para mostrar onde está em radianos
+    CGFloat radianos = atan2f(container.transform.b, container.transform.a);
+    NSLog(@"radiano = %.2f", radianos);
+    
     //armazena até onde o usuário tocou
     CGPoint pontoDeToque = [touch locationInView:self];
     

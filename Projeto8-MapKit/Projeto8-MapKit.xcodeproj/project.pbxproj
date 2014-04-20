@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2300FADC190413C300F739B6 /* ViewControllerRoleta.m in Sources */ = {isa = PBXBuildFile; fileRef = 2300FADB190413C300F739B6 /* ViewControllerRoleta.m */; };
 		2300FADE190416BC00F739B6 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2300FADD190416BC00F739B6 /* FacebookSDK.framework */; };
+		237F164C19048777004DC711 /* Categoria.m in Sources */ = {isa = PBXBuildFile; fileRef = 237F164B19048777004DC711 /* Categoria.m */; };
 		3CA491FD190455820054A01C /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA491FC190455820054A01C /* MenuViewController.m */; };
 		3CA491FF190457800054A01C /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA491FE190457800054A01C /* FacebookSDK.framework */; };
 		941DC21918FF18060049799C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941DC21818FF18060049799C /* Foundation.framework */; };
@@ -44,6 +45,8 @@
 		2300FADA190413C300F739B6 /* ViewControllerRoleta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerRoleta.h; sourceTree = "<group>"; };
 		2300FADB190413C300F739B6 /* ViewControllerRoleta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerRoleta.m; sourceTree = "<group>"; };
 		2300FADD190416BC00F739B6 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		237F164A19048777004DC711 /* Categoria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Categoria.h; sourceTree = "<group>"; };
+		237F164B19048777004DC711 /* Categoria.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Categoria.m; sourceTree = "<group>"; };
 		3CA491FB190455820054A01C /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		3CA491FC190455820054A01C /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
 		3CA491FE190457800054A01C /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
@@ -188,6 +191,8 @@
 				CDFB5E461900678500B1246D /* ControleRoleta.m */,
 				2300FADA190413C300F739B6 /* ViewControllerRoleta.h */,
 				2300FADB190413C300F739B6 /* ViewControllerRoleta.m */,
+				237F164A19048777004DC711 /* Categoria.h */,
+				237F164B19048777004DC711 /* Categoria.m */,
 			);
 			name = "Roleta Desafio";
 			sourceTree = "<group>";
@@ -295,6 +300,7 @@
 				941DC23218FF18060049799C /* ViewController.m in Sources */,
 				941DC22918FF18060049799C /* AppDelegate.m in Sources */,
 				2300FADC190413C300F739B6 /* ViewControllerRoleta.m in Sources */,
+				237F164C19048777004DC711 /* Categoria.m in Sources */,
 				941DC22518FF18060049799C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
