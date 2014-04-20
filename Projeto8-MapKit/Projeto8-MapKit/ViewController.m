@@ -29,6 +29,7 @@
 // This method will be called when the user information has been fetched
 - (void)loginViewFetchedUserInfo:(FBLoginView *)loginView
                             user:(id<FBGraphUser>)user {
+    NSLog(@"%@",user.id);
     self.profilePictureView.profileID = user.id;
     [self.nameLabel setText:user.name];
     

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2300FADC190413C300F739B6 /* ViewControllerRoleta.m in Sources */ = {isa = PBXBuildFile; fileRef = 2300FADB190413C300F739B6 /* ViewControllerRoleta.m */; };
 		2300FADE190416BC00F739B6 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2300FADD190416BC00F739B6 /* FacebookSDK.framework */; };
+		3CA491FD190455820054A01C /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA491FC190455820054A01C /* MenuViewController.m */; };
+		3CA491FF190457800054A01C /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CA491FE190457800054A01C /* FacebookSDK.framework */; };
 		941DC21918FF18060049799C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941DC21818FF18060049799C /* Foundation.framework */; };
 		941DC21B18FF18060049799C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941DC21A18FF18060049799C /* CoreGraphics.framework */; };
 		941DC21D18FF18060049799C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941DC21C18FF18060049799C /* UIKit.framework */; };
@@ -42,6 +44,9 @@
 		2300FADA190413C300F739B6 /* ViewControllerRoleta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerRoleta.h; sourceTree = "<group>"; };
 		2300FADB190413C300F739B6 /* ViewControllerRoleta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerRoleta.m; sourceTree = "<group>"; };
 		2300FADD190416BC00F739B6 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		3CA491FB190455820054A01C /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		3CA491FC190455820054A01C /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		3CA491FE190457800054A01C /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		941DC21518FF18060049799C /* Turistando.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Turistando.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		941DC21818FF18060049799C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		941DC21A18FF18060049799C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -78,6 +83,7 @@
 				941DC21B18FF18060049799C /* CoreGraphics.framework in Frameworks */,
 				941DC21D18FF18060049799C /* UIKit.framework in Frameworks */,
 				941DC21918FF18060049799C /* Foundation.framework in Frameworks */,
+				3CA491FF190457800054A01C /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +122,7 @@
 		941DC21718FF18060049799C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3CA491FE190457800054A01C /* FacebookSDK.framework */,
 				2300FADD190416BC00F739B6 /* FacebookSDK.framework */,
 				CDFB5E481900722C00B1246D /* QuartzCore.framework */,
 				941DC21818FF18060049799C /* Foundation.framework */,
@@ -138,6 +145,8 @@
 				CDFB5E44190066BC00B1246D /* Roleta Desafio */,
 				941DC23318FF18060049799C /* Images.xcassets */,
 				941DC21F18FF18060049799C /* Supporting Files */,
+				3CA491FB190455820054A01C /* MenuViewController.h */,
+				3CA491FC190455820054A01C /* MenuViewController.m */,
 			);
 			path = "Projeto8-MapKit";
 			sourceTree = "<group>";
@@ -282,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDFB5E471900678500B1246D /* ControleRoleta.m in Sources */,
+				3CA491FD190455820054A01C /* MenuViewController.m in Sources */,
 				941DC23218FF18060049799C /* ViewController.m in Sources */,
 				941DC22918FF18060049799C /* AppDelegate.m in Sources */,
 				2300FADC190413C300F739B6 /* ViewControllerRoleta.m in Sources */,
@@ -425,6 +435,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/JuliaYamamoto/Desktop/Projetos/Projeto8-MapKit/Projeto8-MapKit",
+					/Users/Teofilo/Documents/FacebookSDK,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Projeto8-MapKit/Projeto8-MapKit-Prefix.pch";
@@ -442,6 +453,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/JuliaYamamoto/Desktop/Projetos/Projeto8-MapKit/Projeto8-MapKit",
+					/Users/Teofilo/Documents/FacebookSDK,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Projeto8-MapKit/Projeto8-MapKit-Prefix.pch";
