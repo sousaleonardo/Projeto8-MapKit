@@ -16,8 +16,22 @@
 @property (nonatomic, strong) UIView *container; //Contém a roleta
 @property int numeroDeCategorias; //Número de categorias que a roleta terá
 
-//Inicia um frame com um delegate e com o numero de categorias
-//O método será chamado pelo view controler da roleta para inicializá-la
+@property CGFloat tamanhoAngulo; //Tamanho do ângulo de cada categoria. Cálculo --> 2*PI / numeroDeCategorias
+
+//Quando o usuário toca na roleta...
+@property CGAffineTransform transformacaoInicial; //salva a transformação inicial
+@property float deltaAngulo; //salva o ângulo inicial
+
+
+//Inicia um frame com um delegate e com o número de categorias
+//O método será chamado pelo view controler da roleta para inicializar
 -(id) initWithFrame:(CGRect)frame andDelegate:(id)delegate withSections:(int)numeroDeCategorias;
+
+//Método para desenhar a roleta com o numero de categorias passado
+-(void)desenhaRoleta;
+
+//Método para fazer a roleta rodar apenas nos pontos definidos - por categoria
+-(void)rodar;
+
 
 @end

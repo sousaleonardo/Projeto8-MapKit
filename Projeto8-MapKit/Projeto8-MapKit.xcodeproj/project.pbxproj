@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2300FADC190413C300F739B6 /* ViewControllerRoleta.m in Sources */ = {isa = PBXBuildFile; fileRef = 2300FADB190413C300F739B6 /* ViewControllerRoleta.m */; };
+		2300FADE190416BC00F739B6 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2300FADD190416BC00F739B6 /* FacebookSDK.framework */; };
 		941DC21918FF18060049799C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941DC21818FF18060049799C /* Foundation.framework */; };
 		941DC21B18FF18060049799C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941DC21A18FF18060049799C /* CoreGraphics.framework */; };
 		941DC21D18FF18060049799C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941DC21C18FF18060049799C /* UIKit.framework */; };
@@ -37,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2300FADA190413C300F739B6 /* ViewControllerRoleta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerRoleta.h; sourceTree = "<group>"; };
+		2300FADB190413C300F739B6 /* ViewControllerRoleta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerRoleta.m; sourceTree = "<group>"; };
+		2300FADD190416BC00F739B6 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		941DC21518FF18060049799C /* Turistando.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Turistando.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		941DC21818FF18060049799C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		941DC21A18FF18060049799C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -69,6 +74,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDFB5E491900722C00B1246D /* QuartzCore.framework in Frameworks */,
+				2300FADE190416BC00F739B6 /* FacebookSDK.framework in Frameworks */,
 				941DC21B18FF18060049799C /* CoreGraphics.framework in Frameworks */,
 				941DC21D18FF18060049799C /* UIKit.framework in Frameworks */,
 				941DC21918FF18060049799C /* Foundation.framework in Frameworks */,
@@ -110,6 +116,7 @@
 		941DC21718FF18060049799C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2300FADD190416BC00F739B6 /* FacebookSDK.framework */,
 				CDFB5E481900722C00B1246D /* QuartzCore.framework */,
 				941DC21818FF18060049799C /* Foundation.framework */,
 				941DC21A18FF18060049799C /* CoreGraphics.framework */,
@@ -170,6 +177,8 @@
 				CDFB5E43190066B700B1246D /* RoletaProtocol.h */,
 				CDFB5E451900678500B1246D /* ControleRoleta.h */,
 				CDFB5E461900678500B1246D /* ControleRoleta.m */,
+				2300FADA190413C300F739B6 /* ViewControllerRoleta.h */,
+				2300FADB190413C300F739B6 /* ViewControllerRoleta.m */,
 			);
 			name = "Roleta Desafio";
 			sourceTree = "<group>";
@@ -275,6 +284,7 @@
 				CDFB5E471900678500B1246D /* ControleRoleta.m in Sources */,
 				941DC23218FF18060049799C /* ViewController.m in Sources */,
 				941DC22918FF18060049799C /* AppDelegate.m in Sources */,
+				2300FADC190413C300F739B6 /* ViewControllerRoleta.m in Sources */,
 				941DC22518FF18060049799C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +422,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/JuliaYamamoto/Desktop/Projetos/Projeto8-MapKit/Projeto8-MapKit",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Projeto8-MapKit/Projeto8-MapKit-Prefix.pch";
 				INFOPLIST_FILE = "Projeto8-MapKit/Projeto8-MapKit-Info.plist";
@@ -425,6 +439,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/JuliaYamamoto/Desktop/Projetos/Projeto8-MapKit/Projeto8-MapKit",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Projeto8-MapKit/Projeto8-MapKit-Prefix.pch";
 				INFOPLIST_FILE = "Projeto8-MapKit/Projeto8-MapKit-Info.plist";
