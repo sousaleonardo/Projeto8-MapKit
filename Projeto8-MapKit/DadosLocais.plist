@@ -1,0 +1,1252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Categoria</key>
+	<dict>
+		<key>Parque</key>
+		<dict>
+			<key>Lugares</key>
+			<array>
+				<dict>
+					<key>Nome</key>
+					<string>Parque Aclimação</string>
+					<key>Descricao</key>
+					<string>Chamado antigamente de Jardim da Aclimação, o local foi sede do primeiro zoológico da cidade, no final do século 19, e chegou a acolher Maurício, um urso polar branco do polo norte, o camelo Gzar, uma sucuri, um peixe elétrico do Amazonas e hienas africanas, segundo jornais da época.</string>
+					<key>Preco</key>
+					<string>Grátis</string>
+					<key>Endereco</key>
+					<string>Rua Muniz de Souza, 1119 – Aclimação – Centro-oeste</string>
+					<key>Latitude</key>
+					<string>-23.572922</string>
+					<key>Longitude</key>
+					<string>-46.629059</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Parque Burle Marx</string>
+					<key>Descricao</key>
+					<string>Localizado na zona sul de São Paulo, o Parque Burle Marx surgiu de forma diferente.  O arquiteto-paisagista Roberto Burle Marx criou o projeto artístico e paisagístico do parque especialmente para integrar os jardins de uma casa, projetada por Oscar Niemeyer na década de 1950. A casa nunca foi concluída ou habitada, e nos anos 1990, foi demolida. Em 1995 os jardins foram aproveitados para dar lugar ao parque.</string>
+					<key>Preco</key>
+					<string>Grátis</string>
+					<key>Endereco</key>
+					<string>Av. Dona Helena Pereira de Morais, 200 - Vila Andrade</string>
+					<key>Latitude</key>
+					<string>-23.632203</string>
+					<key>Longitude</key>
+					<string>-46.721303</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Parque da Água Branca</string>
+					<key>Descricao</key>
+					<string>Inaugurado em 1929, o parque, que funciona diariamente, das 6h às 22h, possui várias opções de atividades para as crianças, com brinquedoteca e espaço de leitura infantil – em alguns dias ainda conta com a presença de contadores de história. Abriga um parque de diversão permanente com balões pula-pula infláveis e carrosséis de carrinhos, e parquinhos com balanços, gangorras e diversos brinquedos, que ficam espalhados pelo parque. Ao longo do ano também há uma ampla grade de programação voltada ao público infantil.</string>
+					<key>Preco</key>
+					<string>Grátis</string>
+					<key>Endereco</key>
+					<string>Av. Prof. Francisco Matarazzo, 455 – zona Oeste</string>
+					<key>Latitude</key>
+					<string>-23.530757</string>
+					<key>Longitude</key>
+					<string>-46.669036</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Parque da Juventude</string>
+					<key>Descricao</key>
+					<string>Construído no lugar da antiga Casa de Detenção de São Paulo, popularmente conhecida como Carandiru, o Parque da Juventude foi inaugurado em 2003, e é um dos locais mais frequentados da zona Norte da capital. É um complexo esportivo, cultural e recreativo de 240 mil m², com uma estrutura mais do que completa. </string>
+					<key>Preco</key>
+					<string>Grátis</string>
+					<key>Endereco</key>
+					<string>Av. Zaki Narchi, 1309 – Carandiru – zona Norte</string>
+					<key>Latitude</key>
+					<string>-23.508913</string>
+					<key>Longitude</key>
+					<string>-46.622599</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Parque da Luz</string>
+					<key>Descricao</key>
+					<string>Localizado em frente à estação da Luz do metrô, na região central de São Paulo, o Parque da Luz foi originalmente criado como um horto botânico, aberto em 1825 ao público como Jardim Público da Luz. Este é o mais antigo e tradicional parque público da cidade. </string>
+					<key>Preco</key>
+					<string>Grátis</string>
+					<key>Endereco</key>
+					<string>Praça da Luz, s/nº - Bom Retiro</string>
+					<key>Latitude</key>
+					<string>-23.533339</string>
+					<key>Longitude</key>
+					<string>-46.635135</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Parque de Ciência e Tecnologia da USP – CienTec</string>
+					<key>Descricao</key>
+					<string>O CienTec-USP, órgão vinculado à Pró-Reitoria de Cultura e Extensão da Universidade de São Paulo, é uma instituição que oferece entretenimento educativo para crianças, jovens e adultos. Por meio de diferentes passeios, demonstrações e experiências, a ciência e a tecnologia ficam muito mais próximas do visitante. </string>
+					<key>Preco</key>
+					<string>Grátis</string>
+					<key>Endereco</key>
+					<string>Av. Miguel Estéfano, 4200 – Água Funda – zona sul </string>
+					<key>Latitude</key>
+					<string>-23.638324</string>
+					<key>Longitude</key>
+					<string>-46.627356</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Parque do Trote</string>
+					<key>Descricao</key>
+					<string>O Parque do Trote, localizado na Vila Guilherme, é um espaço de 187 mil metros quadrados. Possui áreas para todas as idades, como playgrounds, pista de corrida, ciclovia, quadra poliesportiva e churrasqueiras, além de ser totalmente acessível a portadores de necessidades especiais.</string>
+					<key>Preco</key>
+					<string>Grátis</string>
+					<key>Endereco</key>
+					<string>Rua São Quirino, 905– Vila Guilherme</string>
+					<key>Latitude</key>
+					<string>-23.514731</string>
+					<key>Longitude</key>
+					<string>-46.597785</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Parque Ecológico do Guarapiranga</string>
+					<key>Descricao</key>
+					<string>Por ocupar 28 km (7%) do entorno da Represa do Guarapiranga, o parque se destaca por reunir clubes e escolas dos mais diversos esportes aquáticos. Há opções para quem deseja aprender a velejar em escolas de iatismo, ter aulas de windsurf ou ainda de Dragon Boat, um esporte recém-chegado ao Brasil que consiste em remar uma canoa em forma de dragão oriental ao som das batidas de um tambor posicionado na proa do barco, que pode ser ocupado por até 22 pessoas.</string>
+					<key>Preco</key>
+					<string>Grátis</string>
+					<key>Endereco</key>
+					<string>Estrada da Riviera, 3.286 - Riviera Paulista - zona sul</string>
+					<key>Latitude</key>
+					<string>-23.699944</string>
+					<key>Longitude</key>
+					<string>-46.752839</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Parque Ecológico do Tietê</string>
+					<key>Descricao</key>
+					<string>O parque conta com uma vasta quantidade de opções de lazer aos visitantes, como: trilhas de caminhadas, campos de futebol e quadras poliesportivas, quiosques com churrasqueiras para locação, um conjunto aquático, com piscinas para adulto e criança, playgrounds, aluguel de bikes e pedalinhos, entre outras.</string>
+					<key>Preco</key>
+					<string>Grátis</string>
+					<key>Endereco</key>
+					<string>Rua Guirá Acangatara, 70 – Engenheiro Goulart – zona Leste</string>
+					<key>Latitude</key>
+					<string>-23.484677</string>
+					<key>Longitude</key>
+					<string>-46.518144</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Parque Esportivo do Trabalhador</string>
+					<key>Descricao</key>
+					<string>O local possui 286 mil m² de área, dividido em três campos de futebol, quatro quadras de vôlei, duas de basquete, quatro poliesportivas, seis de tênis (sendo duas de saibro), um campo de rugby, quatro piscinas, pista de corrida e caminhada, pista de atletismo de 400 m, três salas de ginástica, playground, um ginásio poliesportivo e um “pipódromo”, espaço reservado especialmente para empinar pipas de forma segura.</string>
+					<key>Preco</key>
+					<string>Grátis</string>
+					<key>Endereco</key>
+					<string>Rua Canuto de Abreu, s/n° – Tatuapé – zona Leste</string>
+					<key>Latitude</key>
+					<string>-23.557957</string>
+					<key>Longitude</key>
+					<string>-46.555963</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Parque Ibirapuera</string>
+					<key>Descricao</key>
+					<string>Idealizado por ícones, como Oscar Niemeyer, nos moldes de grandes parques mundiais (o Central Park, por exemplo), o Ibirapuera atrai todo o tipo de público. Desde os mais esportistas, que vão para aproveitar a pista de cooper, a ciclofaixa, o bicicletário com aluguel de bicicleta, as quadras, os campos de futebol e os aparelhos de ginástica; até os que vão em busca de cultura, freqüentadores da OCA, Pavilhão das Culturas Brasileiras, Museu Afro-Brasil, Fundação Bienal, MAC, MAM, entre outros.</string>
+					<key>Preco</key>
+					<string>Grátis</string>
+					<key>Endereco</key>
+					<string>Av. Pedro Álvares Cabral, s/nº – Vila Mariana – zona Sul</string>
+					<key>Latitude</key>
+					<string>-23.587446</string>
+					<key>Longitude</key>
+					<string>-46.657625</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Parque Linear Tiquatira</string>
+					<key>Descricao</key>
+					<string>É o primeiro parque linear da cidade de São Paulo, pois foi construído às margens do Rio Tiquatira, de forma a ajudar na preservação e conservação do leito do córrego, além de garantir uma faixa segura de ajardinamento e arborização entre o córrego e as vias urbanas.</string>
+					<key>Preco</key>
+					<string>Grátis</string>
+					<key>Endereco</key>
+					<string>Av. Governador Carvalho Pinto − 1.665/1757 − Penha – zona Leste</string>
+					<key>Latitude</key>
+					<string>-23.514524</string>
+					<key>Longitude</key>
+					<string>-46.533207</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Parque Piqueri</string>
+					<key>Descricao</key>
+					<string>O nome Piqueri refere-se à tribo indígena que habitava a região. No local, funcionava uma chácara de mesmo nome e que virou parque em 1976. Sua vegetação possui mais de 150 espécies, incluindo cinco ameaçadas de extinção, como o pinheiro-do-paraná. Entre as espécies de animais, mais de 90 tipos vivem no parque, com destaque a aves como pica-pau, sabiá e papagaio que encantam os visitantes. </string>
+					<key>Preco</key>
+					<string>Grátis</string>
+					<key>Endereco</key>
+					<string>Rua Tuiuti, 515 – Tatuapé – zona Leste</string>
+					<key>Latitude</key>
+					<string>-23.527765</string>
+					<key>Longitude</key>
+					<string>-46.573572</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Parque do Povo</string>
+					<key>Descricao</key>
+					<string>O Parque Povo Mário Pimenta Camargo (Parque do Povo), localizado no bairro do Itaim Bibi, tem diversão e lazer para todos os gostos, como um jogo gigante de xadrez no qual o visitante pode movimentar peças enormes em um tabuleiro quadriculado no chão.No Jardim Sensitivo, composto por ervas aromáticas, é possível cheirar, tocar ou até morder algumas das iguarias que crescem por lá, como mostarda, coentro, cheiro-verde, cebolinha, babosa e manjericão.</string>
+					<key>Preco</key>
+					<string>Grátis</string>
+					<key>Endereco</key>
+					<string>Av. Henrique Chamma, 420 – Itaim Bibi – zona Sul</string>
+					<key>Latitude</key>
+					<string>-23.587990</string>
+					<key>Longitude</key>
+					<string>-46.688736</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Parque Trianon</string>
+					<key>Descricao</key>
+					<string>Projetado pelo paisagista frânces Paul Villon e o inglês Barry Parker e inaugurado em 3 de abril de 1892, o Parque Trianon está no coração de São Paulo e decora a Avenida Paulista com 48,6 mil m² de vegetação tropical, remanescente da Mata Atlântica.</string>
+					<key>Preco</key>
+					<string>Grátis</string>
+					<key>Endereco</key>
+					<string>R. Peixoto Gomide, 949 (Altura do nº 1500 da Av. Paulista) </string>
+					<key>Latitude</key>
+					<string>-23.562047</string>
+					<key>Longitude</key>
+					<string>-46.656690</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Parque Estadual do Jaraguá</string>
+					<key>Descricao</key>
+					<string>Em 1946, o Pico do Jaraguá foi transformado em ponto turístico e alguns anos depois, em 1961, foi criado o Parque Estadual do Jaraguá, para que os visitantes tivessem acesso à parte histórica do local, como o casarão do bandeirante Afonso Sardinha (mais antigo habitante do lugar).O parque foi tombado em 1983 pelo Conselho de Defesa do Patrimônio Histórico, Artístico, Arqueológico e Turístico (Condephaat) e em 1994 como Patrimônio da Humanidade, pela Unesco.</string>
+					<key>Preco</key>
+					<string>Grátis</string>
+					<key>Endereco</key>
+					<string>Rua Antônio Cardoso Nogueira, 539 – Jaraguá – zona Norte</string>
+					<key>Latitude</key>
+					<string>-23.456196</string>
+					<key>Longitude</key>
+					<string>-46.756315</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Solo Sagrado de Guarapiranga</string>
+					<key>Descricao</key>
+					<string>Um dos grandes destaques do Solo Sagrado é seu grandioso templo, construído em forma de anel. O templo possui três santuários: o Santuário de Deus Supremo, o qual apresenta uma torre de 71 m de altura que tem como objetivo captar energias cósmicas; o Santuário de Mokiti Okada, encontrado ao lado direito do Solo Sagrado; e o Santuário dos Antepassados, ao lado esquerdo, lugar especial para se orar pelos entes que já partiram. Além dos santuários, há um dia especial em que ocorre o Culto de Agradecimento às bênçãos alcançadas no mês, que reúne cerca de 20 mil pessoas.</string>
+					<key>Preco</key>
+					<string>Grátis</string>
+					<key>Endereco</key>
+					<string>Estrada do Jaceguai, 6.567 – Jardim Casa Grande – Parelheiros – zona sul</string>
+					<key>Latitude</key>
+					<string>-23.754374</string>
+					<key>Longitude</key>
+					<string>-46.752306</string>
+				</dict>
+			</array>
+			<key>Pontos</key>
+			<integer>0</integer>
+		</dict>
+		<key>Praças</key>
+		<dict>
+			<key>Lugares</key>
+			<array>
+				<dict>
+					<key>Nome</key>
+					<string>Praça Roosevelt</string>
+					<key>Descricao</key>
+					<string>Construída na década de 60, entre as ruas Consolação e Augusta, a Praça Franklin Roosevelt, homenagem do prefeito da época, José Vicente Faria Lima, ao presidente americano, é uma das principais áreas de lazer no centro da cidade nos dias de hoje.</string>
+					<key>Preco</key>
+					<string>Grátis</string>
+					<key>Endereco</key>
+					<string>Praça Franklin Roosevelt - S/N - Consolação</string>
+					<key>Latitude</key>
+					<string>-23.548720</string>
+					<key>Longitude</key>
+					<string>-46.646364</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Largo São Bento</string>
+					<key>Descricao</key>
+					<string>O Largo São Bento é um dos espaços públicos mais antigos de São Paulo, que nasceu em 1598, no mesmo local onde se erguia uma pequena capela. Em 1660, o Largo já tinha se expandido ao redor da capela e a Igreja Católica solicitou a construção de um mosteiro.Esta praça imponente e movimentada no centro da cidade tem um calçadão para caminhadas, bancos, jardins e um chafariz que foi projetado pelo arquiteto francês Fourchon, em 1864. Ele também foi responsável por cercar alguns jardins do Largo com grades de ferro, conforme os modelos europeus da época.</string>
+					<key>Preco</key>
+					<string>Grátis</string>
+					<key>Endereco</key>
+					<string>Largo de São Bento, s/nº - Centro</string>
+					<key>Latitude</key>
+					<string>-23.543921</string>
+					<key>Longitude</key>
+					<string>-46.634178</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Praça da Republica</string>
+					<key>Descricao</key>
+					<string>Lar de grandes manifestações políticas que mudaram a história do país, abriga edifícios históricos, como a Escola Normal Caetano de Campos (tombado pelo Conselho de Defesa do Patrimônio Histórico, Arqueológico, Artístico e Turístico, Condephaat, em 1978), que em seus anos de operação, recebeu grandes personalidades nacionais e, hoje, é o prédio onde funciona a Secretaria de Educação do Estado de São Paulo.</string>
+					<key>Preco</key>
+					<string>Grátis</string>
+					<key>Endereco</key>
+					<string>República, s/n° – República – Centro</string>
+					<key>Latitude</key>
+					<string>-23.543067</string>
+					<key>Longitude</key>
+					<string>-46.642426</string>
+				</dict>
+			</array>
+			<key>Pontos</key>
+			<integer>0</integer>
+		</dict>
+		<key>Museus</key>
+		<dict>
+			<key>Lugares</key>
+			<array>
+				<dict>
+					<key>Nome</key>
+					<string>Catavento Cultural e educacional</string>
+					<key>Descricao</key>
+					<string>Localizado na Praça Cívica Ulisses Guimarães, no centro de São Paulo, o Catavento Cultural e Educacional é um dos espaços da cidade que mais atrai público infantojuvenil em busca de informação e diversão. O local tem como objetivo apresentar para crianças e adolescentes, assim como para adultos, conhecimentos científicos e culturais transmitidos de forma lúdica, por meio de exposições e outros ambientes interativos.</string>
+					<key>Preco</key>
+					<string>R$ 6, R$ 3(Meia)</string>
+					<key>Endereco</key>
+					<string>Praça Cívica Ulisses Guimarães, s/n - Brás − Centro</string>
+					<key>Latitude</key>
+					<string>-23.543938</string>
+					<key>Longitude</key>
+					<string>-46.627526</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Museu da Imagem e do Som – MIS</string>
+					<key>Descricao</key>
+					<string>Desde o início a proposta foi se destacar da formalidade dos demais museus ao aproximar o público do conteúdo. Outro grande diferencial é ir além da função de documentar e exibir o passado, trazendo o foco para a arte do presente, de forma a vislumbrar o futuro em formação. Tudo isso fez do MIS um dos mais contemporâneos museus. Entre seus feitos estão o Festival Internacional de Curtas, a Mostra do Audiovisual Paulista e o Festival É Tudo Verdade, responsáveis pela revitalização do curta-metragem e de outros formatos.</string>
+					<key>Preco</key>
+					<string>R$ 4, R$ 2 (Meia) - Grátis aos Domingos</string>
+					<key>Endereco</key>
+					<string>End.: Avenida Europa, 158 – Jardim Europa</string>
+					<key>Latitude</key>
+					<string>-23.572998</string>
+					<key>Longitude</key>
+					<string>-46.676008</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Masp – Museu de Arte de São Paulo Assis Chateaubriand</string>
+					<key>Descricao</key>
+					<string>O Masp é um dos locais mais frequentados da cidade e encanta seus visitantes com um acervo de cerca de oito mil peças. Possui obras de grandes nomes da pintura nacional (Cândido Portinari, Di Cavalcanti, Anita Malfatti e Almeida Junior) e internacional (Rafael, Mantegna, Botticceli, Delacroix, Renoir, Monet, Cèzanne, Picasso, Modigliani, Toulouse-Lautrec, Van Gogh, Matisse e Chagall).</string>
+					<key>Preco</key>
+					<string>R$ 15 (estudante, idoso e prof pagam meia) - Terça Feira Grátis</string>
+					<key>Endereco</key>
+					<string>Avenida Paulista, 1578 – Bela Vista</string>
+					<key>Latitude</key>
+					<string>-23.561553</string>
+					<key>Longitude</key>
+					<string>-46.655983</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Museu Anchieta</string>
+					<key>Descricao</key>
+					<string>O acervo foi constituído a partir de coleções particulares pertencentes a padres residentes na comunidade do Pateo do Collegio, de doações e da devolução de alguns dos objetos que pertenceram originalmente à Igreja e ao Colégio dos Jesuítas.</string>
+					<key>Preco</key>
+					<string>R$ 5, R$ 2,50 (estudante), R$ 1 para alunos de escola pública</string>
+					<key>Endereco</key>
+					<string>Praça Pateo do Collegio, 2 – Sé – Centro</string>
+					<key>Latitude</key>
+					<string>-23.548002</string>
+					<key>Longitude</key>
+					<string>-46.632901</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Museu da Arte Mágica e Ilusionismo</string>
+					<key>Descricao</key>
+					<string>Além das apresentações que acontecem durante a visita, para os interessados em desvendar os mistérios mágicos e ilusionistas, o mágico ensina truques simples em uma oficina de 30 minutos (conferir preços e horários pelo telefone). Alguns objetos também podem ser adquiridos no local, como bonecos ventríloquos e kits com cinco ou dez itens de mágica, acompanhados de um vídeo explicativo. Também há o &quot;passaporte mágico&quot;, um manual de bolso que contém instruções para dez truques simples de mágica.</string>
+					<key>Preco</key>
+					<string>2ª R$ 12, 3ª á 6ª R$ 24, Sábados, domingos e feriados R$ 48</string>
+					<key>Endereco</key>
+					<string>Rua Silva Bueno, 519 - Ipiranga</string>
+					<key>Latitude</key>
+					<string>-23.582873</string>
+					<key>Longitude</key>
+					<string>-46.602010</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Museu da Casa Brasileira</string>
+					<key>Descricao</key>
+					<string>Avenida Faria Lima, 2.705 - Jardim Paulistano - Zona Oeste</string>
+					<key>Preco</key>
+					<string>R$ 4, R$ 2 (estudantes); Domingo grátis</string>
+					<key>Endereco</key>
+					<string>Avenida Faria Lima, 2.705 - Jardim Paulistano - Zona Oeste</string>
+					<key>Latitude</key>
+					<string>-23.580197</string>
+					<key>Longitude</key>
+					<string>-46.684848</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Museu da Língua Portuguesa</string>
+					<key>Descricao</key>
+					<string>Recursos de interatividade e tecnologia para apresentar os conteúdos são os diferenciais de um dos museus mais frequentados do Brasil. O acervo é exposto de forma inovadora e inusitada. A visitação é feita de cima para baixo. No auditório do terceiro andar pode ser assistido um vídeo de dez minutos sobre o surgimento da língua portuguesa. Depois a pessoa passa para a Praça da Língua, onde um audiovisual, com textos projetados por toda a sala, ilustra a riqueza do idioma falado no Brasil.</string>
+					<key>Preco</key>
+					<string>R$ 6; Sábado grátis</string>
+					<key>Endereco</key>
+					<string>Praça da Luz, s/n - Centro</string>
+					<key>Latitude</key>
+					<string>-23.535137</string>
+					<key>Longitude</key>
+					<string>-46.634516</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Museu da Tatuagem</string>
+					<key>Descricao</key>
+					<string>O centro da cidade pode reservar ótimas surpresas a cada nova visita. Berço das mais variadas tribos possui, além da arquitetura singular e das tradicionais lojas e bares, um museu inteiro dedicado a tatuagem e body art: é o Museu Tattoo Brasil, o único dedicado a este segmento no país.Aparentemente escondido no primeiro andar do tradicional prédio Cadete Galvão, é mantido pela coleção pessoal do fundador, o tatuador Elcio Sespede, também conhecido como Polaco, que até o momento cuida sozinho do Museu que divide o espaço com um dos seus estúdios. Os 28 anos dedicados à profissão fazem dele um cuidadoso curador do local.</string>
+					<key>Preco</key>
+					<string>Grátis</string>
+					<key>Endereco</key>
+					<string>Rua 24 de Maio, 225 – 1º andar</string>
+					<key>Latitude</key>
+					<string>-23.543583</string>
+					<key>Longitude</key>
+					<string>-46.640563</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Museu das Invenções</string>
+					<key>Descricao</key>
+					<string>Iniciativa da Associação Nacional dos Inventores, a “Inventolândia” foi criada em 1996 pelo presidente da instituição, Carlos Mazzei. Reúne um acervo com mais de 500 invenções diferentes como um piano dobrável, uma máquina de gelar garrafas em sete segundos, um controlador e monitorador de consumo de água, um pente pra careca, uma churrasqueira descartável e uma caixa de pizza que se transforma em um brinquedo.</string>
+					<key>Preco</key>
+					<string>-</string>
+					<key>Endereco</key>
+					<string>R. Doutor Homem de Mello, 1109 - Perdizes</string>
+					<key>Latitude</key>
+					<string>-23.533415</string>
+					<key>Longitude</key>
+					<string>-46.674159</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Museu de Arte Brasileira</string>
+					<key>Descricao</key>
+					<string>O MAB foi idealizado por Armando Alvares Penteado, em seu testamento de 23 de abril de 1938. Nele, instruía sua mulher a vender parte da sua propriedade com o objetivo de construir uma escola de artes e uma pinacoteca para exposições de quadros originais. Em 1947, surge a Fundação Armando Alvares Penteado (FAAP) que, 10 anos depois, tenta estabelecer o Instituto de Arte Contemporânea. Contudo, a iniciativa durou pouco tempo e o Instituto foi dissolvido. A partir dessa data, a FAAP iniciou os tramites necessários para a criação de um novo museu, o MAB.</string>
+					<key>Preco</key>
+					<string>Grátis</string>
+					<key>Endereco</key>
+					<string>Rua Alagoas, 903 – Higienópolis – zona Oeste</string>
+					<key>Latitude</key>
+					<string>-23.544393</string>
+					<key>Longitude</key>
+					<string>-46.662866</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Museu de Arte Contemporânea</string>
+					<key>Descricao</key>
+					<string>Um nome de destaque da arte contemporânea e moderna em toda América Latina, o Museu de Arte Contemporânea, ou MAC possui cerca de dez mil obras em seu acervo. Quase todas são provenientes do Museu de Arte Moderna, que teve a sua coleção entregue à USP pelo então presidente do MAM, Francisco Matarazzo Sobrinho, em 1963. Francisco e sua mulher, Yolanda Matarazzo, também doaram suas coleções particulares ao novo museu.</string>
+					<key>Preco</key>
+					<string>Grátis</string>
+					<key>Endereco</key>
+					<string>Avenida Pedro Álvares Cabral, 1301</string>
+					<key>Latitude</key>
+					<string>-23.588263</string>
+					<key>Longitude</key>
+					<string>-46.651134</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Museu de Arte Moderna - MAM</string>
+					<key>Descricao</key>
+					<string>O entorno do museu é uma atração por si só. É possível observar uma das sete versões de Maman (mamãe, em francês), uma aranha de bronze de dois metros de altura, obra da artista Louise Bourgeois; caminhar alguns passos e chegar ao Jardim de Esculturas, com paisagismo de Burle Marx e avistar 25 peças espalhadas por 6 mil m² de área verde.</string>
+					<key>Preco</key>
+					<string>R$ 6, Domingo - Grátis</string>
+					<key>Endereco</key>
+					<string>Av. Pedro Alvares Cabral, s/n° – Vila Mariana</string>
+					<key>Latitude</key>
+					<string>-23.587848</string>
+					<key>Longitude</key>
+					<string>-46.655631</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Museu do Futebol</string>
+					<key>Descricao</key>
+					<string>Em 29 de setembro de 2008, foi inaugurado o Museu do Futebol. O projeto ocupa área de 6,9 mil metros quadrados embaixo das arquibancadas do estádio do Pacaembu. Sua arquitetura se destaca por integrar os espaços: o teto é a própria arquibancada, uma passarela liga os lados leste e oeste do prédio e permite uma bela visão da Praça Charles Miller.Três eixos norteiam o passeio pelo museu: Emoção, História e Diversão. O visitante começa o percurso no saguão de entrada, batizado de Sala do Torcedor, onde estão reunidos objetos utilizados pelos torcedores como chaveiros, cinzeiros, flâmulas, broches e bandeiras.</string>
+					<key>Preco</key>
+					<string>R$ 6</string>
+					<key>Endereco</key>
+					<string>Praça Charles Miller, s/nº – Pacaembu – zona Oeste</string>
+					<key>Latitude</key>
+					<string>-23.547110</string>
+					<key>Longitude</key>
+					<string>-46.665242</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Museu dos Transportes</string>
+					<key>Descricao</key>
+					<string>Inaugurado em 1985, a atração é iniciativa do ex-funcionário da Companhia Municipal de Transportes Coletivos, Gaetano Ferolla. Ao longo do tempo a coleção foi enriquecida por doações de colecionadores e instituições. São elas as responsáveis por evocar a aura romântica da cidade no século XIX.</string>
+					<key>Preco</key>
+					<string>Grátis</string>
+					<key>Endereco</key>
+					<string>Avenida Cruzeiro do Sul, 780 – Canindé – Centro</string>
+					<key>Latitude</key>
+					<string>-23.524937</string>
+					<key>Longitude</key>
+					<string>-46.625199</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Museu Geológico Valdemar Lefèvre</string>
+					<key>Descricao</key>
+					<string>Você sabia que uma baleia azul pode atingir o peso equivalente ao de 1.600 homens, 150 bois ou 25 elefantes, que dinossauros em grego significa “lagartos terríveis”, ou que na natureza há cerca de duas mil espécies de minerais? Essas e outras curiosidades podem ser descobertas no Mugeo (Museu Geológico Valdemar Lefèvre), aberto gratuitamente de terça a domingo, das 9h às 17h.</string>
+					<key>Preco</key>
+					<string>Grátis</string>
+					<key>Endereco</key>
+					<string>Av. Francisco Matarazzo, 455 – Parque da Água Branca – Perdizes </string>
+					<key>Latitude</key>
+					<string>-23.532344</string>
+					<key>Longitude</key>
+					<string>-46.668913</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Museu da Imigração Japonesa do Brasil</string>
+					<key>Descricao</key>
+					<string>O bairro da Liberdade, no centro de São Paulo, é famoso por dedicar-se à cultura japonesa. É lá onde também encontra-se o Museu da Imigração Japonesa, o qual conta um pouco da história dos primeiros imigrantes nipônicos que vieram ao Brasil.</string>
+					<key>Preco</key>
+					<string>R$ 6</string>
+					<key>Endereco</key>
+					<string>Rua Joaquim, 381 – Liberdade – Centro</string>
+					<key>Latitude</key>
+					<string>-23.561292</string>
+					<key>Longitude</key>
+					<string>-46.635193</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Museu Monteiro Lobato</string>
+					<key>Descricao</key>
+					<string>O escritor Monteiro Lobato, autor de histórias infantis como o “Sítio do Pica-Pau Amarelo” e “Reinações de Narizinho”, é lembrado em um acervo que faz referência à vida e obra.O local contém livros, fotografias, mobiliário, objetos pessoais, banco de textos, bibliografia e documentações, além do Teatro Monteiro Lobato.</string>
+					<key>Preco</key>
+					<string>Grátis</string>
+					<key>Endereco</key>
+					<string>Rua General Jardim, 485 – Consolação – Centro</string>
+					<key>Latitude</key>
+					<string>-23.544628</string>
+					<key>Longitude</key>
+					<string>-46.649302</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Pinacoteca do Estado</string>
+					<key>Descricao</key>
+					<string>Projetado pelo arquiteto Ramos de Azevedo em 1895, o prédio que hoje abriga a Pinacoteca do Estado foi o primeiro museu de artes de São Paulo. Na época foi construído para abrigar o Liceu de Artes e Ofícios, instituição que formava técnicos e artesãos da cidade.
+Em 1901 o edifício deu espaço à Pinacoteca do Estado, que viria funcionar de fato em 1911 com a Primeira Exposição Brasileira de Belas Artes. As primeiras doações para o museu foram peças que até hoje fazem parte do acervo, entre elas obras dos consagrados artistas Benedito Calixto, Pedro Alexandrino e José Ferraz de Almeida Junior.</string>
+					<key>Preco</key>
+					<string>R$ 4, R$ 2(estudantes); Sabado - Grátis</string>
+					<key>Endereco</key>
+					<string>Praça da Luz, 2 - Luz - Centro</string>
+					<key>Latitude</key>
+					<string>-23.534276</string>
+					<key>Longitude</key>
+					<string>-46.633924</string>
+				</dict>
+			</array>
+			<key>Pontos</key>
+			<integer>0</integer>
+		</dict>
+		<key>Teatro</key>
+		<dict>
+			<key>Lugares</key>
+			<array>
+				<dict>
+					<key>Nome</key>
+					<string>Auditório Ibirapuera</string>
+					<key>Descricao</key>
+					<string>Para quem gosta de um passeio cultural diferente, o Auditório Ibirapuera é o lugar ideal. Em meio ao verde do parque, sentado na grama ou em qualquer cantinho, é possível curtir o som de diversos estilos ou assistir às peças teatrais com a qualidade de uma casa de show. Dá até para fazer um piquenique com a família e amigos enquanto assiste à apresentação.</string>
+					<key>Preco</key>
+					<string>-</string>
+					<key>Endereco</key>
+					<string>Avenida Pedro Álvares Cabral, 0 – Portão 3 – Ibirapuera</string>
+					<key>Latitude</key>
+					<string>-23.586935</string>
+					<key>Longitude</key>
+					<string>-46.655405</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Sala São Paulo</string>
+					<key>Descricao</key>
+					<string>Construída com estrutura de concreto e alvenaria de tijolos no estilo Luis XVI, com esculturas e minuciosos detalhes, a Júlio Prestes seria a estação inicial da Estrada de Ferro Sorocabana, a principal veia de transporte de café em São Paulo. Ocupando área total de 25 mil m², seu projeto arquitetônico, de autoria de Cristiano Stockler das Neves e Samuel das Neves, chegou a ser premiado no III° Congresso Panamericano de Arquitetos, de 1927.</string>
+					<key>Preco</key>
+					<string>-</string>
+					<key>Endereco</key>
+					<string>Praça Júlio Prestes, s/n, Luz - Centro</string>
+					<key>Latitude</key>
+					<string>-23.534183</string>
+					<key>Longitude</key>
+					<string>-46.640002</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Theatro Municipal</string>
+					<key>Descricao</key>
+					<string>Aberto ao público no dia 12 de setembro de 1911, o Theatro Municipal de São Paulo começou a ser construído oito anos antes, em 1903. Projetado por Cláudio Rossi e desenhado por Domiziano Rossi, foi inaugurado pela ópera de Hamelet, de Ambroise Thomas, para uma multidão de 20 mil pessoas que se amontoavam na Praça Ramos de Azevedo, centro de São Paulo. Com isso, a cidade começava a se integrar ao roteiro internacional dos grandes espetáculos.</string>
+					<key>Preco</key>
+					<string>-</string>
+					<key>Endereco</key>
+					<string>Praça Ramos de Azevedo - República - Centro</string>
+					<key>Latitude</key>
+					<string>-23.545695</string>
+					<key>Longitude</key>
+					<string>-46.639036</string>
+				</dict>
+			</array>
+			<key>Pontos</key>
+			<integer>0</integer>
+		</dict>
+		<key>Zoológicos</key>
+		<dict>
+			<key>Lugares</key>
+			<array>
+				<dict>
+					<key>Nome</key>
+					<string>Aquario de SP</string>
+					<key>Descricao</key>
+					<string>Com nove mil m² e dois milhões de litros de água, o Aquário de São Paulo (maior aquário da América Latina e único aquário temático do Brasil) vem encantando os mais diversos tipos de visitantes desde sua inauguração, em 2006. Isso se deve às espécies exóticas e fascinantes que apresenta: cerca de três mil exemplares de, aproximadamente, 300 espécies de animais.</string>
+					<key>Preco</key>
+					<string>R$ 45, R$ 35 (crianças de 3 a 12 anos), R$ 20 (idosos e professores) </string>
+					<key>Endereco</key>
+					<string>Rua Huet Bacelar, 407 – Ipiranga – zona Sul</string>
+					<key>Latitude</key>
+					<string>-23.593466</string>
+					<key>Longitude</key>
+					<string>-46.614288</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Zoológico de São Paulo</string>
+					<key>Descricao</key>
+					<string>No dia 25 de abril deste ano foram acrescentados dois complexos ao local. Com investimento de R$ 4 milhões, a Arena Cultural e o Complexo Laboratorial são as novas atrações do Zoológico de São Paulo.A Arena Cultural é um espaço destinado a apresentações culturais, como oficinas de artes, musicas e etc. A principio, as atividades acontecerão por meio do Programa de Ação Cultural (ProAC), da Secretaria de Estado da Cultura. Futuramente, com a finalização do Espaço Vida de Bicho, o local terá atrações didáticas com animais.</string>
+					<key>Preco</key>
+					<string>R$ 18(Adultos), R$ 6,50(Crianças de sete a 12 anos) </string>
+					<key>Endereco</key>
+					<string>Avenida Miguel  Estéfano, 4241 - Água Funda - zona Sul</string>
+					<key>Latitude</key>
+					<string>-23.649440</string>
+					<key>Longitude</key>
+					<string>-46.619921</string>
+				</dict>
+			</array>
+			<key>Pontos</key>
+			<integer>0</integer>
+		</dict>
+		<key>Biblioteca/ Livraria</key>
+		<dict>
+			<key>Lugares</key>
+			<array>
+				<dict>
+					<key>Nome</key>
+					<string>Biblioteca de São Paulo</string>
+					<key>Descricao</key>
+					<string>A Biblioteca de São Paulo (BSP), inaugurada em 8 de fevereiro de 2010, faz parte do conjunto de iniciativas da Secretaria de Estado da Cultura para incentivar e promover o gosto pela leitura.</string>
+					<key>Preco</key>
+					<string>-</string>
+					<key>Endereco</key>
+					<string>Av. Zaki Narchi, 2630 – Carandiru – zona Norte</string>
+					<key>Latitude</key>
+					<string>-23.508394</string>
+					<key>Longitude</key>
+					<string>-46.624920</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Biblioteca Mario Andrade</string>
+					<key>Descricao</key>
+					<string>Fundada em 1925, foi a primeira biblioteca pública da cidade. Atualmente, é a segunda maior do país, superada apenas pela Biblioteca Nacional, no Rio de Janeiro. Seu atual edifício, projetado pelo arquiteto francês Jacques Pilon, é considerado um marco da arquitetura Art Déco, estilo popular no século XX e influenciado pelo cubismo.</string>
+					<key>Preco</key>
+					<string>-</string>
+					<key>Endereco</key>
+					<string>Rua da Consolação, 94 - centro</string>
+					<key>Latitude</key>
+					<string>-23.547775</string>
+					<key>Longitude</key>
+					<string>-46.642248</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Livraria da vila</string>
+					<key>Descricao</key>
+					<string>Com cursos, atividades e lançamentos de livros, a Livraria da Vila oferece auditório, espaço para leitura de exemplares e pockets shows aos finais de semana. Para crianças que querem folhear livros coloridos e participar de atividades,</string>
+					<key>Preco</key>
+					<string>-</string>
+					<key>Endereco</key>
+					<string>Alameda Lorena, 1.731 – Itaim Bibi</string>
+					<key>Latitude</key>
+					<string>-23.562605</string>
+					<key>Longitude</key>
+					<string>-46.667397</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Livraria Cultura do Conjunto Nacional</string>
+					<key>Descricao</key>
+					<string>Um enorme esqueleto de dragão pendurado ao teto recebe o público na Livraria Cultura do Conjunto Nacional, grande referência cultural entre os paulistanos. A livraria se divide entre a loja principal, que ocupa três andares, a loja de arte e pequenas lojas exclusivas de certas editorias. Na loja principal, há locais para crianças brincarem com os livros, espaços para adultos relaxarem em almofadas, uma revistaria com exemplares importados e, para agilizar o atendimento, os caixas se organizam em formato circular.</string>
+					<key>Preco</key>
+					<string>-</string>
+					<key>Endereco</key>
+					<string>Avenida Paulista, 2073 – Jardim</string>
+					<key>Latitude</key>
+					<string>-23.558773</string>
+					<key>Longitude</key>
+					<string>-46.659977</string>
+				</dict>
+			</array>
+			<key>Pontos</key>
+			<integer>0</integer>
+		</dict>
+		<key>Espaços Culturais</key>
+		<dict>
+			<key>Lugares</key>
+			<array>
+				<dict>
+					<key>Nome</key>
+					<string>Casa da Fazenda</string>
+					<key>Descricao</key>
+					<string>Localizada no bairro Morumbi, a Casa da Fazenda foi construída no século XIX, em 1813, pelo Padre Antonio Feijó, regente do império, e desde então foi habitada por tradicionais famílias de São Paulo, teve seu último morador em 1978. E foi totalmente restaurada pela Academia brasileira de arte, cultura e história – Abach. É uma relíquia da cidade, pois mantém o padrão arquitetônico de sua época.</string>
+					<key>Preco</key>
+					<string>-</string>
+					<key>Endereco</key>
+					<string>Av. Morumbi, 5594 - Morumbi – Zona Sul (entre a ponte do Morumbi e o Palácio do governo)</string>
+					<key>Latitude</key>
+					<string>-23.612906</string>
+					<key>Longitude</key>
+					<string>-46.713977</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Casa do Grito</string>
+					<key>Descricao</key>
+					<string>Construída de pau a pique e posteriormente reformada, a Casa do Grito é um imóvel tombado em 1975 pelo Conselho de Defesa do Patrimônio Histórico, Arqueológico, Artístico e Turístico e está localizado na Praça do Monumento, próximo ao Museu Paulista, no bairro do Ipiranga, na zona Sul de São Paulo. Seu nome é associado ao quadro &quot;Independência ou Morte&quot; (1888), popularmente conhecido como Grito do Ipiranga, do artista Pedro Américo, por apresentar características semelhantes à casa pintada no canto direito e ao fundo da pintura.</string>
+					<key>Preco</key>
+					<string>Grátis</string>
+					<key>Endereco</key>
+					<string>Pça. do Monumento, s/nº – Ipiranga</string>
+					<key>Latitude</key>
+					<string>-23.580332</string>
+					<key>Longitude</key>
+					<string>-46.610585</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Casa do Tatuapé</string>
+					<key>Descricao</key>
+					<string>O lugar é uma das preciosidades históricas da cidade, e fica bem no coração da zona leste. A casa foi construída em 1698, segundo consta o registro que comprova a construção do imóvel. No início do século XIX o terreno abrigava uma olaria que produzia exclusivamente telhas. Com o desenvolvimento econômico resultante da imigração italiana, o lugar também passou a produzir tijolos.</string>
+					<key>Preco</key>
+					<string>Grátis</string>
+					<key>Endereco</key>
+					<string>Rua Guabiju, 49, Tatuapé, zona Leste – São Paulo</string>
+					<key>Latitude</key>
+					<string>-23.533252</string>
+					<key>Longitude</key>
+					<string>-46.582285</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Centro Cultural Banco do Brasil</string>
+					<key>Descricao</key>
+					<string>Inaugurado em 2001 pelo arquiteto Luiz Telles, o Centro Cultural Banco do Brasil é um dos polos culturais de São Paulo, concentrando diversas atividades artísticas como exposições, cinema, teatro, literatura, dança e música.Localizado na região central da cidade, na esquina da Rua da Quitanda com a Rua Álvares Penteado, o edifício do CCBB foi construído cem anos antes e adquirido pelo Banco do Brasil em 1923.</string>
+					<key>Preco</key>
+					<string>-</string>
+					<key>Endereco</key>
+					<string>Rua Álvares Penteado, 112 – Sé</string>
+					<key>Latitude</key>
+					<string>-23.547467</string>
+					<key>Longitude</key>
+					<string>-46.634658</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Centro Cultural SP</string>
+					<key>Descricao</key>
+					<string>Localizado na saída do Metrô Vergueiro, o Centro Cultural São Paulo, mais conhecido como Centro Cultural Vergueiro, é um dos principais polos culturais e de lazer da cidade. O projeto, criado a partir da necessidade da extensão da Biblioteca Mário de Andrade, foi inaugurado em 13 de maio de 1982 e, atualmente, possui um conjunto de bibliotecas, um jardim suspenso, salas para apresentações de teatro, música, além de diferentes atividades sociais, educativas e comunitárias.</string>
+					<key>Preco</key>
+					<string>-</string>
+					<key>Endereco</key>
+					<string>Rua Vergueiro, 1000 - Paraíso</string>
+					<key>Latitude</key>
+					<string>-23.570894</string>
+					<key>Longitude</key>
+					<string>-46.639845</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Concreto # Cultura Urbana e Contracultura</string>
+					<key>Descricao</key>
+					<string>Arte urbana e contracultura são as principais diretrizes do mais novo centro de cultura paulistano, inaugurado em novembro de 2010, com a proposta de incentivar, democratizar e mostrar as diferentes formas de expressão que afloram na cidade grande. </string>
+					<key>Preco</key>
+					<string>-</string>
+					<key>Endereco</key>
+					<string>Rua Fradique Coutinho, 1209 – Vila Madalena</string>
+					<key>Latitude</key>
+					<string>-23.556943</string>
+					<key>Longitude</key>
+					<string>-46.690783</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Itaú Cultural</string>
+					<key>Descricao</key>
+					<string>Um dos maiores centros de referência cultural da cidade de São Paulo, o Itaú Cultural é um instituto de pesquisa e produção que busca promover e divulgar o que há de melhor no cenário artístico e intelectual brasileiro. Fundada no início de 1987, a organização mantém na Avenida Paulista a sede para a realização de suas sempre gratuitas atividades, edifício que conta com espaços para exposições, espetáculos cênicos e musicais, auditório para cursos e seminários, biblioteca e muito mais.</string>
+					<key>Preco</key>
+					<string>-</string>
+					<key>Endereco</key>
+					<string>Avenida Paulista, 149 – Centro</string>
+					<key>Latitude</key>
+					<string>-23.570298</string>
+					<key>Longitude</key>
+					<string>-46.646041</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Oficina da Palavra</string>
+					<key>Descricao</key>
+					<string>A Oficina da Palavra Casa Mário de Andrade foi inaugurada em agosto de 1990, no bairro da Barra Funda, endereço da antiga casa do escritor e intelectual Mário de Andrade, um dos principais ideólogos do movimento modernista e da Semana de Arte Moderna, em 1922.</string>
+					<key>Preco</key>
+					<string>-</string>
+					<key>Endereco</key>
+					<string>Rua Lopes Chaves, 546 - Barra Funda</string>
+					<key>Latitude</key>
+					<string>-23.530750</string>
+					<key>Longitude</key>
+					<string>-46.660241</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Paço das Artes</string>
+					<key>Descricao</key>
+					<string>Criado em março de 1970, o Paço das Artes, localizado na Cidade Universitária, é uma instituição ligada a Secretaria de Estado da Cultura de São Paulo, com a missão de incentivar a produção de obras e difundir a arte contemporânea nacional e internacional.</string>
+					<key>Preco</key>
+					<string>Grátis</string>
+					<key>Endereco</key>
+					<string>Av. da Universidade, 1 − Cidade Universitária  − zona Oeste</string>
+					<key>Latitude</key>
+					<string>-23.564552</string>
+					<key>Longitude</key>
+					<string>-46.715347</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Pavilhão da Bienal</string>
+					<key>Descricao</key>
+					<string>O local recebe grandes eventos como os desfiles da São Paulo Fashion Week (maior evento de moda da América Latina) e a Bienal de Arte, que completou 60 anos de exposições em 2013 realizando o intercâmbio entre artistas nacionais e internacionais. O prédio possui três andares, com estrutura de vidro e concreto.</string>
+					<key>Preco</key>
+					<string>-</string>
+					<key>Endereco</key>
+					<string>Avenida Pedro Álvares Cabral, Portão 3 – Ibirapuera</string>
+					<key>Latitude</key>
+					<string>-23.588015</string>
+					<key>Longitude</key>
+					<string>-46.653832</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Pavilhão das Culturas Brasileiras</string>
+					<key>Descricao</key>
+					<string>Inaugurado em 11 de novembro de 2010, o Pavilhão das Culturas Brasileiras é o novo reduto cultural do Parque do Ibirapuera, desenvolvido para abrigar exclusivamente obras e peças dos povos do Brasil, englobando as mais diversas manifestações artísticas, de arte indígena, design e artesanato a grafite e tatuagem.</string>
+					<key>Preco</key>
+					<string>-</string>
+					<key>Endereco</key>
+					<string>Rua Pedro Álvares Cabral, s/ nº</string>
+					<key>Latitude</key>
+					<string>-23.5905429</string>
+					<key>Longitude</key>
+					<string>-46.6575792</string>
+				</dict>
+			</array>
+			<key>Pontos</key>
+			<integer>0</integer>
+		</dict>
+		<key>Edificios Históricos</key>
+		<dict>
+			<key>Lugares</key>
+			<array>
+				<dict>
+					<key>Nome</key>
+					<string>Banespão</string>
+					<key>Descricao</key>
+					<string>Situado no ponto alto do centro velho, a inspiração da arquitetura veio do famoso Empire State Building, em Nova York. Com 161,22 metros de altura, seus 35 andares, 14 elevadores, 900 degraus e 1.119 janelas, foi considerado nos anos 40 a maior construção de concreto armado do mundo. Por quase 20 anos foi o mais alto da cidade, identificado facilmente pelo seu logotipo luminoso. Mas o que garante ainda mais o seu sucesso é a torre. Sua altitude proporciona perspectivas impressionantes.</string>
+					<key>Preco</key>
+					<string>Grátis</string>
+					<key>Endereco</key>
+					<string>Rua João Brícola, 24 - Centro - São Paulo</string>
+					<key>Latitude</key>
+					<string>-23.545655</string>
+					<key>Longitude</key>
+					<string>-46.634145</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Espaço Bovespa</string>
+					<key>Descricao</key>
+					<string>A Bolsa de Valores de São Paulo (Bovespa) inaugurou no dia 27 de setembro de 2006 um espaço para visitação do público em geral. O local onde antes funcionava o antigo pregão viva-voz foi todo remodelado e agora faz parte do circuito turístico do Centro Histórico de São Paulo. Quem passar por lá pode aprender sobre o funcionamento do estabelecimento com ex-operadores, conhecer a história do mercado de capitais no Brasil, além de ver peças de museu, como um telefone sem fio da década de 1980.</string>
+					<key>Preco</key>
+					<string>Grátis</string>
+					<key>Endereco</key>
+					<string>Rua 15 de Novembro, 275 - Centro</string>
+					<key>Latitude</key>
+					<string>-23.546449</string>
+					<key>Longitude</key>
+					<string>-46.634337</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Copan</string>
+					<key>Descricao</key>
+					<string>O edifício Copan, localizado no centro da cidade, completou quatro décadas de inauguração no dia 25 de maio de 2006. Símbolo da arquitetura moderna brasileira, seu projeto foi concebido pelo líder do movimento, o arquiteto Oscar Niemeyer, em 1954, na ocasião do IV Centenário de São Paulo.</string>
+					<key>Preco</key>
+					<string>-</string>
+					<key>Endereco</key>
+					<string>Avenida Ipiranga, 200 - Bloco S - Sobreloja - Bela Vista</string>
+					<key>Latitude</key>
+					<string>-23.546.570</string>
+					<key>Longitude</key>
+					<string>-46.644.374</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Conjunto Nacional</string>
+					<key>Descricao</key>
+					<string>Inaugurado em 1958, o Conjunto Nacional é considerado o primeiro shopping center da América Latina. Construído na época da Avenida Paulista dos grandes casarões, o complexo foi um dos responsáveis  por transformar a morada dos barões do café no maior centro financeiro do Brasil.</string>
+					<key>Preco</key>
+					<string>-</string>
+					<key>Endereco</key>
+					<string>Avenida Paulista, 2073 – Jardim Paulista – São Paulo</string>
+					<key>Latitude</key>
+					<string>-15.791148</string>
+					<key>Longitude</key>
+					<string>-47.883056</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Edificio Itália</string>
+					<key>Descricao</key>
+					<string>Construído em 1956, o Edifício Itália foi por muito tempo o maior edifício da cidade de São Paulo, com 165 metros (hoje, é o segundo maior) e é um dos pontos turísticos mais visitados da capital, devido à vista 360º da cidade que seu terraço, onde se localiza o restaurante Terraço Itália, proporciona.</string>
+					<key>Preco</key>
+					<string>-</string>
+					<key>Endereco</key>
+					<string>Avenida Ipiranga, 344  – República – Centro</string>
+					<key>Latitude</key>
+					<string>-23.545360</string>
+					<key>Longitude</key>
+					<string>-46.643844</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Edificio Martineli</string>
+					<key>Descricao</key>
+					<string>O primeiro arranha céu da América Latina, o Edifício Martinelli está localizado no centro de São Paulo entre as ruas São Bento, Av. São João e a Rua Libero Badaró. O Edifício foi projetado pelo seu idealizador, o italiano Giuseppe Martinelli, em 1924 e simbolizou progresso da cidade. Mais de 600 operários trabalharam nas obras. A construção foi iniciada em 1924 e a inauguração aconteceu em 1929, com 20 andares. </string>
+					<key>Preco</key>
+					<string>-</string>
+					<key>Endereco</key>
+					<string>Rua São Bento, 500</string>
+					<key>Latitude</key>
+					<string>-23.545466</string>
+					<key>Longitude</key>
+					<string>-46.634914</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Estação da Luz</string>
+					<key>Descricao</key>
+					<string>Aberta ao público em 1º de março de 1901, a Estação da Luz ocupa 7,5 mil m² do Jardim da Luz, onde se encontram as estruturas trazidas da Inglaterra que copiam o Big Ben e a abadia de Westminter. Não houve inauguração, já que o tráfego foi sendo deslocado aos poucos, mas não demorou muito para que o novo marco da cidade fosse considerado uma sala de visitas de São Paulo. Todas as personalidades ilustres que tinham a capital como destino eram obrigadas a desembarcar no local. Empresários, intelectuais, políticos, diplomatas e reis foram recepcionados em seu saguão e por lá passavam ao se despedirem.</string>
+					<key>Preco</key>
+					<string>Grátis</string>
+					<key>Endereco</key>
+					<string>Praça da Luz, 1 - Luz </string>
+					<key>Latitude</key>
+					<string>-23.5358946</string>
+					<key>Longitude</key>
+					<string>-46.6343513</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Estação Julio Prestes</string>
+					<key>Descricao</key>
+					<string>Com 25 mil m², a atual construção foi inspirada nos terminais nova-iorquinos Grand Central e Pennsylvania, nos Estados Unidos. Outra característica é a estrutura de concreto e a alvenaria de tijolos, no estilo Luís XVI, com forros trabalhados, colunas imponentes, detalhes nas esculturas na torre do relógio e nos arcos das amplas janelas da fachada, além do pé-direito alto, que confere a sensação de amplitude e luxo.</string>
+					<key>Preco</key>
+					<string>-</string>
+					<key>Endereco</key>
+					<string>Praça Júlio Prestes – s/nº – Luz – Centro</string>
+					<key>Latitude</key>
+					<string>-23.5337988</string>
+					<key>Longitude</key>
+					<string>-46.640566</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Memorial do Ensino Municipal</string>
+					<key>Descricao</key>
+					<string>O Memorial do Ensino Municipal, MEM, foi inaugurado em dezembro de 1996 com o objetivo de preservar a história da educação da cidade de São Paulo e homenagear pioneiros, especialistas, secretários e todos que marcam a educação paulistana.</string>
+					<key>Preco</key>
+					<string>-</string>
+					<key>Endereco</key>
+					<string>Rua Buri, 35 – Pacaembu – zona Oeste</string>
+					<key>Latitude</key>
+					<string>-23.5541988</string>
+					<key>Longitude</key>
+					<string>-46.6656758</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Mercado Municipal</string>
+					<key>Descricao</key>
+					<string>Localizado na Rua Cantareira, no Centro Histórico da capital paulista, o Mercado Municipal de São Paulo, popularmente conhecido como Mercadão, é um dos mais importantes pontos turísticos da cidade. Repleto de opções de lazer e comércio, o edifício, que possuí mais de oito décadas de história, foi inaugurado em 1933, vindo a substituir o antigo Mercado Central, que funcionava a céu aberto na Rua 25 de Março</string>
+					<key>Preco</key>
+					<string>-</string>
+					<key>Endereco</key>
+					<string>Rua Cantareira, 306 - Centro</string>
+					<key>Latitude</key>
+					<string>-23.5416764</string>
+					<key>Longitude</key>
+					<string>-46.6294688</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Pateo do Collegio</string>
+					<key>Descricao</key>
+					<string>Em meio aos arranha-céus e à efervescência de negócios que ocorrem na cidade, o centro guarda também o Pateo do Collegio, berço dessa que se tornou uma das maiores metrópoles do mundo. Foi o local onde São Paulo nasceu, a partir da construção de uma pequena cabana de pau a pique onde se reuniam 13 jesuítas, entre eles José de Anchieta e o padre Manoel da Nóbrega, empenhados em catequizar os nativos.</string>
+					<key>Preco</key>
+					<string>-</string>
+					<key>Endereco</key>
+					<string>Praça Pateo do Collegio, 2 - Centro</string>
+					<key>Latitude</key>
+					<string>-23.548137</string>
+					<key>Longitude</key>
+					<string>-46.632567</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Pavilhão Japonês</string>
+					<key>Descricao</key>
+					<string>Dentro do movimentado Parque do Ibirapuera – na região sul de São Paulo – existe um escondido e agradável recanto de calmaria. É o Pavilhão Japonês – construção inspirada no Palácio Katsura, em Quioto –, entregue pela colônia japonesa no quarto centenário da cidade de São Paulo, em 1954. </string>
+					<key>Preco</key>
+					<string>R$ 5, R$ 2,50 (meia)</string>
+					<key>Endereco</key>
+					<string>Parque do Ibirapuera, Portão 10 - Av. Pedro Álvares Cabral - Moema</string>
+					<key>Latitude</key>
+					<string>-23.587416</string>
+					<key>Longitude</key>
+					<string>-46.657634</string>
+				</dict>
+			</array>
+			<key>Pontos</key>
+			<integer>0</integer>
+		</dict>
+		<key>Espaços Religiosos</key>
+		<dict>
+			<key>Lugares</key>
+			<array>
+				<dict>
+					<key>Nome</key>
+					<string>Capela Morumbi</string>
+					<key>Descricao</key>
+					<string>Até hoje não se sabe ao certo a origem da capela, por falta de documentos detalhados que comprovem a verdadeira história. No entanto, existem três hipóteses sobre o local: a primeira é que era consagrada a São Sebastião dos Escravos; a segunda que era um local, provavelmente uma capela, onde ficavam as sepulturas dos proprietários da fazenda; e a terceira que seriam somente ruínas de um paiol. </string>
+					<key>Preco</key>
+					<string>Grátis</string>
+					<key>Endereco</key>
+					<string>Av. Morumbi, 5387 – Morumbi – zona Sul</string>
+					<key>Latitude</key>
+					<string>-23.612169</string>
+					<key>Longitude</key>
+					<string>-46.712871</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Catedral da Sé</string>
+					<key>Descricao</key>
+					<string>Em 1745, a &quot;velha Sé&quot;, como era chamada, foi elevada à categoria de catedral. Por isso, neste mesmo ano inicia-se a edificação da segunda matriz da Sé no mesmo local da anterior. Ao lado dela, em meados do século XIII levanta-se a Igreja de São Pedro da Pedra. Em 1911, os dois templos foram demolidos para dar espaço ao alargamento da Praça da Sé e, finalmente, à versão atual da catedral.</string>
+					<key>Preco</key>
+					<string>Grátis</string>
+					<key>Endereco</key>
+					<string>Praça da Sé, s/n - Centro - São Paulo</string>
+					<key>Latitude</key>
+					<string>-23.551216</string>
+					<key>Longitude</key>
+					<string>-46.634333</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Catedral Metropolitana Ortodoxa</string>
+					<key>Descricao</key>
+					<string>A imponente cúpula central dourada abriga abóbadas centrais e mezaninos laterais pintados por Joseph Trabulsi, na década de 1950, com técnica de afresco e iconostácio, todo em mármore, entalhado à mão, com ícones do iconógrafo russo Krivotz. Entre os anos 2000 e 2003 as paredes laterais e a cúpula do altar foram realizados por Hannán Houli.</string>
+					<key>Preco</key>
+					<string>Grátis</string>
+					<key>Endereco</key>
+					<string>Rua Vergueiro, 1515 - Paraíso</string>
+					<key>Latitude</key>
+					<string>-23.575397</string>
+					<key>Longitude</key>
+					<string>-46.640103</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Cemitério da Consolação</string>
+					<key>Descricao</key>
+					<string>Fundado em 1858, o Cemitério da Consolação foi a primeira necrópole construída na cidade de São Paulo. Um ambiente arborizado e tranquilo em meio à agitada rua de mesmo nome, que reúne cerca de 300 esculturas e trabalhos de artistas renomados como Victor Brecheret e o arquiteto Ramos de Azevedo.</string>
+					<key>Preco</key>
+					<string>Grátis</string>
+					<key>Endereco</key>
+					<string>Rua da Consolação, 1.660</string>
+					<key>Latitude</key>
+					<string>-23.550894</string>
+					<key>Longitude</key>
+					<string>-46.656534</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Cemitério do Morumbi</string>
+					<key>Descricao</key>
+					<string>Em uma área de 300 mil m², o espaço se tornou o primeiro “Cemitério Parque da América do Sul”, o qual atrai muitos visitantes, principalmente em dia de finados, 2 de novembro. O lugar ficou mundialmente conhecido, pois é onde está sepultado o corpo do piloto Ayrton Senna, que morreu em 1994, em um acidente durante uma corrida de Fórmula 1.</string>
+					<key>Preco</key>
+					<string>Grátis</string>
+					<key>Endereco</key>
+					<string>Rua Deputado Laércio Corte, 468 – Morumbi</string>
+					<key>Latitude</key>
+					<string>-23.623656</string>
+					<key>Longitude</key>
+					<string>-46.724333</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Mesquita Brasil</string>
+					<key>Descricao</key>
+					<string>A Mesquita Brasil tem como base a preservação cultural e religiosa do Islamismo na cidade, oferecendo aos seus visitantes, gratuitamente, a oportunidade de ampliar seus conhecimentos referentes ao Islam. Sua arquitetura segue os padrões dos templos muçulmanos e encanta por suas formas e pela riqueza de detalhes no acabamento do seu interior. Sua construção foi idealizada pelo arquiteto Paulo Camasmie, idealizador da Catedral Ortodoxa de São Paulo.</string>
+					<key>Preco</key>
+					<string>Grátis</string>
+					<key>Endereco</key>
+					<string>Rua Barão de Jaguará, 632 – Cambuci</string>
+					<key>Latitude</key>
+					<string>-23.557867</string>
+					<key>Longitude</key>
+					<string>-46.618386</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Monsteiro de São Bento</string>
+					<key>Descricao</key>
+					<string>O Mosteiro de São Paulo é parada garantida para quem visita a capital paulista. É uma daquelas dicas sacras que vale também para as pessoas que não são religiosas. Os beneditinos chegaram em São Paulo em 1598, mas somente em 1634 foi criada a Abadia e a capela foi dedicada a São Bento. O local, que hospedou o Papa Bento XVI durante sua visita ao Brasil, abriga hoje, além da igreja (Basílica de Nossa Senhora da Assunção), o mosteiro com cerca de 40 monges enclausurados que seguem a tradição do ora et labora(“ora e trabalha”), somado, no caso dos monges paulistanos, ao et legere(&quot;e leia&quot;), em especial as Sagradas Escrituras.</string>
+					<key>Preco</key>
+					<string>Grátis</string>
+					<key>Endereco</key>
+					<string>Largo de São Bento, s/nº - Centro</string>
+					<key>Latitude</key>
+					<string>-23.543625</string>
+					<key>Longitude</key>
+					<string>-46.633997</string>
+				</dict>
+			</array>
+			<key>Pontos</key>
+			<integer>0</integer>
+		</dict>
+		<key>Outros</key>
+		<dict>
+			<key>Lugares</key>
+			<array>
+				<dict>
+					<key>Nome</key>
+					<string>Aeroporto Campo de Marte</string>
+					<key>Descricao</key>
+					<string>Localizado na zona Norte de São Paulo, próximo à Marginal Tietê e ao Terminal Rodoviário Tietê, o Aeroporto Campo de Marte funciona desde 1920. A história começou com a construção de uma pista para pouso e decolagem e um hangar na sede da Escola de Aviação da Força Pública do Estado e, ao longo do tempo, tornou-se um dos principais e importantes espaços da viação civil e militar. Possui infraestrutura para operações noturnas e uma das maiores frotas de helicópteros do Brasil.</string>
+					<key>Preco</key>
+					<string>-</string>
+					<key>Endereco</key>
+					<string>Av. Santos Dumont, 1979 – zona Norte</string>
+					<key>Latitude</key>
+					<string>-23.509612</string>
+					<key>Longitude</key>
+					<string>-46.640289</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Cidade Universitária</string>
+					<key>Descricao</key>
+					<string>O projeto original que transformaria a antiga Fazenda Butantã em um polo da Universidade de São Paulo (USP) foi apresentado na década de 30, mas somente no ínicio da década de 60 a Cidade Universitária Armando Salles de Oliveira (nome dado para homenagear um político paulista) foi reformada e passou a ter a configuração atual, e assim se tornou uma grande base de produção cultural, artística e esportiva. Nela também se encontram os órgãos centrais da USP, como o gabinete do reitor, e diversos institutos, como o de Pesquisas Tecnológicas e o de Pesquisas Energéticas e Nucleares.</string>
+					<key>Preco</key>
+					<string>Grátis</string>
+					<key>Endereco</key>
+					<string>Avenida Professor Luciano Gualberto</string>
+					<key>Latitude</key>
+					<string>-23.559507</string>
+					<key>Longitude</key>
+					<string>-46.722059</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Feira da Praça Benedito Calixto</string>
+					<key>Descricao</key>
+					<string>Conhecida como uma das melhores feiras de antiguidades e artesanato do Brasil, a Feira da Praça Benedito Calixto acontece desde 1987 e reúne em Pinheiros, todos os sábados, mais de 300 expositores. Das 9h às 19h o visitante pode comprar de tudo, desde obras de arte a brinquedos antigos, roupas seminovas, discos de vinil, louças e móveis que datam do meio do século XIX. Para quem prefere algo ainda mais exclusivo, a feirinha conta com estandes de lojas de decoração de alto nível.</string>
+					<key>Preco</key>
+					<string>-</string>
+					<key>Endereco</key>
+					<string>Praça Benedito Calixto, s/nº - Pinheiros</string>
+					<key>Latitude</key>
+					<string>-23.557925</string>
+					<key>Longitude</key>
+					<string>-46.681037</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Memorial da América Latina</string>
+					<key>Descricao</key>
+					<string>Inaugurado em 1989, o conjunto arquitetônico, projetado por Oscar Niemeyer, tinha como objetivo estreitar as relações políticas, econômicas, sociais e culturais do Brasil com os demais países da América Latina, em uma época em que as divergências de interesse eram enormes.</string>
+					<key>Preco</key>
+					<string>-</string>
+					<key>Endereco</key>
+					<string>Av. Auro Soares de Moura Andrade, 664 - Barra Funda</string>
+					<key>Latitude</key>
+					<string>-23.52677</string>
+					<key>Longitude</key>
+					<string>-46.664291</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Planetário do Carmo</string>
+					<key>Descricao</key>
+					<string>Tem muita gente que gosta de ficar deitada olhando para o teto. Isso fica irresistível se esse teto é a projeção de estrelas ou a visão do sistema solar. O Planetário do Carmo é um equipamento de altíssima tecnologia, sem similar na América do Sul. Somente a Europa e Nova York têm o privilégio de desfrutar esse espetáculo único, que faz os visitantes realmente se sentirem perto do céu, do sol e até das constelações do Zodíaco, porém está temporariamente fechado para reformas.</string>
+					<key>Preco</key>
+					<string>-</string>
+					<key>Endereco</key>
+					<string>Rua John Speers, 137 – Itaquera - Parque do Carmo</string>
+					<key>Latitude</key>
+					<string>-23.563447</string>
+					<key>Longitude</key>
+					<string> -46.456319</string>
+				</dict>
+				<dict>
+					<key>Nome</key>
+					<string>Viveiro Manequinho Lopes</string>
+					<key>Descricao</key>
+					<string>Dedicado à produção de herbáceas e arbustivas, é um dos três viveiros que constituem o DEPAVE-2 (Divisão Técnica de Produção e Arborização), que tem como função principal a produção de mudas de plantas destinadas aos plantios realizados nas áreas públicas municipais, bem como promover a arborização e o ajardinamento. O Viveiro Manequinho Lopes possui coleções vivas de espécies vegetais com um acervo composto por cerca de 200 espécies diferentes de plantas com potencial paisagístico.</string>
+					<key>Preco</key>
+					<string>-</string>
+					<key>Endereco</key>
+					<string>Av. Pedro Álvares Cabral, s/nº – Portão 7A – Vila Mariana – zona Sul </string>
+					<key>Latitude</key>
+					<string>-23.5886846</string>
+					<key>Longitude</key>
+					<string>-46.6574406</string>
+				</dict>
+			</array>
+			<key>Pontos</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+</dict>
+</plist>
