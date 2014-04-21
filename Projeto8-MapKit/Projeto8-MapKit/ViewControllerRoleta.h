@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "ControleRoleta.h"
+#import "RoletaProtocol.h"
 
-@interface ViewControllerRoleta : UIViewController
+@interface ViewControllerRoleta : UIViewController <RoletaProtocol>
 
 @property ControleRoleta *roleta;
+@property (nonatomic, strong) UILabel *lblCategoriaAtual;
 
 @end

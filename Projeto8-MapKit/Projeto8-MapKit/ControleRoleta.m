@@ -63,6 +63,9 @@
         [container addSubview:lblCategoria];
     }
     
+    //define acategoria selecionada atualmente como 0
+    categoriaAtual = 0;
+    
     //define que o tamanho do vetor que guarda os objetos da classe categoria.
     categoriasArray = [NSMutableArray arrayWithCapacity:numeroDeCategorias];
     
@@ -73,8 +76,12 @@
     else{ [self construirSeletorImpar]; }
     
     //Adiciona o container no controle
-    container.userInteractionEnabled = NO; //Usuário não pode mexer ainda
+    container.userInteractionEnabled = NO;
     [self addSubview:container];
+    
+    //Chama o metodo de mudar de categoria selecionada
+    [self.delegate roletaMudouDeValor:[NSString stringWithFormat:@"Categoria: %i", self.categoriaAtual]];
+    
 }
 
 -(void)construirSeletorPar
@@ -219,16 +226,22 @@
     //passa verificando em qual categoria a roleta parou - comparando os angulos
     for(Categoria *c in categoriasArray)
     {
-        //verifica se a categoria atual está entre o valor radianos em que o usuário terminou o toque
-        if(radianos > c.valorMinimo && radianos < c.valorMaximo)
-        {
-            //define o novo valor
-            novoValor = radianos - c.valorMediano;
+        if(c.valorMinimo > 0 && c.valorMaximo < 0){
+            if(c.valorMaximo > radianos || c.valorMinimo < radianos){
+                //encontra em qual quadrante está (posifivo ou negativo)
+                if(radianos > 0){ novoValor = radianos + M_PI; }
+                else{ novoValor = M_PI + radianos; }
+                categoriaAtual = c.categoria;
+            }
             
-            //pega o numero da categoria selecinada
+        }
+        
+        else if (radianos > c.valorMinimo && radianos < c.valorMaximo){
+            novoValor = radianos - c.valorMediano;
             categoriaAtual = c.categoria;
         }
     }
+
     
     //define a animação para a roleta
     [UIView beginAnimations:nil context:NULL];
@@ -236,8 +249,9 @@
     CGAffineTransform t = CGAffineTransformRotate(container.transform, -novoValor);
     container.transform = t;
     [UIView commitAnimations];
+    
+    //Chama o metodo de mudar de categoria selecionada
+    [self.delegate roletaMudouDeValor:[NSString stringWithFormat:@"Categoria: %i", self.categoriaAtual]];
 }
-
-
 
 @end

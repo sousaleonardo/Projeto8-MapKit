@@ -7,12 +7,11 @@
 //
 
 #import "ViewControllerRoleta.h"
-
 @interface ViewControllerRoleta ()
-
 @end
 
 @implementation ViewControllerRoleta
+@synthesize lblCategoriaAtual, roleta;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,11 +27,22 @@
     [super viewDidLoad];
 	
     //Inicializa a roleta no ViewController dela, passando o frame, delegate e numero de categorias, no caso, 10.
-    self.roleta = [[ControleRoleta alloc]initWithFrame:CGRectMake(30, 20, 200, 200) andDelegate:self withSections:8];
+    roleta = [[ControleRoleta alloc]initWithFrame:CGRectMake(30, 20, 200, 200) andDelegate:self withSections:10];
+    roleta.center = CGPointMake(130, 240);
     
-    //Adiciona a roleta á view
-    [self.view addSubview: self.roleta];
+    //Inicializa o label da categoria atual
+    lblCategoriaAtual = [[UILabel alloc]initWithFrame:CGRectMake(50, 50, 120, 30)];
+    lblCategoriaAtual.text = @"oi";
     
+    //Adiciona á view
+    [self.view addSubview: roleta]; //roleta
+    [self.view addSubview: lblCategoriaAtual]; //label da categoria atual
+}
+
+-(void)roletaMudouDeValor:(NSString *)novoValor
+{
+    lblCategoriaAtual.text = novoValor;
+    NSLog(@"%@", novoValor);
 }
 
 - (void)didReceiveMemoryWarning
