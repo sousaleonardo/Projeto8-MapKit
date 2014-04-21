@@ -8,7 +8,8 @@
 
 #import "ViewController.h"
 
-@interface RankingViewController : ViewController
-@property (strong, nonatomic) IBOutlet UITableView *Ranking;
 
+@interface RankingViewController : ViewController <UITableViewDelegate>
+@property (strong, nonatomic) IBOutlet UITableView *tabelaRanking;
+@property NSMutableDictionary *scores;
 @end

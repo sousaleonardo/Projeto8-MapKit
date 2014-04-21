@@ -154,7 +154,6 @@
 				3C3A51E31904AA2A00ADFB46 /* RankingViewController.h */,
 				3C3A51E41904AA2A00ADFB46 /* RankingViewController.m */,
 				CDFB5E44190066BC00B1246D /* Roleta Desafio */,
-				941DC23318FF18060049799C /* Images.xcassets */,
 				941DC21F18FF18060049799C /* Supporting Files */,
 				3CA491FB190455820054A01C /* MenuViewController.h */,
 				3CA491FC190455820054A01C /* MenuViewController.m */,
@@ -194,6 +193,7 @@
 		CDFB5E44190066BC00B1246D /* Roleta Desafio */ = {
 			isa = PBXGroup;
 			children = (
+				941DC23318FF18060049799C /* Images.xcassets */,
 				CDFB5E43190066B700B1246D /* RoletaProtocol.h */,
 				CDFB5E451900678500B1246D /* ControleRoleta.h */,
 				CDFB5E461900678500B1246D /* ControleRoleta.m */,
