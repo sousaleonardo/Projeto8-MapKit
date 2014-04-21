@@ -15,7 +15,7 @@
 
 @implementation ControleRoleta
 
-@synthesize delegate, container, numeroDeCategorias, tamanhoAngulo, transformacaoInicial, deltaAngulo;
+@synthesize delegate, container, numeroDeCategorias, tamanhoAngulo, transformacaoInicial, deltaAngulo, categoriasArray;
 
 //Coloquei "Var" no final de cada variável usada para difenciar dos atributos
 -(id)initWithFrame:(CGRect)frameVar andDelegate:(id)delegateVar withSections:(int)numeroDeCategoriasVar
@@ -63,9 +63,80 @@
         [container addSubview:lblCategoria];
     }
     
+    //define que o tamanho do vetor que guarda os objetos da classe categoria.
+    categoriasArray = [NSMutableArray arrayWithCapacity:numeroDeCategorias];
+    
+    //se o numero de categorias for par, chama o método de par
+    if(numeroDeCategorias % 2 == 0) { [self construirSeletorPar]; }
+    
+    //senão, chama o método de impar
+    else{ [self construirSeletorImpar]; }
+    
     //Adiciona o container no controle
     container.userInteractionEnabled = NO; //Usuário não pode mexer ainda
     [self addSubview:container];
+}
+
+-(void)construirSeletorPar
+{
+    //LEMBRETE: A variável "tamanhoAngulo" armazena o tamanho de cada categoria.
+    
+    //define o valorMediano inicial
+    CGFloat valorMedianoVar = 0;
+    
+    //cria e define os atributos de todas as categorias
+    for(int i = 0; i < numeroDeCategorias; i++)
+    {
+        Categoria *categoriaAtual = [[Categoria alloc]init];
+        
+        categoriaAtual.valorMediano = valorMedianoVar;
+        categoriaAtual.valorMinimo = valorMedianoVar - (tamanhoAngulo / 2);
+        categoriaAtual.valorMaximo = valorMedianoVar + (tamanhoAngulo / 2);
+        categoriaAtual.categoria = i;
+        
+        if(categoriaAtual.valorMaximo - tamanhoAngulo < (- M_PI)){
+            valorMedianoVar = M_PI;
+            categoriaAtual.valorMediano = valorMedianoVar;
+            categoriaAtual.valorMinimo = fabsf(categoriaAtual.valorMaximo);
+        }
+        
+        valorMedianoVar -= tamanhoAngulo;
+        
+        //adicionando ao vetor
+        [categoriasArray addObject:categoriaAtual];
+        NSLog(@"categoria: %@", [categoriaAtual atributosDaCategoria]);
+    }
+}
+
+-(void)construirSeletorImpar
+{
+    //LEMBRETE: A variável "tamanhoAngulo" armazena o tamanho de cada categoria.
+    
+    //define o valorMediano inicial
+    CGFloat valorMedianoVar = 0;
+    
+    //cria e define os atributos de todas as categorias
+    for(int i = 0; i < numeroDeCategorias; i++)
+    {
+        Categoria *categoriaAtual = [[Categoria alloc]init];
+        
+        categoriaAtual.valorMediano = valorMedianoVar;
+        categoriaAtual.valorMinimo = valorMedianoVar - (tamanhoAngulo / 2);
+        categoriaAtual.valorMaximo = valorMedianoVar + (tamanhoAngulo / 2);
+        categoriaAtual.categoria = i;
+        
+        valorMedianoVar -= tamanhoAngulo;
+        
+        if(categoriaAtual.valorMinimo < (- M_PI)){
+            valorMedianoVar = -valorMedianoVar;
+            valorMedianoVar -= tamanhoAngulo;
+        }
+        
+        //adicionando ao vetor
+        [categoriasArray addObject:categoriaAtual];
+        NSLog(@"categoria: %@", [categoriaAtual atributosDaCategoria]);
+    }
+    
 }
 
 -(void)rodar

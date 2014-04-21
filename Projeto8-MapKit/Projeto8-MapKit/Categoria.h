@@ -16,4 +16,6 @@
 @property float valorMediano;
 @property int categoria;
 
+-(NSString *) atributosDaCategoria;
+
 @end

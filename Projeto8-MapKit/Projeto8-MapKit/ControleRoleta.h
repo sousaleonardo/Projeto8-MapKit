@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 #import "RoletaProtocol.h"
+#import "Categoria.h"
 
 @interface ControleRoleta : UIControl
 
@@ -18,10 +19,11 @@
 
 @property CGFloat tamanhoAngulo; //Tamanho do ângulo de cada categoria. Cálculo --> 2*PI / numeroDeCategorias
 
+@property (nonatomic, strong) NSMutableArray *categoriasArray; //mutable array que irá armazenar os objetos do tipo categoria
+
 //Quando o usuário toca na roleta...
 @property CGAffineTransform transformacaoInicial; //salva a transformação inicial
 @property float deltaAngulo; //salva o ângulo inicial
-
 
 //Inicia um frame com um delegate e com o número de categorias
 //O método será chamado pelo view controler da roleta para inicializar
@@ -33,5 +35,8 @@
 //Método para fazer a roleta rodar apenas nos pontos definidos - por categoria
 -(void)rodar;
 
+//métodos para os seletores quando o numero de categorias for par e quando for impar
+-(void) construirSeletorPar;
+-(void) construirSeletorImpar;
 
 @end
