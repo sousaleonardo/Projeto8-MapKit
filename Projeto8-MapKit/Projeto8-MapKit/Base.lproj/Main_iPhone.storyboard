@@ -140,6 +140,9 @@
                                         <state key="normal" title="Desafio">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="HuC-rO-CaY" kind="modal" id="0Eg-a7-GlV"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTW-nQ-M7i">
                                         <rect key="frame" x="180" y="211" width="120" height="120"/>

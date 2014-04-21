@@ -15,7 +15,7 @@
 
 @implementation ControleRoleta
 
-@synthesize delegate, container, numeroDeCategorias, tamanhoAngulo, transformacaoInicial, deltaAngulo, categoriasArray;
+@synthesize delegate, container, numeroDeCategorias, tamanhoAngulo, transformacaoInicial, deltaAngulo, categoriasArray, categoriaAtual;
 
 //Coloquei "Var" no final de cada variável usada para difenciar dos atributos
 -(id)initWithFrame:(CGRect)frameVar andDelegate:(id)delegateVar withSections:(int)numeroDeCategoriasVar
@@ -87,24 +87,24 @@
     //cria e define os atributos de todas as categorias
     for(int i = 0; i < numeroDeCategorias; i++)
     {
-        Categoria *categoriaAtual = [[Categoria alloc]init];
+        Categoria *categoriaNova = [[Categoria alloc]init];
         
-        categoriaAtual.valorMediano = valorMedianoVar;
-        categoriaAtual.valorMinimo = valorMedianoVar - (tamanhoAngulo / 2);
-        categoriaAtual.valorMaximo = valorMedianoVar + (tamanhoAngulo / 2);
-        categoriaAtual.categoria = i;
+        categoriaNova.valorMediano = valorMedianoVar;
+        categoriaNova.valorMinimo = valorMedianoVar - (tamanhoAngulo / 2);
+        categoriaNova.valorMaximo = valorMedianoVar + (tamanhoAngulo / 2);
+        categoriaNova.categoria = i;
         
-        if(categoriaAtual.valorMaximo - tamanhoAngulo < (- M_PI)){
+        if(categoriaNova.valorMaximo - tamanhoAngulo < (- M_PI)){
             valorMedianoVar = M_PI;
-            categoriaAtual.valorMediano = valorMedianoVar;
-            categoriaAtual.valorMinimo = fabsf(categoriaAtual.valorMaximo);
+            categoriaNova.valorMediano = valorMedianoVar;
+            categoriaNova.valorMinimo = fabsf(categoriaNova.valorMaximo);
         }
         
         valorMedianoVar -= tamanhoAngulo;
         
         //adicionando ao vetor
-        [categoriasArray addObject:categoriaAtual];
-        NSLog(@"categoria: %@", [categoriaAtual atributosDaCategoria]);
+        [categoriasArray addObject:categoriaNova];
+        NSLog(@"categoria: %@", [categoriaNova atributosDaCategoria]);
     }
 }
 
@@ -118,23 +118,23 @@
     //cria e define os atributos de todas as categorias
     for(int i = 0; i < numeroDeCategorias; i++)
     {
-        Categoria *categoriaAtual = [[Categoria alloc]init];
+        Categoria *categoriaNova = [[Categoria alloc]init];
         
-        categoriaAtual.valorMediano = valorMedianoVar;
-        categoriaAtual.valorMinimo = valorMedianoVar - (tamanhoAngulo / 2);
-        categoriaAtual.valorMaximo = valorMedianoVar + (tamanhoAngulo / 2);
-        categoriaAtual.categoria = i;
+        categoriaNova.valorMediano = valorMedianoVar;
+        categoriaNova.valorMinimo = valorMedianoVar - (tamanhoAngulo / 2);
+        categoriaNova.valorMaximo = valorMedianoVar + (tamanhoAngulo / 2);
+        categoriaNova.categoria = i;
         
         valorMedianoVar -= tamanhoAngulo;
         
-        if(categoriaAtual.valorMinimo < (- M_PI)){
+        if(categoriaNova.valorMinimo < (- M_PI)){
             valorMedianoVar = -valorMedianoVar;
             valorMedianoVar -= tamanhoAngulo;
         }
         
         //adicionando ao vetor
-        [categoriasArray addObject:categoriaAtual];
-        NSLog(@"categoria: %@", [categoriaAtual atributosDaCategoria]);
+        [categoriasArray addObject:categoriaNova];
+        NSLog(@"categoria: %@", [categoriaNova atributosDaCategoria]);
     }
     
 }
@@ -180,7 +180,7 @@
 }
 
 //sobreescrevendo o método que é chamado para rastrear por onde o usuário está passando
-//método armazena as informações finais e intermediárias, enquanto o usuário faz movimentos tocando na tela
+//método armazena as informações intermediárias, enquanto o usuário faz movimentos tocando na tela
 -(BOOL)continueTrackingWithTouch:(UITouch *)touch withEvent:(UIEvent *)event
 {
     //para mostrar onde está em radianos
@@ -203,8 +203,39 @@
     //transforma a roleta dependendo de onde para onde ele moveu
     container.transform = CGAffineTransformRotate(transformacaoInicial, diferencaAngulo);
     
-    
     return YES;
+}
+
+//sobreescrevendo o método que é chamado para rastrear quando o usuário termina o toque
+//método armazena as informações finais, quando o usuário terminou seus movimentos tocando na tela
+-(void)endTrackingWithTouch:(UITouch *)touch withEvent:(UIEvent *)event
+{
+    //armazena onde está em radianos
+    CGFloat radianos = atan2f(container.transform.b, container.transform.a);
+    
+    //inicializa um novo valor
+    CGFloat novoValor = 0.0f;
+    
+    //passa verificando em qual categoria a roleta parou - comparando os angulos
+    for(Categoria *c in categoriasArray)
+    {
+        //verifica se a categoria atual está entre o valor radianos em que o usuário terminou o toque
+        if(radianos > c.valorMinimo && radianos < c.valorMaximo)
+        {
+            //define o novo valor
+            novoValor = radianos - c.valorMediano;
+            
+            //pega o numero da categoria selecinada
+            categoriaAtual = c.categoria;
+        }
+    }
+    
+    //define a animação para a roleta
+    [UIView beginAnimations:nil context:NULL];
+    [UIView setAnimationDuration:0.2];
+    CGAffineTransform t = CGAffineTransformRotate(container.transform, -novoValor);
+    container.transform = t;
+    [UIView commitAnimations];
 }
 
 

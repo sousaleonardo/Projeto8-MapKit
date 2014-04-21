@@ -17,9 +17,10 @@
 @property (nonatomic, strong) UIView *container; //Contém a roleta
 @property int numeroDeCategorias; //Número de categorias que a roleta terá
 
-@property CGFloat tamanhoAngulo; //Tamanho do ângulo de cada categoria. Cálculo --> 2*PI / numeroDeCategorias
-
+@property CGFloat tamanhoAngulo; //Tamanho do ângulo de cada categoria. Cálculo --> 2*M_PI / numeroDeCategorias
 @property (nonatomic, strong) NSMutableArray *categoriasArray; //mutable array que irá armazenar os objetos do tipo categoria
+@property int categoriaAtual;
+
 
 //Quando o usuário toca na roleta...
 @property CGAffineTransform transformacaoInicial; //salva a transformação inicial
