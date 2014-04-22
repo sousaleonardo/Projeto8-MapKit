@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2300FADC190413C300F739B6 /* ViewControllerRoleta.m in Sources */ = {isa = PBXBuildFile; fileRef = 2300FADB190413C300F739B6 /* ViewControllerRoleta.m */; };
-		2300FADE190416BC00F739B6 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2300FADD190416BC00F739B6 /* FacebookSDK.framework */; };
 		237F164C19048777004DC711 /* Categoria.m in Sources */ = {isa = PBXBuildFile; fileRef = 237F164B19048777004DC711 /* Categoria.m */; };
 		3C3A51E51904AA2A00ADFB46 /* RankingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3A51E41904AA2A00ADFB46 /* RankingViewController.m */; };
 		3C607F0E1905A79A00BE1458 /* MapaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C607F0D1905A79A00BE1458 /* MapaViewController.m */; };
@@ -28,8 +27,16 @@
 		941DC23D18FF18060049799C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941DC21C18FF18060049799C /* UIKit.framework */; };
 		941DC24518FF18060049799C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 941DC24318FF18060049799C /* InfoPlist.strings */; };
 		941DC24718FF18060049799C /* Projeto8_MapKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 941DC24618FF18060049799C /* Projeto8_MapKitTests.m */; };
-		94281D9A1906EECF00A699F0 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94281D991906EECF00A699F0 /* FacebookSDK.framework */; };
 		94281D9E1906EF5B00A699F0 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94281D9D1906EF5B00A699F0 /* Parse.framework */; };
+		94281DA01906F2AF00A699F0 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94281D9F1906F2AF00A699F0 /* FacebookSDK.framework */; };
+		94281DA21906F43B00A699F0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94281DA11906F43B00A699F0 /* CFNetwork.framework */; };
+		94281DA41906F45F00A699F0 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94281DA31906F45F00A699F0 /* MobileCoreServices.framework */; };
+		94281DA61906F47D00A699F0 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 94281DA51906F47D00A699F0 /* libz.dylib */; };
+		94281DA81906F48B00A699F0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94281DA71906F48B00A699F0 /* Security.framework */; };
+		94281DAA1906F49400A699F0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94281DA91906F49400A699F0 /* StoreKit.framework */; };
+		94281DAC1906F4A100A699F0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94281DAB1906F4A100A699F0 /* SystemConfiguration.framework */; };
+		94281DB51907013000A699F0 /* DadosUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 94281DB41907013000A699F0 /* DadosUser.m */; };
+		94281DBE1907065000A699F0 /* MedalhaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94281DBD1907065000A699F0 /* MedalhaViewController.m */; };
 		C5AB4328190463020000855D /* DadosLocais.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5AB4327190463020000855D /* DadosLocais.plist */; };
 		CDFB5E471900678500B1246D /* ControleRoleta.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB5E461900678500B1246D /* ControleRoleta.m */; };
 		CDFB5E491900722C00B1246D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFB5E481900722C00B1246D /* QuartzCore.framework */; };
@@ -48,7 +55,6 @@
 /* Begin PBXFileReference section */
 		2300FADA190413C300F739B6 /* ViewControllerRoleta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerRoleta.h; sourceTree = "<group>"; };
 		2300FADB190413C300F739B6 /* ViewControllerRoleta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerRoleta.m; sourceTree = "<group>"; };
-		2300FADD190416BC00F739B6 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		237F164A19048777004DC711 /* Categoria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Categoria.h; sourceTree = "<group>"; };
 		237F164B19048777004DC711 /* Categoria.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Categoria.m; sourceTree = "<group>"; };
 		3C3A51E31904AA2A00ADFB46 /* RankingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankingViewController.h; sourceTree = "<group>"; };
@@ -77,8 +83,18 @@
 		941DC24218FF18060049799C /* Projeto8-MapKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Projeto8-MapKitTests-Info.plist"; sourceTree = "<group>"; };
 		941DC24418FF18060049799C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		941DC24618FF18060049799C /* Projeto8_MapKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Projeto8_MapKitTests.m; sourceTree = "<group>"; };
-		94281D991906EECF00A699F0 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		94281D9D1906EF5B00A699F0 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		94281D9F1906F2AF00A699F0 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		94281DA11906F43B00A699F0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		94281DA31906F45F00A699F0 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		94281DA51906F47D00A699F0 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		94281DA71906F48B00A699F0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		94281DA91906F49400A699F0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		94281DAB1906F4A100A699F0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		94281DB31907013000A699F0 /* DadosUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DadosUser.h; sourceTree = "<group>"; };
+		94281DB41907013000A699F0 /* DadosUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DadosUser.m; sourceTree = "<group>"; };
+		94281DBC1907065000A699F0 /* MedalhaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedalhaViewController.h; sourceTree = "<group>"; };
+		94281DBD1907065000A699F0 /* MedalhaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedalhaViewController.m; sourceTree = "<group>"; };
 		C5AB4327190463020000855D /* DadosLocais.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DadosLocais.plist; sourceTree = "<group>"; };
 		CDFB5E43190066B700B1246D /* RoletaProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RoletaProtocol.h; path = ../RoletaProtocol.h; sourceTree = "<group>"; };
 		CDFB5E451900678500B1246D /* ControleRoleta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControleRoleta.h; sourceTree = "<group>"; };
@@ -91,13 +107,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94281DAC1906F4A100A699F0 /* SystemConfiguration.framework in Frameworks */,
+				94281DAA1906F49400A699F0 /* StoreKit.framework in Frameworks */,
+				94281DA81906F48B00A699F0 /* Security.framework in Frameworks */,
+				94281DA61906F47D00A699F0 /* libz.dylib in Frameworks */,
+				94281DA41906F45F00A699F0 /* MobileCoreServices.framework in Frameworks */,
+				94281DA21906F43B00A699F0 /* CFNetwork.framework in Frameworks */,
 				CDFB5E491900722C00B1246D /* QuartzCore.framework in Frameworks */,
-				2300FADE190416BC00F739B6 /* FacebookSDK.framework in Frameworks */,
 				941DC21B18FF18060049799C /* CoreGraphics.framework in Frameworks */,
 				941DC21D18FF18060049799C /* UIKit.framework in Frameworks */,
 				941DC21918FF18060049799C /* Foundation.framework in Frameworks */,
 				94281D9E1906EF5B00A699F0 /* Parse.framework in Frameworks */,
-				94281D9A1906EECF00A699F0 /* FacebookSDK.framework in Frameworks */,
+				94281DA01906F2AF00A699F0 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,9 +158,14 @@
 		941DC21718FF18060049799C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				94281DAB1906F4A100A699F0 /* SystemConfiguration.framework */,
+				94281DA91906F49400A699F0 /* StoreKit.framework */,
+				94281DA71906F48B00A699F0 /* Security.framework */,
+				94281DA51906F47D00A699F0 /* libz.dylib */,
+				94281DA31906F45F00A699F0 /* MobileCoreServices.framework */,
+				94281DA11906F43B00A699F0 /* CFNetwork.framework */,
+				94281D9F1906F2AF00A699F0 /* FacebookSDK.framework */,
 				94281D9D1906EF5B00A699F0 /* Parse.framework */,
-				94281D991906EECF00A699F0 /* FacebookSDK.framework */,
-				2300FADD190416BC00F739B6 /* FacebookSDK.framework */,
 				CDFB5E481900722C00B1246D /* QuartzCore.framework */,
 				941DC21818FF18060049799C /* Foundation.framework */,
 				941DC21A18FF18060049799C /* CoreGraphics.framework */,
@@ -152,6 +178,8 @@
 		941DC21E18FF18060049799C /* Projeto8-MapKit */ = {
 			isa = PBXGroup;
 			children = (
+				94281DBC1907065000A699F0 /* MedalhaViewController.h */,
+				94281DBD1907065000A699F0 /* MedalhaViewController.m */,
 				941DC22718FF18060049799C /* AppDelegate.h */,
 				941DC22818FF18060049799C /* AppDelegate.m */,
 				941DC22A18FF18060049799C /* Main_iPhone.storyboard */,
@@ -160,6 +188,8 @@
 				941DC23118FF18060049799C /* ViewController.m */,
 				3C3A51E31904AA2A00ADFB46 /* RankingViewController.h */,
 				3C3A51E41904AA2A00ADFB46 /* RankingViewController.m */,
+				94281DB31907013000A699F0 /* DadosUser.h */,
+				94281DB41907013000A699F0 /* DadosUser.m */,
 				CDFB5E44190066BC00B1246D /* Roleta Desafio */,
 				941DC21F18FF18060049799C /* Supporting Files */,
 				3CA491FB190455820054A01C /* MenuViewController.h */,
@@ -314,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDFB5E471900678500B1246D /* ControleRoleta.m in Sources */,
+				94281DBE1907065000A699F0 /* MedalhaViewController.m in Sources */,
 				3CA491FD190455820054A01C /* MenuViewController.m in Sources */,
 				3C607F0E1905A79A00BE1458 /* MapaViewController.m in Sources */,
 				941DC23218FF18060049799C /* ViewController.m in Sources */,
@@ -321,6 +352,7 @@
 				941DC22918FF18060049799C /* AppDelegate.m in Sources */,
 				2300FADC190413C300F739B6 /* ViewControllerRoleta.m in Sources */,
 				237F164C19048777004DC711 /* Categoria.m in Sources */,
+				94281DB51907013000A699F0 /* DadosUser.m in Sources */,
 				941DC22518FF18060049799C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
