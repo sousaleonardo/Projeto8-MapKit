@@ -16,6 +16,13 @@
     // Override point for customization after application launch.
     [FBLoginView class];
     
+    
+    //Adiciona no Parse o AppID e ClienteKey para autenticar ao serviço
+    [Parse setApplicationId:@"NqcQibuUFOv31C9GEgGgX6CGC4PkRdgrmMufNbCq" clientKey:@"35lUV8WFSGImAEehmZ3Nv9paqinvJ6L0Jzn2L47C"];
+    
+    //
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    
     return YES;
 }
 							
@@ -53,7 +60,14 @@
     
     // You can add your app-specific url handling code here if needed
     
+    [PFFacebookUtils handleOpenURL:url];
+    
     return wasHandled;
 }
+
+-(BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url{
+    return [PFFacebookUtils handleOpenURL:url];
+}
+
 
 @end
