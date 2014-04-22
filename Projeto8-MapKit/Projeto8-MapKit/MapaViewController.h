@@ -7,12 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "HorizontalPickerView.h"
 
-@interface MapaViewController : ViewController <UIPickerViewDelegate>
-
-
-@property (strong, nonatomic) IBOutlet HorizontalPickerView *categorias;
+@interface MapaViewController : ViewController
 
 @end
-
