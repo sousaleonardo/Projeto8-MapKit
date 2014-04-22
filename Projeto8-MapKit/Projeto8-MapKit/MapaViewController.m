@@ -7,6 +7,8 @@
 //
 
 #import "MapaViewController.h"
+#import "Atracoes.h"
+#import "OverlayAtracoes.h"
 
 @interface MapaViewController ()
 
@@ -14,19 +16,14 @@
 
 @implementation MapaViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
+
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self addAttractionPins];
+    self->categoriaSelecionada = 0;
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -34,16 +31,29 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)addAttractionPins {
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"DadosLocais" ofType:@"plist"];
+    NSDictionary *attractions = [NSArray arrayWithContentsOfFile:filePath];
+    
+    NSDictionary *atracoes = [[attractions objectForKey:@"Categoria"]objectAtIndex:self->categoriaSelecionada];
+    
+    for (int i = 0; i < [[atracoes objectForKey:@"Lugares"]count]; i++) {
+        NSDictionary *lugar = [[atracoes objectForKey:@"Lugares"]objectAtIndex:i];
+        Atracoes *annotation = [[Atracoes alloc] init];
+        CGPoint point = CGPointMake([[lugar objectForKey:@"Latitude"]doubleValue],[[lugar objectForKey:@"Longitude"]doubleValue] );
+        annotation.coordinate = CLLocationCoordinate2DMake(point.x, point.y);
+        annotation.nomeLocal = [lugar objectForKey:@"Nome"];
+        annotation.tipoDeAtracao = self->categoriaSelecionada+1;
+        annotation.descricaoLocal = [lugar objectForKey:@"Descricao"];
+        [self.mapView addAnnotation:annotation];
+    }
 }
-*/
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
+   OverlayAtracoes *viewAtracao = [[OverlayAtracoes alloc] initWithAnnotation:annotation reuseIdentifier:@"Attraction"];
+    viewAtracao.canShowCallout = YES;
+    return viewAtracao;
+}
+
+
 
 @end

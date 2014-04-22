@@ -3,8 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Categoria</key>
-	<dict>
-		<key>Parque</key>
+	<array>
 		<dict>
 			<key>Lugares</key>
 			<array>
@@ -250,7 +249,6 @@
 			<key>Pontos</key>
 			<integer>0</integer>
 		</dict>
-		<key>Praças</key>
 		<dict>
 			<key>Lugares</key>
 			<array>
@@ -300,7 +298,6 @@
 			<key>Pontos</key>
 			<integer>0</integer>
 		</dict>
-		<key>Museus</key>
 		<dict>
 			<key>Lugares</key>
 			<array>
@@ -561,7 +558,6 @@ Em 1901 o edifício deu espaço à Pinacoteca do Estado, que viria funcionar de 
 			<key>Pontos</key>
 			<integer>0</integer>
 		</dict>
-		<key>Teatro</key>
 		<dict>
 			<key>Lugares</key>
 			<array>
@@ -611,7 +607,6 @@ Em 1901 o edifício deu espaço à Pinacoteca do Estado, que viria funcionar de 
 			<key>Pontos</key>
 			<integer>0</integer>
 		</dict>
-		<key>Zoológicos</key>
 		<dict>
 			<key>Lugares</key>
 			<array>
@@ -647,7 +642,6 @@ Em 1901 o edifício deu espaço à Pinacoteca do Estado, que viria funcionar de 
 			<key>Pontos</key>
 			<integer>0</integer>
 		</dict>
-		<key>Biblioteca/ Livraria</key>
 		<dict>
 			<key>Lugares</key>
 			<array>
@@ -711,7 +705,6 @@ Em 1901 o edifício deu espaço à Pinacoteca do Estado, que viria funcionar de 
 			<key>Pontos</key>
 			<integer>0</integer>
 		</dict>
-		<key>Espaços Culturais</key>
 		<dict>
 			<key>Lugares</key>
 			<array>
@@ -873,7 +866,6 @@ Em 1901 o edifício deu espaço à Pinacoteca do Estado, que viria funcionar de 
 			<key>Pontos</key>
 			<integer>0</integer>
 		</dict>
-		<key>Edificios Históricos</key>
 		<dict>
 			<key>Lugares</key>
 			<array>
@@ -1049,7 +1041,6 @@ Em 1901 o edifício deu espaço à Pinacoteca do Estado, que viria funcionar de 
 			<key>Pontos</key>
 			<integer>0</integer>
 		</dict>
-		<key>Espaços Religiosos</key>
 		<dict>
 			<key>Lugares</key>
 			<array>
@@ -1155,7 +1146,6 @@ Em 1901 o edifício deu espaço à Pinacoteca do Estado, que viria funcionar de 
 			<key>Pontos</key>
 			<integer>0</integer>
 		</dict>
-		<key>Outros</key>
 		<dict>
 			<key>Lugares</key>
 			<array>
@@ -1247,6 +1237,6 @@ Em 1901 o edifício deu espaço à Pinacoteca do Estado, que viria funcionar de 
 			<key>Pontos</key>
 			<integer>0</integer>
 		</dict>
-	</dict>
+	</array>
 </dict>
 </plist>

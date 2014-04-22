@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--View Controller - Login-->
@@ -133,6 +133,9 @@
                                         <state key="normal" title="Mapa">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="PYp-Xi-LLd" kind="modal" id="Cp8-YB-zpG"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9NV-uF-W1V">
                                         <rect key="frame" x="180" y="20" width="120" height="120"/>
@@ -175,7 +178,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pf7-CX-svi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-140" y="138"/>
+            <point key="canvasLocation" x="-124" y="138"/>
         </scene>
         <!--View Controller - Medalha-->
         <scene sceneID="lnw-hf-qH6">
@@ -227,10 +230,10 @@
             </objects>
             <point key="canvasLocation" x="152" y="907"/>
         </scene>
-        <!--View Controller - Mapa-->
+        <!--Mapa View Controller - Mapa-->
         <scene sceneID="Er1-Kt-ciN">
             <objects>
-                <viewController title="Mapa" id="PYp-Xi-LLd" sceneMemberID="viewController">
+                <viewController title="Mapa" id="PYp-Xi-LLd" customClass="MapaViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Tqx-Qc-yXZ"/>
                         <viewControllerLayoutGuide type="bottom" id="XgQ-xq-k7g"/>
@@ -238,8 +241,20 @@
                     <view key="view" contentMode="scaleToFill" id="qWZ-zs-UrY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="dhG-oQ-z1c">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="PYp-Xi-LLd" id="qzS-XW-7Yb"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="dhG-oQ-z1c" id="ZiP-a9-SfO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Gg-74-hZ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

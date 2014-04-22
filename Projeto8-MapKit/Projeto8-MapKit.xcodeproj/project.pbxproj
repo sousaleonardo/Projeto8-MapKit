@@ -29,6 +29,8 @@
 		941DC23D18FF18060049799C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941DC21C18FF18060049799C /* UIKit.framework */; };
 		941DC24518FF18060049799C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 941DC24318FF18060049799C /* InfoPlist.strings */; };
 		941DC24718FF18060049799C /* Projeto8_MapKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 941DC24618FF18060049799C /* Projeto8_MapKitTests.m */; };
+		94281D9A1906EECF00A699F0 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94281D991906EECF00A699F0 /* FacebookSDK.framework */; };
+		94281D9E1906EF5B00A699F0 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94281D9D1906EF5B00A699F0 /* Parse.framework */; };
 		C5AB4328190463020000855D /* DadosLocais.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5AB4327190463020000855D /* DadosLocais.plist */; };
 		CDFB5E471900678500B1246D /* ControleRoleta.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB5E461900678500B1246D /* ControleRoleta.m */; };
 		CDFB5E491900722C00B1246D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFB5E481900722C00B1246D /* QuartzCore.framework */; };
@@ -77,6 +79,8 @@
 		941DC24218FF18060049799C /* Projeto8-MapKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Projeto8-MapKitTests-Info.plist"; sourceTree = "<group>"; };
 		941DC24418FF18060049799C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		941DC24618FF18060049799C /* Projeto8_MapKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Projeto8_MapKitTests.m; sourceTree = "<group>"; };
+		94281D991906EECF00A699F0 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		94281D9D1906EF5B00A699F0 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		C5AB4327190463020000855D /* DadosLocais.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DadosLocais.plist; sourceTree = "<group>"; };
 		CDFB5E43190066B700B1246D /* RoletaProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RoletaProtocol.h; path = ../RoletaProtocol.h; sourceTree = "<group>"; };
 		CDFB5E451900678500B1246D /* ControleRoleta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControleRoleta.h; sourceTree = "<group>"; };
@@ -89,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				752CF93F19070AA5002288E4 /* MapKit.framework in Frameworks */,
 				CDFB5E491900722C00B1246D /* QuartzCore.framework in Frameworks */,
 				2300FADE190416BC00F739B6 /* FacebookSDK.framework in Frameworks */,
 				941DC21B18FF18060049799C /* CoreGraphics.framework in Frameworks */,
@@ -162,6 +167,10 @@
 				3CA491FC190455820054A01C /* MenuViewController.m */,
 				3C607F0C1905A79A00BE1458 /* MapaViewController.h */,
 				3C607F0D1905A79A00BE1458 /* MapaViewController.m */,
+				752CF9361906F1F6002288E4 /* Atracoes.h */,
+				752CF9391906F3A5002288E4 /* OverlayAtracoes.h */,
+				752CF93A1906F3A5002288E4 /* OverlayAtracoes.m */,
+				752CF9371906F1F6002288E4 /* Atracoes.m */,
 			);
 			path = "Projeto8-MapKit";
 			sourceTree = "<group>";
@@ -310,6 +319,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDFB5E471900678500B1246D /* ControleRoleta.m in Sources */,
+				752CF93B1906F3A5002288E4 /* OverlayAtracoes.m in Sources */,
+				752CF9381906F1F6002288E4 /* Atracoes.m in Sources */,
 				3CA491FD190455820054A01C /* MenuViewController.m in Sources */,
 				3C607F0E1905A79A00BE1458 /* MapaViewController.m in Sources */,
 				941DC23218FF18060049799C /* ViewController.m in Sources */,
@@ -458,6 +469,7 @@
 					"$(inherited)",
 					"/Users/JuliaYamamoto/Desktop/Projetos/Projeto8-MapKit/Projeto8-MapKit",
 					/Users/Teofilo/Documents/FacebookSDK,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Projeto8-MapKit/Projeto8-MapKit-Prefix.pch";
@@ -476,6 +488,7 @@
 					"$(inherited)",
 					"/Users/JuliaYamamoto/Desktop/Projetos/Projeto8-MapKit/Projeto8-MapKit",
 					/Users/Teofilo/Documents/FacebookSDK,
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Projeto8-MapKit/Projeto8-MapKit-Prefix.pch";
