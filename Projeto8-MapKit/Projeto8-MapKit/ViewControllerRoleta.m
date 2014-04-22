@@ -30,13 +30,14 @@
     roleta = [[ControleRoleta alloc]initWithFrame:CGRectMake(30, 20, 200, 200) andDelegate:self withSections:10];
     roleta.center = CGPointMake(130, 240);
     
-    //Inicializa o label da categoria atual
-    lblCategoriaAtual = [[UILabel alloc]initWithFrame:CGRectMake(50, 50, 120, 30)];
-    lblCategoriaAtual.text = @"oi";
-    
     //Adiciona á view
     [self.view addSubview: roleta]; //roleta
-    [self.view addSubview: lblCategoriaAtual]; //label da categoria atual
+    
+    //faz o valor inicial da label ser a instrução:
+    [self roletaMudouDeValor:@"Selecione uma categoria"];
+    
+    //centraliza o texto
+    lblCategoriaAtual.textAlignment = UITextAlignmentCenter;
 }
 
 -(void)roletaMudouDeValor:(NSString *)novoValor

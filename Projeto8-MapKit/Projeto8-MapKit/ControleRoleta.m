@@ -29,9 +29,6 @@
         
         //desenha a roleta
         [self desenhaRoleta];
-        
-        //cira um timer para rodar a roleta
-        //[NSTimer scheduledTimerWithTimeInterval:2.0 target:self selector:@selector(rodar) userInfo:Nil repeats:YES];
     }
     return self;
 }
@@ -251,7 +248,7 @@
     [UIView commitAnimations];
     
     //Chama o metodo de mudar de categoria selecionada
-    [self.delegate roletaMudouDeValor:[NSString stringWithFormat:@"Categoria: %i", self.categoriaAtual]];
+    [self.delegate roletaMudouDeValor:[NSString stringWithFormat:@"%i", self.categoriaAtual]];
 }
 
 @end

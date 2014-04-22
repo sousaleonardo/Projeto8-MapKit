@@ -12,7 +12,8 @@
 
 @interface ViewControllerRoleta : UIViewController <RoletaProtocol>
 
+@property (nonatomic, strong) IBOutlet UILabel *lblCategoriaAtual;
 @property ControleRoleta *roleta;
-@property (nonatomic, strong) UILabel *lblCategoriaAtual;
+
 
 @end

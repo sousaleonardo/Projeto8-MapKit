@@ -21,7 +21,6 @@
 @property (nonatomic, strong) NSMutableArray *categoriasArray; //mutable array que irá armazenar os objetos do tipo categoria
 @property int categoriaAtual;
 
-
 //Quando o usuário toca na roleta...
 @property CGAffineTransform transformacaoInicial; //salva a transformação inicial
 @property float deltaAngulo; //salva o ângulo inicial
