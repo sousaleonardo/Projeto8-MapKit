@@ -44,6 +44,13 @@
                 self.image = [UIImage imageNamed:@"star"];
                 break;
         }
+        
+        UIButton *rota = [[UIButton alloc]initWithFrame:CGRectMake(self.frame.origin.x-5, (self.frame.origin.y/2), 25, 25)];
+        
+        [rota setTitle:@"Rota" forState:UIControlStateNormal];
+        [rota setBackgroundColor:[UIColor blackColor]];
+        [self addSubview:rota];
+        
     }
     
     return self;
