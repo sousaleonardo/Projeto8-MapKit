@@ -52,16 +52,14 @@
     
     //a string entre colchetes é o nome do campo
     atracaoVisitada[@"NomeAtracao"]=nomeAtracao;
-<<<<<<< HEAD
     atracaoVisitada[@"LocAtracao"]=[PFGeoPoint geoPointWithLatitude:[latitude doubleValue] longitude:[longitude doubleValue]];
     atracaoVisitada[@"userName"]=[PFUser currentUser].username;
 
-=======
+
     //atracaoVisitada[@"LocAtracao"]=[PFGeoPoint geoPointWithLatitude:[latitude doubleValue]  longitude:[longitude doubleValue]];
     //PFGeoPoint *locAtracao=[PFGeoPoint geoPointWithLatitude:latitude longitude:longitude];
     atracaoVisitada[@"userName"]=[PFUser user].username;
     
->>>>>>> 1a0d854cad1085751ffe29478066138f93c2e949
     //Estou usando o save Eventually para permitir que salve mesmo sem ter conexão com a internet
     //Assim quando o disp tiver conexão e o app estiver aberto ele irá salvar se o app estiver fechado na prox vez que abrir com net ele salva
     [atracaoVisitada saveEventually];
@@ -69,8 +67,6 @@
 
 //Melhorar método
 +(void)lugaresVisitados{
-    NSLog(@"%@",[PFUser currentUser].username);
-    
     //Cria o predicado para usar como filtro
     NSPredicate *predicate=[NSPredicate predicateWithFormat:@"userName=%@",[PFUser currentUser].username];
     
@@ -121,5 +117,56 @@
 
 +(void)logout{
     [PFUser logOut];
+}
+
++(void)inicializaMedalhas{
+    PFObject *medalhas=[PFObject objectWithClassName:@"Medalha"];
+    PFQuery *query=[PFQuery queryWithClassName:@"Medalha"];
+    
+    [query whereKey:@"userName" equalTo:[PFUser currentUser].username];
+    
+    NSInteger cont=[query countObjects];
+    //Verifica se ja tem as medalhas configuradas
+    if (cont>0) {
+        //Ja foi configurado sai da rotina
+        return;
+    }
+    
+    //a string entre colchetes é o nome do campo
+    medalhas[@"userName"]=[PFUser currentUser].username;
+    
+    medalhas[@"maiorExplorador"]=[NSNumber numberWithInt:20];
+    medalhas[@"apreciadorNatureza"]=[NSNumber numberWithInt:17];
+    medalhas[@"oPasseador"]=[NSNumber numberWithInt:3];
+    medalhas[@"maquinaTempo"]=[NSNumber numberWithInt:18];
+    medalhas[@"artesCenicas"]=[NSNumber numberWithInt:3];
+    medalhas[@"amantesAnimais"]=[NSNumber numberWithInt:2];
+    medalhas[@"grandeLeitor"]=[NSNumber numberWithInt:4];
+    medalhas[@"grandeAntropologo"]=[NSNumber numberWithInt:6];
+    medalhas[@"grandeHistoriador"]=[NSNumber numberWithInt:12];
+    medalhas[@"exploradorIluminado"]=[NSNumber numberWithInt:7];
+    medalhas[@"exploradorEcletico"]=[NSNumber numberWithInt:20];
+    medalhas[@"aprendizExplorador"]=[NSNumber numberWithInt:2];
+    medalhas[@"exploradorMediano"]=[NSNumber numberWithInt:3];
+    medalhas[@"superExplorador"]=[NSNumber numberWithInt:4];
+    medalhas[@"exploradorMestre"]=[NSNumber numberWithInt:5];
+    medalhas[@"exploradorCorajoso"]=[NSNumber numberWithInt:1];
+    medalhas[@"primeirosPassos"]=[NSNumber numberWithInt:1];
+    medalhas[@"exploradorCompanheiro"]=[NSNumber numberWithInt:1];
+    medalhas[@"exploradorNostalgico"]=[NSNumber numberWithInt:1];
+    medalhas[@"grandeConquistador"]=[NSNumber numberWithInt:10];
+    
+    [medalhas saveInBackground];
+}
+
++(BOOL)userLogado{
+    
+    if ([PFUser currentUser]) {
+        return YES;
+    }else{
+        return NO;
+    }
+    
+    return YES;
 }
 @end

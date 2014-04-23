@@ -23,5 +23,7 @@
 +(void)salvarMedalha:(NSString*)nomeMedalha;
 +(void)medalhasSalvas;
 
++(void)inicializaMedalhas;
++(BOOL)userLogado;
 +(void)logout;
 @end

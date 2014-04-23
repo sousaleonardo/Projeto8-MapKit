@@ -28,8 +28,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    //[DadosUser logout];
-    [DadosUser login:self];
+    //verifica se ja esta logado
+    //if (![DadosUser userLogado]) {
+        //loga o user no parse
+        [DadosUser login:self];
+    //}
+    [DadosUser inicializaMedalhas];
 }
 
 - (void)didReceiveMemoryWarning
@@ -56,4 +60,5 @@
     
     [DadosUser lugaresVisitados];
 }
+
 @end
