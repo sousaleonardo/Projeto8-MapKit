@@ -10,8 +10,10 @@
 		2300FADC190413C300F739B6 /* ViewControllerRoleta.m in Sources */ = {isa = PBXBuildFile; fileRef = 2300FADB190413C300F739B6 /* ViewControllerRoleta.m */; };
 		237F164C19048777004DC711 /* Categoria.m in Sources */ = {isa = PBXBuildFile; fileRef = 237F164B19048777004DC711 /* Categoria.m */; };
 		3C3A51E51904AA2A00ADFB46 /* RankingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3A51E41904AA2A00ADFB46 /* RankingViewController.m */; };
-		3C607F0E1905A79A00BE1458 /* MapaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C607F0D1905A79A00BE1458 /* MapaViewController.m */; };
 		3CA491FD190455820054A01C /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA491FC190455820054A01C /* MenuViewController.m */; };
+		752D30C91908343100C5D81F /* MapaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 752D30C31908343100C5D81F /* MapaViewController.m */; };
+		752D30CA1908343100C5D81F /* OverlayAtracoes.m in Sources */ = {isa = PBXBuildFile; fileRef = 752D30C51908343100C5D81F /* OverlayAtracoes.m */; };
+		752D30CB1908343100C5D81F /* Atracoes.m in Sources */ = {isa = PBXBuildFile; fileRef = 752D30C71908343100C5D81F /* Atracoes.m */; };
 		941DC21918FF18060049799C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941DC21818FF18060049799C /* Foundation.framework */; };
 		941DC21B18FF18060049799C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941DC21A18FF18060049799C /* CoreGraphics.framework */; };
 		941DC21D18FF18060049799C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941DC21C18FF18060049799C /* UIKit.framework */; };
@@ -60,10 +62,14 @@
 		237F164B19048777004DC711 /* Categoria.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Categoria.m; sourceTree = "<group>"; };
 		3C3A51E31904AA2A00ADFB46 /* RankingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankingViewController.h; sourceTree = "<group>"; };
 		3C3A51E41904AA2A00ADFB46 /* RankingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankingViewController.m; sourceTree = "<group>"; };
-		3C607F0C1905A79A00BE1458 /* MapaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapaViewController.h; sourceTree = "<group>"; };
-		3C607F0D1905A79A00BE1458 /* MapaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapaViewController.m; sourceTree = "<group>"; };
 		3CA491FB190455820054A01C /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		3CA491FC190455820054A01C /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		752D30C31908343100C5D81F /* MapaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapaViewController.m; sourceTree = "<group>"; };
+		752D30C41908343100C5D81F /* OverlayAtracoes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayAtracoes.h; sourceTree = "<group>"; };
+		752D30C51908343100C5D81F /* OverlayAtracoes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayAtracoes.m; sourceTree = "<group>"; };
+		752D30C61908343100C5D81F /* Atracoes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Atracoes.h; sourceTree = "<group>"; };
+		752D30C71908343100C5D81F /* Atracoes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Atracoes.m; sourceTree = "<group>"; };
+		752D30C81908343100C5D81F /* MapaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapaViewController.h; sourceTree = "<group>"; };
 		941DC21518FF18060049799C /* Turistando.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Turistando.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		941DC21818FF18060049799C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		941DC21A18FF18060049799C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -192,14 +198,18 @@
 				941DC23118FF18060049799C /* ViewController.m */,
 				3C3A51E31904AA2A00ADFB46 /* RankingViewController.h */,
 				3C3A51E41904AA2A00ADFB46 /* RankingViewController.m */,
+				752D30C41908343100C5D81F /* OverlayAtracoes.h */,
+				752D30C51908343100C5D81F /* OverlayAtracoes.m */,
+				752D30C61908343100C5D81F /* Atracoes.h */,
+				752D30C71908343100C5D81F /* Atracoes.m */,
+				752D30C81908343100C5D81F /* MapaViewController.h */,
+				752D30C31908343100C5D81F /* MapaViewController.m */,
 				94281DB31907013000A699F0 /* DadosUser.h */,
 				94281DB41907013000A699F0 /* DadosUser.m */,
 				CDFB5E44190066BC00B1246D /* Roleta Desafio */,
 				941DC21F18FF18060049799C /* Supporting Files */,
 				3CA491FB190455820054A01C /* MenuViewController.h */,
 				3CA491FC190455820054A01C /* MenuViewController.m */,
-				3C607F0C1905A79A00BE1458 /* MapaViewController.h */,
-				3C607F0D1905A79A00BE1458 /* MapaViewController.m */,
 			);
 			path = "Projeto8-MapKit";
 			sourceTree = "<group>";
@@ -349,9 +359,11 @@
 			files = (
 				CDFB5E471900678500B1246D /* ControleRoleta.m in Sources */,
 				94281DBE1907065000A699F0 /* MedalhaViewController.m in Sources */,
+				752D30C91908343100C5D81F /* MapaViewController.m in Sources */,
 				3CA491FD190455820054A01C /* MenuViewController.m in Sources */,
-				3C607F0E1905A79A00BE1458 /* MapaViewController.m in Sources */,
+				752D30CA1908343100C5D81F /* OverlayAtracoes.m in Sources */,
 				941DC23218FF18060049799C /* ViewController.m in Sources */,
+				752D30CB1908343100C5D81F /* Atracoes.m in Sources */,
 				3C3A51E51904AA2A00ADFB46 /* RankingViewController.m in Sources */,
 				941DC22918FF18060049799C /* AppDelegate.m in Sources */,
 				2300FADC190413C300F739B6 /* ViewControllerRoleta.m in Sources */,

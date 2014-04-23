@@ -7,7 +7,12 @@
 //
 
 #import "ViewController.h"
+#import <MapKit/MapKit.h>
 
-@interface MapaViewController : ViewController
+@interface MapaViewController : ViewController 
+{
+    int categoriaSelecionada;
+}
+@property (strong, nonatomic) IBOutlet MKMapView *mapView;
 
 @end
