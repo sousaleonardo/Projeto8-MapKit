@@ -24,8 +24,8 @@ typedef NS_ENUM(NSInteger, TipoAtracao) {
 @interface Atracoes: NSObject <MKAnnotation>
 
 @property (nonatomic) CLLocationCoordinate2D coordinate;
-@property (nonatomic, strong) NSString *nomeLocal;
-@property (nonatomic, strong) NSString *descricaoLocal;
+@property (nonatomic, strong) NSString *title;
+@property (nonatomic, strong) NSString *subtitle;
 @property (nonatomic) TipoAtracao tipoDeAtracao;
 
 @end

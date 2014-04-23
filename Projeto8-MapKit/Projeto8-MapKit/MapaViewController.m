@@ -21,8 +21,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self->categoriaSelecionada = 2;
     [self addAttractionPins];
-    self->categoriaSelecionada = 0;
+    
     
 }
 
@@ -33,18 +34,18 @@
 }
 - (void)addAttractionPins {
     NSString *filePath = [[NSBundle mainBundle] pathForResource:@"DadosLocais" ofType:@"plist"];
-    NSDictionary *attractions = [NSArray arrayWithContentsOfFile:filePath];
+    NSDictionary *attractions = [NSDictionary dictionaryWithContentsOfFile:filePath];
     
     NSDictionary *atracoes = [[attractions objectForKey:@"Categoria"]objectAtIndex:self->categoriaSelecionada];
-    
+        
     for (int i = 0; i < [[atracoes objectForKey:@"Lugares"]count]; i++) {
         NSDictionary *lugar = [[atracoes objectForKey:@"Lugares"]objectAtIndex:i];
         Atracoes *annotation = [[Atracoes alloc] init];
         CGPoint point = CGPointMake([[lugar objectForKey:@"Latitude"]doubleValue],[[lugar objectForKey:@"Longitude"]doubleValue] );
         annotation.coordinate = CLLocationCoordinate2DMake(point.x, point.y);
-        annotation.nomeLocal = [lugar objectForKey:@"Nome"];
+        annotation.title = [lugar objectForKey:@"Nome"];
         annotation.tipoDeAtracao = self->categoriaSelecionada+1;
-        annotation.descricaoLocal = [lugar objectForKey:@"Descricao"];
+        annotation.subtitle = [lugar objectForKey:@"Preco"];
         [self.mapView addAnnotation:annotation];
     }
 }

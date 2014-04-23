@@ -133,6 +133,9 @@
                                         <state key="normal" title="Mapa">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="PYp-Xi-LLd" kind="modal" id="Ius-Zw-PTH"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9NV-uF-W1V">
                                         <rect key="frame" x="180" y="20" width="120" height="120"/>
@@ -245,10 +248,10 @@
             </objects>
             <point key="canvasLocation" x="152" y="907"/>
         </scene>
-        <!--View Controller - Mapa-->
+        <!--Mapa View Controller - Mapa-->
         <scene sceneID="Er1-Kt-ciN">
             <objects>
-                <viewController title="Mapa" id="PYp-Xi-LLd" sceneMemberID="viewController">
+                <viewController title="Mapa" id="PYp-Xi-LLd" customClass="MapaViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Tqx-Qc-yXZ"/>
                         <viewControllerLayoutGuide type="bottom" id="XgQ-xq-k7g"/>
@@ -256,8 +259,20 @@
                     <view key="view" contentMode="scaleToFill" id="qWZ-zs-UrY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="eaX-dy-odc">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="PYp-Xi-LLd" id="3Bk-Vc-wKq"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="eaX-dy-odc" id="eDq-YS-paI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Gg-74-hZ3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

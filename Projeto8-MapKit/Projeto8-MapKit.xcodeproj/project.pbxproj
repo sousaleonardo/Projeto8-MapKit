@@ -14,6 +14,14 @@
 		752D30C91908343100C5D81F /* MapaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 752D30C31908343100C5D81F /* MapaViewController.m */; };
 		752D30CA1908343100C5D81F /* OverlayAtracoes.m in Sources */ = {isa = PBXBuildFile; fileRef = 752D30C51908343100C5D81F /* OverlayAtracoes.m */; };
 		752D30CB1908343100C5D81F /* Atracoes.m in Sources */ = {isa = PBXBuildFile; fileRef = 752D30C71908343100C5D81F /* Atracoes.m */; };
+		752D30D4190834F700C5D81F /* firstaid.png in Resources */ = {isa = PBXBuildFile; fileRef = 752D30CC190834F700C5D81F /* firstaid.png */; };
+		752D30D5190834F700C5D81F /* firstaid@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 752D30CD190834F700C5D81F /* firstaid@2x.png */; };
+		752D30D6190834F700C5D81F /* food.png in Resources */ = {isa = PBXBuildFile; fileRef = 752D30CE190834F700C5D81F /* food.png */; };
+		752D30D7190834F700C5D81F /* food@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 752D30CF190834F700C5D81F /* food@2x.png */; };
+		752D30D8190834F700C5D81F /* ride.png in Resources */ = {isa = PBXBuildFile; fileRef = 752D30D0190834F700C5D81F /* ride.png */; };
+		752D30D9190834F700C5D81F /* ride@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 752D30D1190834F700C5D81F /* ride@2x.png */; };
+		752D30DA190834F700C5D81F /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = 752D30D2190834F700C5D81F /* star.png */; };
+		752D30DB190834F700C5D81F /* star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 752D30D3190834F700C5D81F /* star@2x.png */; };
 		941DC21918FF18060049799C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941DC21818FF18060049799C /* Foundation.framework */; };
 		941DC21B18FF18060049799C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941DC21A18FF18060049799C /* CoreGraphics.framework */; };
 		941DC21D18FF18060049799C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941DC21C18FF18060049799C /* UIKit.framework */; };
@@ -70,6 +78,14 @@
 		752D30C61908343100C5D81F /* Atracoes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Atracoes.h; sourceTree = "<group>"; };
 		752D30C71908343100C5D81F /* Atracoes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Atracoes.m; sourceTree = "<group>"; };
 		752D30C81908343100C5D81F /* MapaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapaViewController.h; sourceTree = "<group>"; };
+		752D30CC190834F700C5D81F /* firstaid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = firstaid.png; sourceTree = "<group>"; };
+		752D30CD190834F700C5D81F /* firstaid@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "firstaid@2x.png"; sourceTree = "<group>"; };
+		752D30CE190834F700C5D81F /* food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = food.png; sourceTree = "<group>"; };
+		752D30CF190834F700C5D81F /* food@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "food@2x.png"; sourceTree = "<group>"; };
+		752D30D0190834F700C5D81F /* ride.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ride.png; sourceTree = "<group>"; };
+		752D30D1190834F700C5D81F /* ride@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ride@2x.png"; sourceTree = "<group>"; };
+		752D30D2190834F700C5D81F /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		752D30D3190834F700C5D81F /* star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star@2x.png"; sourceTree = "<group>"; };
 		941DC21518FF18060049799C /* Turistando.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Turistando.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		941DC21818FF18060049799C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		941DC21A18FF18060049799C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -102,7 +118,7 @@
 		94281DB41907013000A699F0 /* DadosUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DadosUser.m; sourceTree = "<group>"; };
 		94281DBC1907065000A699F0 /* MedalhaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedalhaViewController.h; sourceTree = "<group>"; };
 		94281DBD1907065000A699F0 /* MedalhaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedalhaViewController.m; sourceTree = "<group>"; };
-		C5AB4327190463020000855D /* DadosLocais.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DadosLocais.plist; sourceTree = "<group>"; };
+		C5AB4327190463020000855D /* DadosLocais.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = DadosLocais.plist; path = ../DadosLocais.plist; sourceTree = "<group>"; };
 		C5CFF1661907750900B93086 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		CDFB5E43190066B700B1246D /* RoletaProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RoletaProtocol.h; path = ../RoletaProtocol.h; sourceTree = "<group>"; };
 		CDFB5E451900678500B1246D /* ControleRoleta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControleRoleta.h; sourceTree = "<group>"; };
@@ -144,10 +160,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		752D30DC1908350200C5D81F /* Imagens */ = {
+			isa = PBXGroup;
+			children = (
+				752D30CC190834F700C5D81F /* firstaid.png */,
+				752D30CD190834F700C5D81F /* firstaid@2x.png */,
+				752D30CE190834F700C5D81F /* food.png */,
+				752D30CF190834F700C5D81F /* food@2x.png */,
+				752D30D0190834F700C5D81F /* ride.png */,
+				752D30D1190834F700C5D81F /* ride@2x.png */,
+				752D30D2190834F700C5D81F /* star.png */,
+				752D30D3190834F700C5D81F /* star@2x.png */,
+			);
+			name = Imagens;
+			sourceTree = "<group>";
+		};
 		941DC20C18FF18060049799C = {
 			isa = PBXGroup;
 			children = (
-				C5AB4327190463020000855D /* DadosLocais.plist */,
 				941DC21E18FF18060049799C /* Projeto8-MapKit */,
 				941DC24018FF18060049799C /* Projeto8-MapKitTests */,
 				941DC21718FF18060049799C /* Frameworks */,
@@ -188,6 +218,7 @@
 		941DC21E18FF18060049799C /* Projeto8-MapKit */ = {
 			isa = PBXGroup;
 			children = (
+				752D30DC1908350200C5D81F /* Imagens */,
 				94281DBC1907065000A699F0 /* MedalhaViewController.h */,
 				94281DBD1907065000A699F0 /* MedalhaViewController.m */,
 				941DC22718FF18060049799C /* AppDelegate.h */,
@@ -217,6 +248,7 @@
 		941DC21F18FF18060049799C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C5AB4327190463020000855D /* DadosLocais.plist */,
 				941DC22018FF18060049799C /* Projeto8-MapKit-Info.plist */,
 				941DC22118FF18060049799C /* InfoPlist.strings */,
 				941DC22418FF18060049799C /* main.m */,
@@ -335,9 +367,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				941DC22F18FF18060049799C /* Main_iPad.storyboard in Resources */,
+				752D30D8190834F700C5D81F /* ride.png in Resources */,
+				752D30D5190834F700C5D81F /* firstaid@2x.png in Resources */,
+				752D30D7190834F700C5D81F /* food@2x.png in Resources */,
 				941DC23418FF18060049799C /* Images.xcassets in Resources */,
+				752D30DA190834F700C5D81F /* star.png in Resources */,
+				752D30D6190834F700C5D81F /* food.png in Resources */,
 				941DC22C18FF18060049799C /* Main_iPhone.storyboard in Resources */,
+				752D30DB190834F700C5D81F /* star@2x.png in Resources */,
+				752D30D4190834F700C5D81F /* firstaid.png in Resources */,
 				941DC22318FF18060049799C /* InfoPlist.strings in Resources */,
+				752D30D9190834F700C5D81F /* ride@2x.png in Resources */,
 				C5AB4328190463020000855D /* DadosLocais.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
