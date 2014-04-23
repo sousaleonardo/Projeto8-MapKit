@@ -50,7 +50,8 @@
     
     //a string entre colchetes é o nome do campo
     atracaoVisitada[@"NomeAtracao"]=nomeAtracao;
-    atracaoVisitada[@"LocAtracao"]=[PFGeoPoint geoPointWithLatitude:[latitude doubleValue]  longitude:[longitude doubleValue]];
+    //atracaoVisitada[@"LocAtracao"]=[PFGeoPoint geoPointWithLatitude:[latitude doubleValue]  longitude:[longitude doubleValue]];
+    PFGeoPoint *locAtracao=[PFGeoPoint geoPointWithLatitude:latitude longitude:longitude];
     atracaoVisitada[@"userName"]=[PFUser user].username;
     
     //Estou usando o save Eventually para permitir que salve mesmo sem ter conexão com a internet
