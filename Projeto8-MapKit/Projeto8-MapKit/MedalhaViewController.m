@@ -27,6 +27,9 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    //[DadosUser logout];
+    [DadosUser login:self];
 }
 
 - (void)didReceiveMemoryWarning
@@ -49,6 +52,8 @@
     NSNumber *lat=[NSNumber numberWithDouble:-23.572922];
     NSNumber *longt=[NSNumber numberWithDouble:-23.572922];
     
-    [DadosUser salvarLugar:nomeLugar :lat :longt];
+    //[DadosUser salvarLugar:nomeLugar :lat :longt];
+    
+    [DadosUser lugaresVisitados];
 }
 @end

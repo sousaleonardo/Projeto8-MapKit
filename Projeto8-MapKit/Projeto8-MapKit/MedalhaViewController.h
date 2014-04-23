@@ -14,4 +14,6 @@
 @property (weak, nonatomic) IBOutlet UIButton *teste;
 
 -(IBAction)salvarLugar:(id)sender;
+
+
 @end
