@@ -60,7 +60,7 @@
 
 +(void)salvarMedalha:(NSString*)nomeMedalha{
     //O mesmo processo usado no local visitado
-    PFObject *medalha
+    //PFObject *medalha
 }
 +(void)logout{
     [PFUser logOut];
