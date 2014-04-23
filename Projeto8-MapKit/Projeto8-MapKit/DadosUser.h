@@ -18,9 +18,9 @@
 
 +(void)login:(id<DadosUser>)delegate;
 
-+(void)salvarLugar;
++(void)salvarLugar:(NSString*)nomeAtracao :(NSNumber*)latitude :(NSNumber*)longitude;
 +(void)lugaresVisitados;
-+(void)salvarMedalha;
++(void)salvarMedalha:(NSString*)nomeMedalha;
 +(void)medalhasSalvas;
 
 @end

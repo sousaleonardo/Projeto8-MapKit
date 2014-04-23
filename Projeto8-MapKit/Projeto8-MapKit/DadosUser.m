@@ -43,6 +43,25 @@
     }];
 }
 
+
++(void)salvarLugar:(NSString*)nomeAtracao :(NSNumber*)latitude :(NSNumber*)longitude{
+    //Class name é como se fosse o nome da tabela no site
+    PFObject *atracaoVisitada=[PFObject objectWithClassName:@"AtracaoVisitada"];
+    
+    //a string entre colchetes é o nome do campo
+    atracaoVisitada[@"NomeAtracao"]=nomeAtracao;
+    atracaoVisitada[@"LocAtracao"]=[PFGeoPoint geoPointWithLatitude:[latitude doubleValue]  longitude:[longitude doubleValue]];
+    atracaoVisitada[@"userName"]=[PFUser user].username;
+    
+    //Estou usando o save Eventually para permitir que salve mesmo sem ter conexão com a internet
+    //Assim quando o disp tiver conexão e o app estiver aberto ele irá salvar se o app estiver fechado na prox vez que abrir com net ele salva
+    [atracaoVisitada saveEventually];
+}
+
++(void)salvarMedalha:(NSString*)nomeMedalha{
+    //O mesmo processo usado no local visitado
+    PFObject *medalha
+}
 +(void)logout{
     [PFUser logOut];
 }

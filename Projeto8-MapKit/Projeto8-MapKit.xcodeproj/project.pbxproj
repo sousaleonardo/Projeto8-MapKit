@@ -38,6 +38,7 @@
 		94281DB51907013000A699F0 /* DadosUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 94281DB41907013000A699F0 /* DadosUser.m */; };
 		94281DBE1907065000A699F0 /* MedalhaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94281DBD1907065000A699F0 /* MedalhaViewController.m */; };
 		C5AB4328190463020000855D /* DadosLocais.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5AB4327190463020000855D /* DadosLocais.plist */; };
+		C5CFF1671907750900B93086 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5CFF1661907750900B93086 /* FacebookSDK.framework */; };
 		CDFB5E471900678500B1246D /* ControleRoleta.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB5E461900678500B1246D /* ControleRoleta.m */; };
 		CDFB5E491900722C00B1246D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFB5E481900722C00B1246D /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
@@ -96,6 +97,7 @@
 		94281DBC1907065000A699F0 /* MedalhaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedalhaViewController.h; sourceTree = "<group>"; };
 		94281DBD1907065000A699F0 /* MedalhaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedalhaViewController.m; sourceTree = "<group>"; };
 		C5AB4327190463020000855D /* DadosLocais.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DadosLocais.plist; sourceTree = "<group>"; };
+		C5CFF1661907750900B93086 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		CDFB5E43190066B700B1246D /* RoletaProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RoletaProtocol.h; path = ../RoletaProtocol.h; sourceTree = "<group>"; };
 		CDFB5E451900678500B1246D /* ControleRoleta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControleRoleta.h; sourceTree = "<group>"; };
 		CDFB5E461900678500B1246D /* ControleRoleta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControleRoleta.m; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				94281DA21906F43B00A699F0 /* CFNetwork.framework in Frameworks */,
 				CDFB5E491900722C00B1246D /* QuartzCore.framework in Frameworks */,
 				941DC21B18FF18060049799C /* CoreGraphics.framework in Frameworks */,
+				C5CFF1671907750900B93086 /* FacebookSDK.framework in Frameworks */,
 				941DC21D18FF18060049799C /* UIKit.framework in Frameworks */,
 				941DC21918FF18060049799C /* Foundation.framework in Frameworks */,
 				94281D9E1906EF5B00A699F0 /* Parse.framework in Frameworks */,
@@ -158,6 +161,7 @@
 		941DC21718FF18060049799C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C5CFF1661907750900B93086 /* FacebookSDK.framework */,
 				94281DAB1906F4A100A699F0 /* SystemConfiguration.framework */,
 				94281DA91906F49400A699F0 /* StoreKit.framework */,
 				94281DA71906F48B00A699F0 /* Security.framework */,
@@ -495,6 +499,7 @@
 					"/Users/JuliaYamamoto/Desktop/Projetos/Projeto8-MapKit/Projeto8-MapKit",
 					/Users/Teofilo/Documents/FacebookSDK,
 					"$(PROJECT_DIR)",
+					"/Users/sousaLeonardo/Documents/iOS/Projetos\\ Semanais/Projeto8-MapKit/Projeto8-MapKit",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Projeto8-MapKit/Projeto8-MapKit-Prefix.pch";
@@ -514,6 +519,7 @@
 					"/Users/JuliaYamamoto/Desktop/Projetos/Projeto8-MapKit/Projeto8-MapKit",
 					/Users/Teofilo/Documents/FacebookSDK,
 					"$(PROJECT_DIR)",
+					"/Users/sousaLeonardo/Documents/iOS/Projetos\\ Semanais/Projeto8-MapKit/Projeto8-MapKit",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Projeto8-MapKit/Projeto8-MapKit-Prefix.pch";
