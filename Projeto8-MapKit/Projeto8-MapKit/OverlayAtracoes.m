@@ -11,7 +11,7 @@
 
 @implementation OverlayAtracoes
 
-- (id)initWithAnnotation:(id<MKAnnotation>)annotation reuseIdentifier:(NSString *)reuseIdentifier {
+- (id)initWithAnnotation:(id<MKAnnotation>)annotation reuseIdentifier:(NSString *)reuseIdentifier :(id)target : (SEL)seletor : (SEL)seletor2 {
     self = [super initWithAnnotation:annotation reuseIdentifier:reuseIdentifier];
     if (self) {
         Atracoes *anotacaoDaAtracao = self.annotation;
@@ -45,16 +45,20 @@
                 break;
         }
         
+        
+        
         UIButton * disclosureButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
         UIButton *botaoRota = [UIButton buttonWithType:UIButtonTypeInfoLight];
         [botaoRota setImage:[UIImage imageNamed:@"star"] forState:UIControlStateNormal];
         [botaoRota setTintColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"star"]]];
-        [botaoRota addTarget:self action:@selector(rota) forControlEvents:UIControlEventTouchDown];
         
+        [botaoRota addTarget:target action:seletor forControlEvents:UIControlEventTouchDown];
+        [botaoRota performSelector:seletor withObject:self.anotacaoDaAtracao];
         
         self.leftCalloutAccessoryView = botaoRota;
         
         self.rightCalloutAccessoryView = disclosureButton;
+        
         
         
         
@@ -64,7 +68,8 @@
 }
 
 -(void)rota{
-    NSLog(@"Foi rota");
+    
+    
 }
 
 @end

@@ -26,6 +26,9 @@ typedef NS_ENUM(NSInteger, TipoAtracao) {
 @property (nonatomic) CLLocationCoordinate2D coordinate;
 @property (nonatomic, strong) NSString *title;
 @property (nonatomic, strong) NSString *subtitle;
+@property NSString *descricao;
+@property NSString *endereco;
+
 @property (nonatomic) TipoAtracao tipoDeAtracao;
 
 @end

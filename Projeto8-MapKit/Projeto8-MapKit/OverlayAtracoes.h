@@ -7,7 +7,9 @@
 //
 
 #import <MapKit/MapKit.h>
+#import "Atracoes.h"
 
 @interface OverlayAtracoes : MKAnnotationView
-
+@property Atracoes * anotacaoDaAtracao;
+- (id)initWithAnnotation:(id<MKAnnotation>)annotation reuseIdentifier:(NSString *)reuseIdentifier :(id)Target : (SEL)seletor : (SEL)seletor2;
 @end

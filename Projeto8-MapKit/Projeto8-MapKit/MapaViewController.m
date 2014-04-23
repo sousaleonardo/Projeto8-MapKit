@@ -9,6 +9,7 @@
 #import "MapaViewController.h"
 #import "Atracoes.h"
 #import "OverlayAtracoes.h"
+#import "Lugares.h"
 
 @interface MapaViewController ()
 
@@ -33,10 +34,10 @@
     // Dispose of any resources that can be recreated.
 }
 - (void)addAttractionPins {
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"DadosLocais" ofType:@"plist"];
-    NSDictionary *attractions = [NSDictionary dictionaryWithContentsOfFile:filePath];
     
-    NSDictionary *atracoes = [[attractions objectForKey:@"Categoria"]objectAtIndex:self->categoriaSelecionada];
+    Lugares *todasAtracoes = [Lugares sharedLugares];
+    
+    NSDictionary *atracoes = [[todasAtracoes objectForKey:@"Categoria"]objectAtIndex:self->categoriaSelecionada];
         
     for (int i = 0; i < [[atracoes objectForKey:@"Lugares"]count]; i++) {
         NSDictionary *lugar = [[atracoes objectForKey:@"Lugares"]objectAtIndex:i];
@@ -46,15 +47,21 @@
         annotation.title = [lugar objectForKey:@"Nome"];
         annotation.tipoDeAtracao = self->categoriaSelecionada+1;
         annotation.subtitle = [lugar objectForKey:@"Preco"];
+        
+        
         [self.mapView addAnnotation:annotation];
     }
 }
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
-   OverlayAtracoes *viewAtracao = [[OverlayAtracoes alloc] initWithAnnotation:annotation reuseIdentifier:@"Attraction"];
+   OverlayAtracoes *viewAtracao = [[OverlayAtracoes alloc] initWithAnnotation:annotation reuseIdentifier:@"Atraction" :self :@selector(verInformacoes:) :nil ];
     viewAtracao.canShowCallout = YES;
     return viewAtracao;
 }
+-(void)verInformacoes {
+    
+    [self performSegueWithIdentifier:@"ParaInformacoes" sender:nil];
 
+}
 
 
 @end
