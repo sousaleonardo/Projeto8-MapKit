@@ -44,5 +44,11 @@
     }
 }
 
-
+-(IBAction)salvarLugar:(id)sender{
+    NSString *nomeLugar=@"Parque Aclimação";
+    NSNumber *lat=[NSNumber numberWithDouble:-23.572922];
+    NSNumber *longt=[NSNumber numberWithDouble:-23.572922];
+    
+    [DadosUser salvarLugar:nomeLugar :lat :longt];
+}
 @end

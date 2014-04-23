@@ -198,10 +198,16 @@
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="salvarLugar:" destination="yp6-ui-HnO" eventType="touchUpInside" id="p5S-wT-yVV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="teste" destination="tYv-Bo-w4L" id="PmS-j4-YtF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ndN-WW-AyZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
