@@ -45,15 +45,26 @@
                 break;
         }
         
-        UIButton *rota = [[UIButton alloc]initWithFrame:CGRectMake(self.frame.origin.x-5, (self.frame.origin.y/2), 25, 25)];
+        UIButton * disclosureButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+        UIButton *botaoRota = [UIButton buttonWithType:UIButtonTypeInfoLight];
+        [botaoRota setImage:[UIImage imageNamed:@"star"] forState:UIControlStateNormal];
+        [botaoRota setTintColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"star"]]];
+        [botaoRota addTarget:self action:@selector(rota) forControlEvents:UIControlEventTouchDown];
         
-        [rota setTitle:@"Rota" forState:UIControlStateNormal];
-        [rota setBackgroundColor:[UIColor blackColor]];
-        [self addSubview:rota];
+        
+        self.leftCalloutAccessoryView = botaoRota;
+        
+        self.rightCalloutAccessoryView = disclosureButton;
+        
+        
         
     }
     
     return self;
+}
+
+-(void)rota{
+    NSLog(@"Foi rota");
 }
 
 @end
