@@ -28,12 +28,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    //verifica se ja esta logado
-    //if (![DadosUser userLogado]) {
+    //[DadosUser logout];
+    //verifica se ja esta logado, para diminuir as requisiçoes ao site ;)
+    if (![DadosUser userLogado]) {
         //loga o user no parse
         [DadosUser login:self];
-    //}
-    [DadosUser inicializaMedalhas];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -52,13 +52,8 @@
 }
 
 -(IBAction)salvarLugar:(id)sender{
-    NSString *nomeLugar=@"Parque Aclimação";
-    NSNumber *lat=[NSNumber numberWithDouble:-23.572922];
-    NSNumber *longt=[NSNumber numberWithDouble:-23.572922];
-    
-    //[DadosUser salvarLugar:nomeLugar :lat :longt];
-    
-    [DadosUser lugaresVisitados];
+
+    [DadosUser inicializaMedalhas];
 }
 
 @end

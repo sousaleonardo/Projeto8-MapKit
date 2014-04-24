@@ -11,6 +11,8 @@
 
 @interface MedalhaViewController : ViewController <DadosUser>
 
+
+
 @property (weak, nonatomic) IBOutlet UIButton *teste;
 
 -(IBAction)salvarLugar:(id)sender;
