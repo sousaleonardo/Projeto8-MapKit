@@ -17,11 +17,12 @@
 {
     int categoriaSelecionada;
     Atracoes *atracaoSelecionada;
-    
+    int pontosGanhos;
 }
 @property CLLocationCoordinate2D localizacaoAtual;
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;
 @property MKMapItem *inicio;
 @property MKMapItem *destino;
 @property MKPolylineRenderer * renderer;
+@property NSThread *verifandoLugar;
 @end

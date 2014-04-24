@@ -15,6 +15,20 @@
 
 @implementation MapaViewController
 
+-(void)verifandoSeIraGanharPontos{
+    CFTimeInterval startTime = CACurrentMediaTime();
+
+
+    while ([self.mapView.userLocation.location distanceFromLocation:self.destino.placemark.location] < 1000) {
+        
+        
+    }
+  
+    CFTimeInterval elapsedTime = CACurrentMediaTime() - startTime;
+    if ((elapsedTime*5)>=300) {
+        [self mandarPontos];
+    }
+}
 
 
 - (void)viewDidLoad
@@ -23,6 +37,7 @@
     self.mapView.showsUserLocation = YES;
     self->categoriaSelecionada = 2;
     [self addAttractionPins];
+    self.verifandoLugar = [[NSThread alloc]initWithTarget:self selector:@selector(verifandoSeIraGanharPontos) object:nil];
     
     
 }
@@ -94,6 +109,11 @@
     [request setDestination:self.destino];
     [request setRequestsAlternateRoutes:NO];
     
+    CLLocation *localizacaoDestino = [[CLLocation alloc] initWithLatitude:atracaoDestino.coordinate.latitude longitude:atracaoDestino.coordinate.longitude];
+    double distanceMeters = [self.mapView.userLocation.location distanceFromLocation:localizacaoDestino];
+    double distaciaEmKM = distanceMeters/1000;
+    NSLog(@"A distancia é :%.2lf KM",distaciaEmKM);
+    
     MKDirections *direcoes = [[MKDirections alloc] initWithRequest:request];
     [direcoes calculateDirectionsWithCompletionHandler:^(MKDirectionsResponse *response, NSError *error)
      {
@@ -119,7 +139,7 @@
 - (void)mostraRota:(MKDirectionsResponse *)response
 {
     for (MKRoute *rota in response.routes)
-    {
+    {  
         [[self mapView] addOverlay:rota.polyline level:MKOverlayLevelAboveRoads];
     }
 }
@@ -128,12 +148,50 @@
     // Centraliza o mapa ao redor da posição atual do usuário
     [[self mapView] setCenterCoordinate:[[userLocation location] coordinate] animated:YES];
     
+    
     // Dá um zoom na região atual do usuário
     self.mapView.region = MKCoordinateRegionMake(userLocation.location.coordinate, MKCoordinateSpanMake(0.1, 0.1));
     
     self.localizacaoAtual = userLocation.location.coordinate;
+}
+-(void)mandarPontos {
     
-    
+    [FBRequestConnection startWithGraphPath:@"me/scores"
+                                 parameters:nil
+                                 HTTPMethod:@"GET"
+                          completionHandler:
+     ^(FBRequestConnection *connection, id result, NSError *error) {
+         if (error) {
+             UIAlertView *erro = [[UIAlertView alloc]initWithTitle:@"Erro" message:@"Nao foi Possivel Enviar seus pontos" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+             [erro show];
+         }
+         else{
+             int pontosAtuais =[[[[result objectForKey:@"data"]objectAtIndex:0]objectForKey:@"score"]intValue];
+             
+             
+             NSDictionary *pontosEnviar = [NSDictionary dictionaryWithObjectsAndKeys:[NSString stringWithFormat:@"%d",self->pontosGanhos+ pontosAtuais],@"score",nil];
+             
+             [FBRequestConnection startWithGraphPath:@"me/scores"
+                                          parameters:pontosEnviar
+                                          HTTPMethod:@"POST"
+                                   completionHandler:
+              ^(FBRequestConnection *connection, id result, NSError *error) {
+                  if (error) {
+                      UIAlertView *erro = [[UIAlertView alloc]initWithTitle:@"Erro" message:@"Nao foi Possivel Enviar seus pontos" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+                      [erro show];
+                  }
+                  else{
+                      NSString *mensagem = [NSString stringWithFormat:@"Você ganhou %d Pontos",self->pontosGanhos];
+                      UIAlertView *ganhouPontos = [[UIAlertView alloc]initWithTitle:@"Parabéns!" message:mensagem delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+                      [ganhouPontos show];
+                      
+                  }
+                  
+              }];
+             
+         }
+         
+     }];
 }
 
      
