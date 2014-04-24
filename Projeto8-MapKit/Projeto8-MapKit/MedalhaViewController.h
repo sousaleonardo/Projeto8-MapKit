@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "DadosUser.h"
+#import "Medalha.h"
 
 @interface MedalhaViewController : ViewController <DadosUser>
 
