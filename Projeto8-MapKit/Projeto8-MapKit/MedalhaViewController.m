@@ -28,8 +28,8 @@
     [super viewDidLoad];
     //inicia sem medalhas e acrescenta ao rodar
     self->contMedalhas=0;
-    self->posXUsar=5;
-    self->posYUsar=50;
+    self->posXUsar=self.viewParte1.frame.origin.x +10;
+    self->posYUsar=self.viewParte1.frame.origin.y +20;
     
     //verifica se ja esta logado, para diminuir as requisiçoes ao site ;)
     if (![DadosUser userLogado]) {
@@ -39,6 +39,9 @@
         [DadosUser medalhasSalvas:self];
     }
     
+    [self.view addSubview:self.viewParte1];
+    
+    [self.view addSubview:self.viewParte2];
     
 }
 
@@ -59,7 +62,7 @@
         NSLog(@"Não Logado");
         
         //AlertView Avisando
-        UIAlertView *alerta =[[UIAlertView alloc]initWithTitle:@"Falha" message:@"Não Foi Possível se conectar ao sefvidor!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        UIAlertView *alerta =[[UIAlertView alloc]initWithTitle:@"Opss..." message:@"Não Foi Possível se conectar ao sefvidor!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
         
         [alerta show];
     }
@@ -80,28 +83,32 @@
     if (self->contMedalhas<10) {
         
         if (self->contMedalhas==5) {
-            self->posXUsar=5;
+            self->posXUsar=self.viewParte1.frame.origin.x +10;
             self->posYUsar= self->posYUsar + 74;
         }
         
         [medalhaAdd setFrame:CGRectMake(posXUsar, posYUsar, tamRect, tamRect)];
-        //[medalhaAdd setBackgroundColor:[UIColor redColor]];
+        [medalhaAdd setBackgroundColor:[UIColor redColor]];
         
         [self.viewParte1 addSubview:medalhaAdd];
         self->posXUsar = self->posXUsar + tamRect + 5;
         
     }else{
+        if (self->contMedalhas==10) {
+            self->posXUsar=self.viewParte2.frame.origin.x +10;
+            self->posYUsar=self.viewParte2.frame.origin.y +20;
+        }
         
-        if (self->contMedalhas==5) {
-            self->posXUsar=5;
+        if (self->contMedalhas==15) {
+            self->posXUsar=self.viewParte2.frame.origin.x +10;
             self->posYUsar= self->posYUsar + 74;
         }
         
         [medalhaAdd setFrame:CGRectMake(posXUsar, posYUsar, tamRect, tamRect)];
         
-        [medalhaAdd setBackgroundColor:[UIColor redColor]];
+        [medalhaAdd setBackgroundColor:[UIColor blueColor]];
         
-        [self.viewParte1 addSubview:medalhaAdd];
+        [self.viewParte2 addSubview:medalhaAdd];
         self->posXUsar = self->posXUsar + tamRect + 5;
         
     }

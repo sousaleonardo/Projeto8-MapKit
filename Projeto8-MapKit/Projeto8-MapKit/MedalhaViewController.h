@@ -21,13 +21,8 @@
     float posYUsar;
 }
 
-@property (weak, nonatomic) IBOutlet UIButton *teste;
-@property NSArray *medalhas;
-
 @property (weak, nonatomic) IBOutlet UIView *viewParte1;
 @property (weak, nonatomic) IBOutlet UIView *viewParte2;
-
--(IBAction)salvarLugar:(id)sender;
 
 
 @end
