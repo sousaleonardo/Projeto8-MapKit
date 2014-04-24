@@ -10,6 +10,10 @@
 #import "Atracoes.h"
 
 @interface OverlayAtracoes : MKAnnotationView
+{
+    SEL mostrarInfo;
+    id Target;
+}
 @property Atracoes * anotacaoDaAtracao;
 - (id)initWithAnnotation:(id<MKAnnotation>)annotation reuseIdentifier:(NSString *)reuseIdentifier :(id)Target : (SEL)seletor : (SEL)seletor2;
 @end

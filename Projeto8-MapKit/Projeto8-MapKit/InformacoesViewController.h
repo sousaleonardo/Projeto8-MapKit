@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Atracoes.h"
 
 @interface InformacoesViewController : ViewController
 @property (strong, nonatomic) IBOutlet UIImageView *imagemLocal;
@@ -14,5 +15,5 @@
 @property (strong, nonatomic) IBOutlet UILabel *precoLocal;
 @property (strong, nonatomic) IBOutlet UILabel *enderecoLocal;
 @property (strong, nonatomic) IBOutlet UITextView *informacoesLocal;
-
+@property Atracoes *atracao;
 @end

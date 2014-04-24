@@ -14,8 +14,8 @@
 - (id)initWithAnnotation:(id<MKAnnotation>)annotation reuseIdentifier:(NSString *)reuseIdentifier :(id)target : (SEL)seletor : (SEL)seletor2 {
     self = [super initWithAnnotation:annotation reuseIdentifier:reuseIdentifier];
     if (self) {
-        Atracoes *anotacaoDaAtracao = self.annotation;
-        switch (anotacaoDaAtracao.tipoDeAtracao) {
+        self.anotacaoDaAtracao = self.annotation;
+        switch (self.anotacaoDaAtracao.tipoDeAtracao) {
             case Parque:
                 self.image = [UIImage imageNamed:@"firstaid"];
                 break;
@@ -52,9 +52,9 @@
         [botaoRota setImage:[UIImage imageNamed:@"star"] forState:UIControlStateNormal];
         [botaoRota setTintColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"star"]]];
         
-        [botaoRota addTarget:target action:seletor forControlEvents:UIControlEventTouchDown];
-        [botaoRota performSelector:seletor withObject:self.anotacaoDaAtracao];
-        
+        [botaoRota addTarget:self action:@selector(rota) forControlEvents:UIControlEventTouchDown];
+        self->mostrarInfo = seletor;
+        self->Target = target;
         self.leftCalloutAccessoryView = botaoRota;
         
         self.rightCalloutAccessoryView = disclosureButton;
@@ -68,6 +68,9 @@
 }
 
 -(void)rota{
+    if ([Target respondsToSelector:self->mostrarInfo]) {
+        [Target performSelector:self->mostrarInfo withObject:self.anotacaoDaAtracao];
+    }
     
     
 }

@@ -8,10 +8,15 @@
 
 #import "ViewController.h"
 #import <MapKit/MapKit.h>
+#import "InformacoesViewController.h"
+#import "Atracoes.h"
+#import "OverlayAtracoes.h"
+#import "Lugares.h"
 
 @interface MapaViewController : ViewController 
 {
     int categoriaSelecionada;
+    Atracoes *atracaoSelecionada;
 }
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;
 

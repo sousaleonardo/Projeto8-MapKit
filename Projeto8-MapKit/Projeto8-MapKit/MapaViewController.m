@@ -7,9 +7,7 @@
 //
 
 #import "MapaViewController.h"
-#import "Atracoes.h"
-#import "OverlayAtracoes.h"
-#import "Lugares.h"
+
 
 @interface MapaViewController ()
 
@@ -46,6 +44,9 @@
         annotation.coordinate = CLLocationCoordinate2DMake(point.x, point.y);
         annotation.title = [lugar objectForKey:@"Nome"];
         annotation.tipoDeAtracao = self->categoriaSelecionada+1;
+        annotation.descricao = [lugar objectForKey:@"Descricao"];
+        annotation.endereco = [lugar objectForKey:@"Endereco"];
+        
         annotation.subtitle = [lugar objectForKey:@"Preco"];
         
         
@@ -53,15 +54,26 @@
     }
 }
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
-   OverlayAtracoes *viewAtracao = [[OverlayAtracoes alloc] initWithAnnotation:annotation reuseIdentifier:@"Atraction" :self :@selector(verInformacoes:) :nil ];
+    OverlayAtracoes *viewAtracao = [[OverlayAtracoes alloc] initWithAnnotation:annotation reuseIdentifier:@"Atraction" :self :@selector(verInformacoes:) :nil ];
     viewAtracao.canShowCallout = YES;
     return viewAtracao;
 }
--(void)verInformacoes {
+-(void)verInformacoes : (Atracoes*)atracao{
     
-    [self performSegueWithIdentifier:@"ParaInformacoes" sender:nil];
+    self->atracaoSelecionada = atracao;
+   
+    [self performSegueWithIdentifier:@"mostrarInfo" sender:self];
 
 }
-
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"mostrarInfo"])
+    {
+        InformacoesViewController *info =  [segue destinationViewController];
+        [info setAtracao:self->atracaoSelecionada];
+        
+    }
+}
+     
 
 @end

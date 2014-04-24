@@ -20,7 +20,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    [self.nomeLocal setText:self.atracao.title];
+    [self.precoLocal setText:[NSString stringWithFormat:@"Preço: %@",self.atracao.subtitle ]];
+    [self.informacoesLocal setText:self.atracao.descricao];
+    [self.enderecoLocal setText:self.atracao.endereco];
+    [self.informacoesLocal setEditable:NO];
+    [self.informacoesLocal setTextAlignment:NSTextAlignmentJustified];
 }
 
 - (void)didReceiveMemoryWarning
