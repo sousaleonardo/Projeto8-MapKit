@@ -12,6 +12,7 @@
 @protocol DadosUser <NSObject>
 @optional
 -(void)dadosDidLogin:(BOOL)logado;
+-(void)buscaMedalhas:(NSArray*)medalhas;
 @end
 
 @interface DadosUser : NSObject

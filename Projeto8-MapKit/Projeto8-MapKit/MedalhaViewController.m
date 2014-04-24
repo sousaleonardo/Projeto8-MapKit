@@ -53,7 +53,8 @@
 
 -(IBAction)salvarLugar:(id)sender{
 
-    [DadosUser inicializaMedalhas];
+    //[DadosUser inicializaMedalhas];
+    [DadosUser medalhasSalvas:self];
 }
 
 @end

@@ -92,11 +92,12 @@
     //PFObject *medalha
 }
 
-+(void)medalhasSalvas{
-    NSLog(@"%@",[PFUser currentUser].username);
-    
++(void)medalhasSalvas:(id)delegate{
     //Cria o predicado para usar como filtro
     NSPredicate *predicate=[NSPredicate predicateWithFormat:@"userName=%@",[PFUser currentUser].username];
+    
+    //Cria um array com os objetos recebidos
+    NSMutableArray *medalhasSalvas=[NSMutableArray array];
     
     //Cria a query que puxará os dados
     PFQuery *lugaresVisitados=[PFQuery queryWithClassName:@"Medalha" predicate:predicate];
@@ -108,9 +109,7 @@
             NSLog(@"Consegui!");
             
             //Pega os objetos
-            for (PFObject *obj in objects) {
-                NSLog(@"%@",obj);
-            }
+            
         }
     }];
 }
