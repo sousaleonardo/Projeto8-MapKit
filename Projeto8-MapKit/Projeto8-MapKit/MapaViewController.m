@@ -20,6 +20,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.mapView.showsUserLocation = YES;
     self->categoriaSelecionada = 2;
     [self addAttractionPins];
     
@@ -54,9 +55,12 @@
     }
 }
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
-    OverlayAtracoes *viewAtracao = [[OverlayAtracoes alloc] initWithAnnotation:annotation reuseIdentifier:@"Atraction" :self :@selector(verInformacoes:) :nil ];
-    viewAtracao.canShowCallout = YES;
-    return viewAtracao;
+    if ([annotation isKindOfClass:[Atracoes class]]) {
+        OverlayAtracoes *viewAtracao = [[OverlayAtracoes alloc] initWithAnnotation:annotation reuseIdentifier:@"Atraction" :self :@selector(verInformacoes:) :@selector(calcularRota:)];
+        viewAtracao.canShowCallout = YES;
+        return viewAtracao;
+    }
+    return nil;
 }
 -(void)verInformacoes : (Atracoes*)atracao{
     
@@ -74,20 +78,20 @@
         
     }
 }
-- (void)calcularRota:(CLLocationCoordinate2D)coordenadaDestino
+- (void)calcularRota:(Atracoes*)atracaoDestino
 {
     
     MKPlacemark *placeInicio = [[MKPlacemark alloc] initWithCoordinate:[[[self mapView] userLocation] coordinate] addressDictionary:nil];
     
-    MKMapItem *inicio = [[MKMapItem alloc] initWithPlacemark:placeInicio];
+    self.inicio = [[MKMapItem alloc] initWithPlacemark:placeInicio];
     
-    MKPlacemark *placeDestino = [[MKPlacemark alloc] initWithCoordinate:coordenadaDestino addressDictionary:Nil];
+    MKPlacemark *placeDestino = [[MKPlacemark alloc] initWithCoordinate:atracaoDestino.coordinate addressDictionary:Nil];
     
-    MKMapItem *destino = [[MKMapItem alloc] initWithPlacemark:placeDestino];
+    self.destino = [[MKMapItem alloc] initWithPlacemark:placeDestino];
     
     MKDirectionsRequest *request = [[MKDirectionsRequest alloc] init];
-    [request setSource:inicio];
-    [request setDestination:destino];
+    [request setSource:self.inicio];
+    [request setDestination:self.destino];
     [request setRequestsAlternateRoutes:NO];
     
     MKDirections *direcoes = [[MKDirections alloc] initWithRequest:request];
@@ -103,16 +107,20 @@
      }];
 }
 
+- (MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay
+{
+    self.renderer = [[MKPolylineRenderer alloc] initWithOverlay:overlay];
+    [[self renderer] setStrokeColor:[UIColor blueColor]];
+    [[self renderer] setLineWidth:5.0];
+    
+    return [self renderer];
+}
+
 - (void)mostraRota:(MKDirectionsResponse *)response
 {
     for (MKRoute *rota in response.routes)
     {
         [[self mapView] addOverlay:rota.polyline level:MKOverlayLevelAboveRoads];
-        
-        for (MKRouteStep *step in rota.steps)
-        {
-            NSLog(@"%@", step.instructions);
-        }
     }
 }
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation

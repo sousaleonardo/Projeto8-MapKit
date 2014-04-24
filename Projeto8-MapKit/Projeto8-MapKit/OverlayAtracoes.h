@@ -12,6 +12,7 @@
 @interface OverlayAtracoes : MKAnnotationView
 {
     SEL mostrarInfo;
+    SEL calcularRota;
     id Target;
 }
 @property Atracoes * anotacaoDaAtracao;

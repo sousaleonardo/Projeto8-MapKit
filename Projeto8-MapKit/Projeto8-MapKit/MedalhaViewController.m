@@ -54,7 +54,7 @@
 -(IBAction)salvarLugar:(id)sender{
 
     //[DadosUser inicializaMedalhas];
-    [DadosUser medalhasSalvas:self];
+   // [DadosUser medalhasSalvas:self];
 }
 
 @end

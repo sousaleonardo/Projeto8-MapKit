@@ -13,7 +13,7 @@
 #import "OverlayAtracoes.h"
 #import "Lugares.h"
 
-@interface MapaViewController : ViewController 
+@interface MapaViewController : ViewController <MKMapViewDelegate>
 {
     int categoriaSelecionada;
     Atracoes *atracaoSelecionada;
@@ -21,5 +21,7 @@
 }
 @property CLLocationCoordinate2D localizacaoAtual;
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;
-
+@property MKMapItem *inicio;
+@property MKMapItem *destino;
+@property MKPolylineRenderer * renderer;
 @end

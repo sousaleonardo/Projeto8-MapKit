@@ -54,6 +54,7 @@
         
         [botaoRota addTarget:self action:@selector(rota) forControlEvents:UIControlEventTouchDown];
         self->mostrarInfo = seletor;
+        self->calcularRota = seletor2;
         self->Target = target;
         self.leftCalloutAccessoryView = botaoRota;
         
@@ -68,8 +69,8 @@
 }
 
 -(void)rota{
-    if ([Target respondsToSelector:self->mostrarInfo]) {
-        [Target performSelector:self->mostrarInfo withObject:self.anotacaoDaAtracao];
+    if ([Target respondsToSelector:self->calcularRota]) {
+        [Target performSelector:self->calcularRota withObject:self.anotacaoDaAtracao];
     }
     
     
