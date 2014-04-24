@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Medalha : NSObject
+@interface Medalha : UIView
 
 @property NSString *nomeMedalha;
 @property NSString *idMedalha;

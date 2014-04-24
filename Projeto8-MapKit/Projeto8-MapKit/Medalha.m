@@ -22,6 +22,13 @@
         if (contGanharMedalha ==0) {
             [self setMensagem:[NSString stringWithFormat:@"Parabéns! Você pode se considerar %@",self.nomeMedalha]];
         }
+        
+        [self addSubview:self->imagem];
+        
+        //Adiciona gesto tap para aparecer as info
+        UITapGestureRecognizer *tap=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(mostrarInfo)];
+        
+        [self addGestureRecognizer:tap];
     }
     
     return self;
@@ -37,6 +44,12 @@
     }else{
         [self.imagem setAlpha:1.0f];
     }
+}
+
+-(void)mostrarInfo{
+    UIAlertView *alerta=[[UIAlertView alloc]initWithTitle:self.nomeMedalha message:self.mensagem delegate:nil cancelButtonTitle:@"Fantástico" otherButtonTitles: nil];
+    
+    [alerta show];
 }
 
 -(void)configMensagem:(int)contGanharMedalha :(NSString*)idMedalha{

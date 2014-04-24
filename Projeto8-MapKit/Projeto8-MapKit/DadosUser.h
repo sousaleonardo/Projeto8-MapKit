@@ -12,7 +12,7 @@
 @protocol DadosUser <NSObject>
 @optional
 -(void)dadosDidLogin:(BOOL)logado;
--(void)buscaMedalhas:(NSArray*)medalhas;
+-(void)adicionarMedalha:(NSString*)idMEdalaha :(int)contGanharMedalha;
 @end
 
 @interface DadosUser : NSObject
@@ -22,7 +22,7 @@
 +(void)salvarLugar:(NSString*)nomeAtracao :(NSNumber*)latitude :(NSNumber*)longitude;
 +(void)lugaresVisitados;
 +(void)salvarMedalha:(NSString*)nomeMedalha;
-+(void)medalhasSalvas;
++(void)medalhasSalvas:(id)delegate;
 
 +(void)inicializaMedalhas;
 +(BOOL)userLogado;

@@ -10,9 +10,16 @@
 #import "DadosUser.h"
 #import "Medalha.h"
 
+#define MEDALHASLINHA 5;
+
 @interface MedalhaViewController : ViewController <DadosUser>
 
 
+{
+    int contMedalhas;
+    float posXUsar;
+    float posYUsar;
+}
 
 @property (weak, nonatomic) IBOutlet UIButton *teste;
 @property NSArray *medalhas;

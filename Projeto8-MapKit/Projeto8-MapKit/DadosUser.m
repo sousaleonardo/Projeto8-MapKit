@@ -87,9 +87,9 @@
     }];
 }
 
-+(void)salvarMedalha:(NSString*)nomeMedalha{
-    //O mesmo processo usado no local visitado
-    //PFObject *medalha
++(void)salvarMedalha:(NSString*)idMedalha{
+    //Pega o valor atual do ID e remove 1 do contador se o contador chegar a 0 add os pontos
+    
 }
 
 +(void)medalhasSalvas:(id)delegate{
@@ -97,7 +97,7 @@
     NSPredicate *predicate=[NSPredicate predicateWithFormat:@"userName=%@",[PFUser currentUser].username];
     
     //Cria um array com os objetos recebidos
-    NSMutableArray *medalhasSalvas=[NSMutableArray array];
+    
     
     //Cria a query que puxará os dados
     PFQuery *lugaresVisitados=[PFQuery queryWithClassName:@"Medalha" predicate:predicate];
@@ -109,6 +109,17 @@
             NSLog(@"Consegui!");
             
             //Pega os objetos
+            
+            //Cria array com
+            //Removemos a chave do user name pq não nos interessa ela
+            [[objects objectAtIndex:0]removeObjectForKey:@"userName"];
+            
+            for(NSString *key in [[objects objectAtIndex:0]allKeys]){
+
+                if ([delegate respondsToSelector:@selector(adicionarMedalha::)]){
+                    [delegate adicionarMedalha:key :[[[objects objectAtIndex:0]valueForKey:key]intValue]];
+                }
+            }
             
         }
     }];
