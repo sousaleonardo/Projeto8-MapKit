@@ -44,6 +44,8 @@
     }else{
         [self.imagem setAlpha:1.0f];
     }
+    self.imagem
+    [self addSubview:self.imagem];
 }
 
 -(void)mostrarInfo{
