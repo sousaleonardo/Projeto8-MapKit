@@ -49,6 +49,8 @@
 		94281DAC1906F4A100A699F0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94281DAB1906F4A100A699F0 /* SystemConfiguration.framework */; };
 		94281DB51907013000A699F0 /* DadosUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 94281DB41907013000A699F0 /* DadosUser.m */; };
 		94281DBE1907065000A699F0 /* MedalhaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94281DBD1907065000A699F0 /* MedalhaViewController.m */; };
+		C5AA2DFC19093C5C003B55FB /* Medalha.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AA2DFB19093C5C003B55FB /* Medalha.m */; };
+		C5AA2DFE19094B87003B55FB /* medalha.png in Resources */ = {isa = PBXBuildFile; fileRef = C5AA2DFD19094B87003B55FB /* medalha.png */; };
 		C5AB4328190463020000855D /* DadosLocais.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5AB4327190463020000855D /* DadosLocais.plist */; };
 		C5CFF1671907750900B93086 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5CFF1661907750900B93086 /* FacebookSDK.framework */; };
 		CDFB5E471900678500B1246D /* ControleRoleta.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB5E461900678500B1246D /* ControleRoleta.m */; };
@@ -124,6 +126,9 @@
 		94281DB41907013000A699F0 /* DadosUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DadosUser.m; sourceTree = "<group>"; };
 		94281DBC1907065000A699F0 /* MedalhaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedalhaViewController.h; sourceTree = "<group>"; };
 		94281DBD1907065000A699F0 /* MedalhaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedalhaViewController.m; sourceTree = "<group>"; };
+		C5AA2DFA19093C5C003B55FB /* Medalha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Medalha.h; sourceTree = "<group>"; };
+		C5AA2DFB19093C5C003B55FB /* Medalha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Medalha.m; sourceTree = "<group>"; };
+		C5AA2DFD19094B87003B55FB /* medalha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = medalha.png; sourceTree = "<group>"; };
 		C5AB4327190463020000855D /* DadosLocais.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = DadosLocais.plist; path = ../DadosLocais.plist; sourceTree = "<group>"; };
 		C5CFF1661907750900B93086 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		CDFB5E43190066B700B1246D /* RoletaProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RoletaProtocol.h; path = ../RoletaProtocol.h; sourceTree = "<group>"; };
@@ -169,6 +174,7 @@
 		752D30DC1908350200C5D81F /* Imagens */ = {
 			isa = PBXGroup;
 			children = (
+				C5AA2DFD19094B87003B55FB /* medalha.png */,
 				752D30CC190834F700C5D81F /* firstaid.png */,
 				752D30CD190834F700C5D81F /* firstaid@2x.png */,
 				752D30CE190834F700C5D81F /* food.png */,
@@ -226,6 +232,8 @@
 			children = (
 				752D30DC1908350200C5D81F /* Imagens */,
 				94281DBC1907065000A699F0 /* MedalhaViewController.h */,
+				C5AA2DFA19093C5C003B55FB /* Medalha.h */,
+				C5AA2DFB19093C5C003B55FB /* Medalha.m */,
 				94281DBD1907065000A699F0 /* MedalhaViewController.m */,
 				941DC22718FF18060049799C /* AppDelegate.h */,
 				941DC22818FF18060049799C /* AppDelegate.m */,
@@ -389,6 +397,7 @@
 				941DC22318FF18060049799C /* InfoPlist.strings in Resources */,
 				752D30D9190834F700C5D81F /* ride@2x.png in Resources */,
 				C5AB4328190463020000855D /* DadosLocais.plist in Resources */,
+				C5AA2DFE19094B87003B55FB /* medalha.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +416,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5AA2DFC19093C5C003B55FB /* Medalha.m in Sources */,
 				CDFB5E471900678500B1246D /* ControleRoleta.m in Sources */,
 				94281DBE1907065000A699F0 /* MedalhaViewController.m in Sources */,
 				752D30C91908343100C5D81F /* MapaViewController.m in Sources */,

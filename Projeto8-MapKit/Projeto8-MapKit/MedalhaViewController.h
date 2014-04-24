@@ -14,6 +14,7 @@
 
 
 @property (weak, nonatomic) IBOutlet UIButton *teste;
+@property NSArray *medalhas;
 
 -(IBAction)salvarLugar:(id)sender;
 
