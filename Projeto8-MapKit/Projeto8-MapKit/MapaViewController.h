@@ -17,7 +17,9 @@
 {
     int categoriaSelecionada;
     Atracoes *atracaoSelecionada;
+    
 }
+@property CLLocationCoordinate2D localizacaoAtual;
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;
 
 @end

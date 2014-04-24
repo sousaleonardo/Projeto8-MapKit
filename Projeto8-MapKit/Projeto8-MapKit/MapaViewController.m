@@ -74,6 +74,60 @@
         
     }
 }
+- (void)calcularRota:(CLLocationCoordinate2D)coordenadaDestino
+{
+    
+    MKPlacemark *placeInicio = [[MKPlacemark alloc] initWithCoordinate:[[[self mapView] userLocation] coordinate] addressDictionary:nil];
+    
+    MKMapItem *inicio = [[MKMapItem alloc] initWithPlacemark:placeInicio];
+    
+    MKPlacemark *placeDestino = [[MKPlacemark alloc] initWithCoordinate:coordenadaDestino addressDictionary:Nil];
+    
+    MKMapItem *destino = [[MKMapItem alloc] initWithPlacemark:placeDestino];
+    
+    MKDirectionsRequest *request = [[MKDirectionsRequest alloc] init];
+    [request setSource:inicio];
+    [request setDestination:destino];
+    [request setRequestsAlternateRoutes:NO];
+    
+    MKDirections *direcoes = [[MKDirections alloc] initWithRequest:request];
+    [direcoes calculateDirectionsWithCompletionHandler:^(MKDirectionsResponse *response, NSError *error)
+     {
+         if (error)
+         {
+             NSLog(@"Erro ao traçar caminho");
+         }else
+         {
+             [self mostraRota:response];
+         }
+     }];
+}
+
+- (void)mostraRota:(MKDirectionsResponse *)response
+{
+    for (MKRoute *rota in response.routes)
+    {
+        [[self mapView] addOverlay:rota.polyline level:MKOverlayLevelAboveRoads];
+        
+        for (MKRouteStep *step in rota.steps)
+        {
+            NSLog(@"%@", step.instructions);
+        }
+    }
+}
+- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
+{
+    // Centraliza o mapa ao redor da posição atual do usuário
+    [[self mapView] setCenterCoordinate:[[userLocation location] coordinate] animated:YES];
+    
+    // Dá um zoom na região atual do usuário
+    self.mapView.region = MKCoordinateRegionMake(userLocation.location.coordinate, MKCoordinateSpanMake(0.1, 0.1));
+    
+    self.localizacaoAtual = userLocation.location.coordinate;
+    
+    
+}
+
      
 
 @end
