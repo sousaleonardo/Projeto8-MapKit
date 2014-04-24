@@ -369,6 +369,7 @@
                         <outlet property="imagemLocal" destination="e2g-1V-egJ" id="FsK-ke-zHw"/>
                         <outlet property="informacoesLocal" destination="7cI-Rq-3wh" id="mOM-hz-yov"/>
                         <outlet property="nomeLocal" destination="kRd-PB-z3b" id="xNv-IG-0bu"/>
+                        <outlet property="precoLocal" destination="W7c-fe-y9j" id="JPR-21-rII"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F24-nu-eMs" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -508,6 +509,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="8QT-4W-CJ2"/>
-        <segue reference="Ius-Zw-PTH"/>
+        <segue reference="eh8-NS-3wX"/>
     </inferredMetricsTieBreakers>
 </document>
