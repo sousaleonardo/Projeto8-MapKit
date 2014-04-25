@@ -16,6 +16,6 @@
 @property NSString *mensagem;
 @property int pontosGanhos;
 
--(id)initMedalha:(NSString*)idMedalha :(int)contGanharMedalha;
+-(id)initMedalha:(NSString*)idMedalha :(int)contGanharMedalha :(CGRect)rectView;
 
 @end

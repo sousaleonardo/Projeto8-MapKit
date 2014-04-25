@@ -11,10 +11,13 @@
 @implementation Medalha
 @synthesize nomeMedalha,imagem,mensagem,pontosGanhos;
 
--(id)initMedalha:(NSString*)idMedalha :(int)contGanharMedalha{
+-(id)initMedalha:(NSString*)idMedalha :(int)contGanharMedalha :(CGRect)rectView{
     self=[super init];
     
     if (self) {
+        //Seta o frame para poder redimencionar a img
+        [self setFrame:rectView];
+        
         [self configMensagem:contGanharMedalha :idMedalha];
         //Alterar config imgagem para tratar diferentes medalhas // atualmente esta padrão
         [self configImagem:contGanharMedalha];
@@ -37,21 +40,37 @@
 -(void)configImagem:(int)contGanharMedalha{
     //O contador é decresente
     //alterar caso queira imagens diferentes p cada medalha
-    self.imagem=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"medalha"]];
+    //self.imagem=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"icon"]];
+    
+    UIImage *imagemAdd = [self redimencionarImagem:[UIImage imageNamed:@"icon"] escalaSize:CGSizeMake(self.frame.size.width, self.frame.size.height)];
+    
+    
+    self.imagem=[[UIImageView alloc]initWithImage:imagemAdd];
     
     if (contGanharMedalha!=0) {
         [self.imagem setAlpha:0.5f];
     }else{
         [self.imagem setAlpha:1.0f];
     }
-    //self.imagem
-    [self addSubview:self.imagem];
 }
 
 -(void)mostrarInfo{
     UIAlertView *alerta=[[UIAlertView alloc]initWithTitle:self.nomeMedalha message:self.mensagem delegate:nil cancelButtonTitle:@"Fantástico" otherButtonTitles: nil];
     
     [alerta show];
+}
+
+-(UIImage*)redimencionarImagem:(UIImage*)_imagem escalaSize:(CGSize)novoSize{
+    
+    UIGraphicsBeginImageContextWithOptions(novoSize, NO, 0.0);
+    
+    [_imagem drawInRect:CGRectMake(0, 0, novoSize.width, novoSize.height)];
+    
+    UIImage *novaImagem = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsEndImageContext();
+    
+    return novaImagem;
 }
 
 -(void)configMensagem:(int)contGanharMedalha :(NSString*)idMedalha{

@@ -75,7 +75,7 @@
 }
 
 -(void)adicionarMedalha:(NSString*)idMEdalaha :(int)contGanharMedalha{
-    Medalha *medalhaAdd =[[Medalha alloc]initMedalha:idMEdalaha :contGanharMedalha];
+    //Medalha *medalhaAdd =[[Medalha alloc]initMedalha:idMEdalaha :contGanharMedalha];
     
     float tamRect=self.viewParte1.frame.size.width/MEDALHASLINHA;
     
@@ -86,9 +86,10 @@
             self->posXUsar=self.viewParte1.frame.origin.x +10;
             self->posYUsar= self->posYUsar + 74;
         }
+        Medalha *medalhaAdd =[[Medalha alloc]initMedalha:idMEdalaha :contGanharMedalha :CGRectMake(posXUsar, posYUsar, tamRect, tamRect)];
         
-        [medalhaAdd setFrame:CGRectMake(posXUsar, posYUsar, tamRect, tamRect)];
-        [medalhaAdd setBackgroundColor:[UIColor redColor]];
+        //[medalhaAdd setFrame:CGRectMake(posXUsar, posYUsar, tamRect, tamRect)];
+        //[medalhaAdd setBackgroundColor:[UIColor redColor]];
         
         [self.viewParte1 addSubview:medalhaAdd];
         self->posXUsar = self->posXUsar + tamRect + 5;
@@ -104,9 +105,11 @@
             self->posYUsar= self->posYUsar + 74;
         }
         
+        Medalha *medalhaAdd =[[Medalha alloc]initMedalha:idMEdalaha :contGanharMedalha :CGRectMake(posXUsar, posYUsar, tamRect, tamRect)];
+        
         [medalhaAdd setFrame:CGRectMake(posXUsar, posYUsar, tamRect, tamRect)];
         
-        [medalhaAdd setBackgroundColor:[UIColor blueColor]];
+        //[medalhaAdd setBackgroundColor:[UIColor blueColor]];
         
         [self.viewParte2 addSubview:medalhaAdd];
         self->posXUsar = self->posXUsar + tamRect + 5;
