@@ -28,6 +28,7 @@ typedef NS_ENUM(NSInteger, TipoAtracao) {
 @property (nonatomic, strong) NSString *subtitle;
 @property NSString *descricao;
 @property NSString *endereco;
+@property NSInteger pontos;
 
 @property (nonatomic) TipoAtracao tipoDeAtracao;
 

@@ -17,16 +17,19 @@
 
 -(void)verifandoSeIraGanharPontos{
     CFTimeInterval startTime = CACurrentMediaTime();
+    CFTimeInterval elapsedTime;
 
-
-    while ([self.mapView.userLocation.location distanceFromLocation:self.destino.placemark.location] < 1000) {
+    while ([self.mapView.userLocation.location distanceFromLocation:self.destino.placemark.location] < 7000) {
         
-        
+        elapsedTime = CACurrentMediaTime() - startTime;
+        if (elapsedTime >10) {
+            break;
+        }
     }
   
-    CFTimeInterval elapsedTime = CACurrentMediaTime() - startTime;
-    if ( elapsedTime >= 300 ) {
-        [self mandarPontos];
+    elapsedTime = CACurrentMediaTime() - startTime;
+    if ( elapsedTime >= 10) {
+        [self performSelectorOnMainThread:@selector(mandarPontos) withObject:nil waitUntilDone:YES];
     }
 }
 
@@ -36,7 +39,7 @@
     [super viewDidLoad];
     self.mapView.showsUserLocation = YES;
     
-    self.verifandoLugar = [[NSThread alloc]initWithTarget:self selector:@selector(verifandoSeIraGanharPontos) object:nil];
+   
     
 }
 
@@ -60,7 +63,7 @@
         annotation.tipoDeAtracao = self->categoriaSelecionada;
         annotation.descricao = [lugar objectForKey:@"Descricao"];
         annotation.endereco = [lugar objectForKey:@"Endereco"];
-        
+        annotation.pontos = [[[[todasAtracoes objectForKey:@"Categoria"]objectAtIndex:self->categoriaSelecionada]objectForKey:@"Pontos"]integerValue];
         annotation.subtitle = [lugar objectForKey:@"Preco"];
         
         
@@ -95,6 +98,8 @@
 - (void)calcularRota:(Atracoes*)atracaoDestino
 {
     
+    self->pontosGanhos +=atracaoDestino.pontos;
+    
     MKPlacemark *placeInicio = [[MKPlacemark alloc] initWithCoordinate:[[[self mapView] userLocation] coordinate] addressDictionary:nil];
     
     self.inicio = [[MKMapItem alloc] initWithPlacemark:placeInicio];
@@ -111,7 +116,20 @@
     CLLocation *localizacaoDestino = [[CLLocation alloc] initWithLatitude:atracaoDestino.coordinate.latitude longitude:atracaoDestino.coordinate.longitude];
     double distanceMeters = [self.mapView.userLocation.location distanceFromLocation:localizacaoDestino];
     double distaciaEmKM = distanceMeters/1000;
-    NSLog(@"A distancia é :%.2lf KM",distaciaEmKM);
+        
+        if (distaciaEmKM <= 5) {
+            self->pontosGanhos +=25;
+        }
+        else if (distaciaEmKM <= 10) {
+            self->pontosGanhos +=50;
+        }
+        else if (distaciaEmKM <= 15) {
+            self->pontosGanhos +=75;
+        }
+        else if (distaciaEmKM >=20) {
+            self->pontosGanhos +=100;
+        }
+        
     
     MKDirections *direcoes = [[MKDirections alloc] initWithRequest:request];
     [direcoes calculateDirectionsWithCompletionHandler:^(MKDirectionsResponse *response, NSError *error)
@@ -124,6 +142,18 @@
              [self mostraRota:response];
          }
      }];
+
+
+    if (self.destino != nil && [self.mapView.userLocation.location distanceFromLocation:self.destino.placemark.location] < 7000) {
+        self.verifandoLugar = [[NSThread alloc]initWithTarget:self selector:@selector(verifandoSeIraGanharPontos) object:nil];
+        [self.verifandoLugar start];
+        
+    }
+    if (self.inicio !=nil && self.destino != nil) {
+        self.inicio = nil;
+        self.destino = nil;
+        [self.mapView removeOverlays:self.mapView.overlays];
+    }
 }
 - (IBAction)mudarCategoria:(id)sender {
     
@@ -146,7 +176,7 @@
 - (void)mostraRota:(MKDirectionsResponse *)response
 {
     for (MKRoute *rota in response.routes)
-    {  
+    {
         [[self mapView] addOverlay:rota.polyline level:MKOverlayLevelAboveRoads];
     }
 }
@@ -160,7 +190,8 @@
     self.mapView.region = MKCoordinateRegionMake(userLocation.location.coordinate, MKCoordinateSpanMake(0.1, 0.1));
     
     self.localizacaoAtual = userLocation.location.coordinate;
-    if ([self.mapView.userLocation.location distanceFromLocation:self.destino.placemark.location] < 1000) {
+    if (self.destino != nil && [self.mapView.userLocation.location distanceFromLocation:self.destino.placemark.location] < 7000) {
+        self.verifandoLugar = [[NSThread alloc]initWithTarget:self selector:@selector(verifandoSeIraGanharPontos) object:nil];
         [self.verifandoLugar start];
     }
 }
