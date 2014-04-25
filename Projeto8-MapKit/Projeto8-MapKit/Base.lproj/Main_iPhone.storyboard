@@ -454,13 +454,19 @@
                                         <state key="normal" backgroundImage="Parques.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="mudarCategoria:" destination="PYp-Xi-LLd" eventType="touchUpInside" id="utI-UZ-8GE"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Sc-gX-2fr">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Sc-gX-2fr">
                                         <rect key="frame" x="-6" y="51" width="63" height="63"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" backgroundImage="Praca.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="mudarCategoria:" destination="PYp-Xi-LLd" eventType="touchUpInside" id="31l-XY-oZf"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eIl-7Q-fX1">
                                         <rect key="frame" x="-6" y="105" width="63" height="63"/>
@@ -468,6 +474,9 @@
                                         <state key="normal" backgroundImage="Museu.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="mudarCategoria:" destination="PYp-Xi-LLd" eventType="touchUpInside" id="ZlP-Q1-9Oc"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yAS-ES-hFa">
                                         <rect key="frame" x="-6" y="159" width="63" height="63"/>
@@ -475,6 +484,9 @@
                                         <state key="normal" backgroundImage="Teatro.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="mudarCategoria:" destination="PYp-Xi-LLd" eventType="touchUpInside" id="cG2-Ih-WEG"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1d0-5z-GiN">
                                         <rect key="frame" x="-6" y="213" width="63" height="63"/>
@@ -482,6 +494,9 @@
                                         <state key="normal" backgroundImage="Zoologicos.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="mudarCategoria:" destination="PYp-Xi-LLd" eventType="touchUpInside" id="RcN-qf-axe"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T2C-eg-egj">
                                         <rect key="frame" x="-6" y="267" width="63" height="63"/>
@@ -489,27 +504,39 @@
                                         <state key="normal" backgroundImage="Biblioteca.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="mudarCategoria:" destination="PYp-Xi-LLd" eventType="touchUpInside" id="Emc-Ul-QkI"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3VY-RC-bEv">
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3VY-RC-bEv">
                                         <rect key="frame" x="-6" y="321" width="63" height="63"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" backgroundImage="EspacosCulturais.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="mudarCategoria:" destination="PYp-Xi-LLd" eventType="touchUpInside" id="bJ8-TB-6SZ"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ly9-UP-mN9">
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ly9-UP-mN9">
                                         <rect key="frame" x="-6" y="375" width="63" height="63"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" backgroundImage="EdificiosHistoricos.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="mudarCategoria:" destination="PYp-Xi-LLd" eventType="touchUpInside" id="RRK-mb-sk8"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irW-7O-oHW">
+                                    <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irW-7O-oHW">
                                         <rect key="frame" x="-6" y="429" width="63" height="63"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" backgroundImage="Igrejas.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="mudarCategoria:" destination="PYp-Xi-LLd" eventType="touchUpInside" id="sZy-uA-Zt4"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lf9-yI-Rti">
                                         <rect key="frame" x="-6" y="483" width="63" height="63"/>
@@ -517,6 +544,9 @@
                                         <state key="normal" backgroundImage="Outros.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="mudarCategoria:" destination="PYp-Xi-LLd" eventType="touchUpInside" id="54e-aS-Wtg"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.66666666666666663" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
@@ -531,16 +561,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="btn0" destination="PaD-Lg-BZg" id="Cte-5R-D6R"/>
-                        <outlet property="btn1" destination="0Sc-gX-2fr" id="50U-lO-GUE"/>
-                        <outlet property="btn2" destination="eIl-7Q-fX1" id="QaP-3A-V37"/>
-                        <outlet property="btn3" destination="yAS-ES-hFa" id="bcj-x2-cAn"/>
-                        <outlet property="btn4" destination="1d0-5z-GiN" id="jMf-t7-t0r"/>
-                        <outlet property="btn5" destination="T2C-eg-egj" id="OON-zg-3FB"/>
-                        <outlet property="btn6" destination="3VY-RC-bEv" id="CGX-PJ-3d6"/>
-                        <outlet property="btn7" destination="ly9-UP-mN9" id="Lod-fg-e0e"/>
-                        <outlet property="btn8" destination="irW-7O-oHW" id="3gS-59-MRf"/>
-                        <outlet property="btn9" destination="lf9-yI-Rti" id="L9k-as-eom"/>
                         <outlet property="mapView" destination="eaX-dy-odc" id="eDq-YS-paI"/>
                         <segue destination="3UF-Tk-h8y" kind="modal" identifier="mostrarInfo" id="b8Q-QV-806"/>
                     </connections>
