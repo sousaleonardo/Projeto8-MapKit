@@ -531,6 +531,17 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btn0" destination="PaD-Lg-BZg" id="Cte-5R-D6R"/>
+                        <outlet property="btn1" destination="0Sc-gX-2fr" id="50U-lO-GUE"/>
+                        <outlet property="btn2" destination="eIl-7Q-fX1" id="QaP-3A-V37"/>
+                        <outlet property="btn3" destination="yAS-ES-hFa" id="bcj-x2-cAn"/>
+                        <outlet property="btn4" destination="1d0-5z-GiN" id="jMf-t7-t0r"/>
+                        <outlet property="btn5" destination="T2C-eg-egj" id="OON-zg-3FB"/>
+                        <outlet property="btn6" destination="3VY-RC-bEv" id="CGX-PJ-3d6"/>
+                        <outlet property="btn7" destination="ly9-UP-mN9" id="Lod-fg-e0e"/>
+                        <outlet property="btn8" destination="irW-7O-oHW" id="3gS-59-MRf"/>
+                        <outlet property="btn9" destination="lf9-yI-Rti" id="L9k-as-eom"/>
+                        <outlet property="btnParques" destination="PaD-Lg-BZg" id="V0T-MA-aFQ"/>
                         <outlet property="mapView" destination="eaX-dy-odc" id="eDq-YS-paI"/>
                         <segue destination="3UF-Tk-h8y" kind="modal" identifier="mostrarInfo" id="b8Q-QV-806"/>
                     </connections>
@@ -599,6 +610,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="8QT-4W-CJ2"/>
-        <segue reference="Ius-Zw-PTH"/>
+        <segue reference="eh8-NS-3wX"/>
     </inferredMetricsTieBreakers>
 </document>

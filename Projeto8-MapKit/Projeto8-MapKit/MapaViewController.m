@@ -25,7 +25,7 @@
     }
   
     CFTimeInterval elapsedTime = CACurrentMediaTime() - startTime;
-    if ((elapsedTime*5)>=300) {
+    if ( elapsedTime >= 300 ) {
         [self mandarPontos];
     }
 }
@@ -153,6 +153,9 @@
     self.mapView.region = MKCoordinateRegionMake(userLocation.location.coordinate, MKCoordinateSpanMake(0.1, 0.1));
     
     self.localizacaoAtual = userLocation.location.coordinate;
+    if ([self.mapView.userLocation.location distanceFromLocation:self.destino.placemark.location] < 1000) {
+        [self.verifandoLugar start];
+    }
 }
 -(void)mandarPontos {
     
