@@ -28,6 +28,8 @@
     [super viewDidLoad];
     //inicia sem medalhas e acrescenta ao rodar
     self->contMedalhas=0;
+    self->medalhasAdicionadas=0;
+    
     self->posXUsar=self.viewParte1.frame.origin.x +10;
     self->posYUsar=self.viewParte1.frame.origin.y +20;
     
@@ -82,38 +84,43 @@
     
     if (self->contMedalhas<10) {
         
-        if (self->contMedalhas==5) {
+        if (self->medalhasAdicionadas==4) {
             self->posXUsar=self.viewParte1.frame.origin.x +10;
             self->posYUsar= self->posYUsar + 74;
+            self->medalhasAdicionadas=0;
         }
-        Medalha *medalhaAdd =[[Medalha alloc]initMedalha:idMEdalaha :contGanharMedalha :CGRectMake(posXUsar, posYUsar, tamRect, tamRect)];
         
-        //[medalhaAdd setFrame:CGRectMake(posXUsar, posYUsar, tamRect, tamRect)];
-        //[medalhaAdd setBackgroundColor:[UIColor redColor]];
+        Medalha *medalhaAdd =[[Medalha alloc]initMedalha:idMEdalaha :contGanharMedalha :CGRectMake(posXUsar, posYUsar, tamRect, tamRect)];
         
         [self.viewParte1 addSubview:medalhaAdd];
         self->posXUsar = self->posXUsar + tamRect + 5;
         
+        self->medalhasAdicionadas ++;
     }else{
         if (self->contMedalhas==10) {
-            self->posXUsar=self.viewParte2.frame.origin.x +10;
-            self->posYUsar=self.viewParte2.frame.origin.y +20;
+            self->posXUsar=10;
+            self->posYUsar=10;
+            
+            self->medalhasAdicionadas=0;
         }
         
-        if (self->contMedalhas==15) {
+        if (self->medalhasAdicionadas==4) {
             self->posXUsar=self.viewParte2.frame.origin.x +10;
             self->posYUsar= self->posYUsar + 74;
+            
+            self->medalhasAdicionadas=0;
         }
         
         Medalha *medalhaAdd =[[Medalha alloc]initMedalha:idMEdalaha :contGanharMedalha :CGRectMake(posXUsar, posYUsar, tamRect, tamRect)];
         
         [medalhaAdd setFrame:CGRectMake(posXUsar, posYUsar, tamRect, tamRect)];
         
-        //[medalhaAdd setBackgroundColor:[UIColor blueColor]];
+        [medalhaAdd setBackgroundColor:[UIColor blueColor]];
         
         [self.viewParte2 addSubview:medalhaAdd];
         self->posXUsar = self->posXUsar + tamRect + 5;
         
+        self->medalhasAdicionadas++;
     }
     
     self->contMedalhas++;

@@ -41,12 +41,10 @@
 		941DC24518FF18060049799C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 941DC24318FF18060049799C /* InfoPlist.strings */; };
 		941DC24718FF18060049799C /* Projeto8_MapKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 941DC24618FF18060049799C /* Projeto8_MapKitTests.m */; };
 		94281D9E1906EF5B00A699F0 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94281D9D1906EF5B00A699F0 /* Parse.framework */; };
-		94281DA01906F2AF00A699F0 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94281D9F1906F2AF00A699F0 /* FacebookSDK.framework */; };
 		94281DA21906F43B00A699F0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94281DA11906F43B00A699F0 /* CFNetwork.framework */; };
 		94281DA41906F45F00A699F0 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94281DA31906F45F00A699F0 /* MobileCoreServices.framework */; };
 		94281DA61906F47D00A699F0 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 94281DA51906F47D00A699F0 /* libz.dylib */; };
 		94281DA81906F48B00A699F0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94281DA71906F48B00A699F0 /* Security.framework */; };
-		94281DAA1906F49400A699F0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94281DA91906F49400A699F0 /* StoreKit.framework */; };
 		94281DAC1906F4A100A699F0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94281DAB1906F4A100A699F0 /* SystemConfiguration.framework */; };
 		94281DB51907013000A699F0 /* DadosUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 94281DB41907013000A699F0 /* DadosUser.m */; };
 		94281DBE1907065000A699F0 /* MedalhaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94281DBD1907065000A699F0 /* MedalhaViewController.m */; };
@@ -163,7 +161,6 @@
 		94281DA31906F45F00A699F0 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		94281DA51906F47D00A699F0 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		94281DA71906F48B00A699F0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		94281DA91906F49400A699F0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		94281DAB1906F4A100A699F0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		94281DB31907013000A699F0 /* DadosUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DadosUser.h; sourceTree = "<group>"; };
 		94281DB41907013000A699F0 /* DadosUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DadosUser.m; sourceTree = "<group>"; };
@@ -203,7 +200,7 @@
 		CD2E2A1F190AEE560061B0C5 /* 7_iconeEdificiosHistoricos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7_iconeEdificiosHistoricos.png; sourceTree = "<group>"; };
 		CD2E2A20190AEE560061B0C5 /* 8_iconeIgrejas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8_iconeIgrejas.png; sourceTree = "<group>"; };
 		CD2E2A21190AEE560061B0C5 /* 9_iconeOutros.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9_iconeOutros.png; sourceTree = "<group>"; };
-		CD2E2A34190AEE850061B0C5 /* 0_iconeParques.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0_iconeParques.png; sourceTree = "<group>"; };
+		CD2E2A34190AEE850061B0C5 /* 0_iconeParques.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 0_iconeParques.png; path = "/Users/leonardo.smendes1/Desktop/Projeto8-MapKit/Projeto8-MapKit/Projeto8-MapKit/0_iconeParques.png"; sourceTree = "<absolute>"; };
 		CDAFC88F1909A3E200CDB343 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		CDFB5E43190066B700B1246D /* RoletaProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RoletaProtocol.h; path = ../RoletaProtocol.h; sourceTree = "<group>"; };
 		CDFB5E451900678500B1246D /* ControleRoleta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControleRoleta.h; sourceTree = "<group>"; };
@@ -218,7 +215,6 @@
 			files = (
 				752FD3B81909853D00EF4EFD /* CoreLocation.framework in Frameworks */,
 				94281DAC1906F4A100A699F0 /* SystemConfiguration.framework in Frameworks */,
-				94281DAA1906F49400A699F0 /* StoreKit.framework in Frameworks */,
 				94281DA81906F48B00A699F0 /* Security.framework in Frameworks */,
 				94281DA61906F47D00A699F0 /* libz.dylib in Frameworks */,
 				94281DA41906F45F00A699F0 /* MobileCoreServices.framework in Frameworks */,
@@ -229,7 +225,6 @@
 				941DC21D18FF18060049799C /* UIKit.framework in Frameworks */,
 				941DC21918FF18060049799C /* Foundation.framework in Frameworks */,
 				94281D9E1906EF5B00A699F0 /* Parse.framework in Frameworks */,
-				94281DA01906F2AF00A699F0 /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,7 +285,6 @@
 				752FD3B71909853D00EF4EFD /* CoreLocation.framework */,
 				C5CFF1661907750900B93086 /* FacebookSDK.framework */,
 				94281DAB1906F4A100A699F0 /* SystemConfiguration.framework */,
-				94281DA91906F49400A699F0 /* StoreKit.framework */,
 				94281DA71906F48B00A699F0 /* Security.framework */,
 				94281DA51906F47D00A699F0 /* libz.dylib */,
 				94281DA31906F45F00A699F0 /* MobileCoreServices.framework */,
@@ -779,7 +773,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Projeto8-MapKit.app/Projeto8-MapKit";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Turistando.app/Turistando";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -802,7 +796,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Projeto8-MapKit.app/Projeto8-MapKit";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Turistando.app/Turistando";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

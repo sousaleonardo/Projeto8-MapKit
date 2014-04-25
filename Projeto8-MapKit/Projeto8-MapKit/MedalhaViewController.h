@@ -17,6 +17,7 @@
 
 {
     int contMedalhas;
+    int medalhasAdicionadas;
     float posXUsar;
     float posYUsar;
 }
