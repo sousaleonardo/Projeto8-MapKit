@@ -10,7 +10,7 @@
 #import <MapKit/MapKit.h>
 
 typedef NS_ENUM(NSInteger, TipoAtracao) {
-    Outros = 0,
+    Outros = 9,
     Parque,
     Pracas,
     Museus,

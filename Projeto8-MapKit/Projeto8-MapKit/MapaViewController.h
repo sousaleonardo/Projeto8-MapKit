@@ -15,7 +15,7 @@
 
 @interface MapaViewController : ViewController <MKMapViewDelegate>
 {
-    int categoriaSelecionada;
+    NSInteger categoriaSelecionada;
     Atracoes *atracaoSelecionada;
     int pontosGanhos;
 }
@@ -26,16 +26,7 @@
 @property MKPolylineRenderer * renderer;
 @property NSThread *verifandoLugar;
 
-@property (strong, nonatomic) IBOutlet UIButton *btn0;
-@property (strong, nonatomic) IBOutlet UIButton *btn1;
-@property (strong, nonatomic) IBOutlet UIButton *btn2;
-@property (strong, nonatomic) IBOutlet UIButton *btn3;
-@property (strong, nonatomic) IBOutlet UIButton *btn4;
-@property (strong, nonatomic) IBOutlet UIButton *btn5;
-@property (strong, nonatomic) IBOutlet UIButton *btn6;
-@property (strong, nonatomic) IBOutlet UIButton *btn7;
-@property (strong, nonatomic) IBOutlet UIButton *btn8;
-@property (strong, nonatomic) IBOutlet UIButton *btn9;
+
 
 
 

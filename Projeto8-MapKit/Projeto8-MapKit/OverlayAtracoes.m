@@ -47,22 +47,19 @@
         
         
         
-        UIButton * disclosureButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+        UIButton * botaoInfo = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
         UIButton *botaoRota = [UIButton buttonWithType:UIButtonTypeInfoLight];
         [botaoRota setImage:[UIImage imageNamed:@"star"] forState:UIControlStateNormal];
         [botaoRota setTintColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"star"]]];
         
         [botaoRota addTarget:self action:@selector(rota) forControlEvents:UIControlEventTouchDown];
+        [botaoInfo addTarget:self action:@selector(mostrarInfo) forControlEvents:UIControlEventTouchDown];
         self->mostrarInfo = seletor;
         self->calcularRota = seletor2;
         self->Target = target;
         self.leftCalloutAccessoryView = botaoRota;
         
-        self.rightCalloutAccessoryView = disclosureButton;
-        
-        
-        
-        
+        self.rightCalloutAccessoryView = botaoInfo;
     }
     
     return self;
@@ -72,8 +69,11 @@
     if ([Target respondsToSelector:self->calcularRota]) {
         [Target performSelector:self->calcularRota withObject:self.anotacaoDaAtracao];
     }
-    
-    
+}
+-(void)mostrarInfo{
+    if ([Target respondsToSelector:self->mostrarInfo]) {
+        [Target performSelector:self->mostrarInfo withObject:self.anotacaoDaAtracao];
+    }
 }
 
 @end

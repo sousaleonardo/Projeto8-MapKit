@@ -35,10 +35,8 @@
 {
     [super viewDidLoad];
     self.mapView.showsUserLocation = YES;
-    self->categoriaSelecionada = 2;
-    [self addAttractionPins];
-    self.verifandoLugar = [[NSThread alloc]initWithTarget:self selector:@selector(verifandoSeIraGanharPontos) object:nil];
     
+    self.verifandoLugar = [[NSThread alloc]initWithTarget:self selector:@selector(verifandoSeIraGanharPontos) object:nil];
     
 }
 
@@ -59,7 +57,7 @@
         CGPoint point = CGPointMake([[lugar objectForKey:@"Latitude"]doubleValue],[[lugar objectForKey:@"Longitude"]doubleValue] );
         annotation.coordinate = CLLocationCoordinate2DMake(point.x, point.y);
         annotation.title = [lugar objectForKey:@"Nome"];
-        annotation.tipoDeAtracao = self->categoriaSelecionada+1;
+        annotation.tipoDeAtracao = self->categoriaSelecionada;
         annotation.descricao = [lugar objectForKey:@"Descricao"];
         annotation.endereco = [lugar objectForKey:@"Endereco"];
         
@@ -75,6 +73,7 @@
         viewAtracao.canShowCallout = YES;
         return viewAtracao;
     }
+   
     return nil;
 }
 -(void)verInformacoes : (Atracoes*)atracao{
@@ -125,6 +124,14 @@
              [self mostraRota:response];
          }
      }];
+}
+- (IBAction)mudarCategoria:(id)sender {
+    
+    [self.mapView removeAnnotations:self.mapView.annotations];
+    
+    self->categoriaSelecionada = [sender tag];
+    [self addAttractionPins];
+    
 }
 
 - (MKOverlayRenderer *)mapView:(MKMapView *)mapView rendererForOverlay:(id<MKOverlay>)overlay
