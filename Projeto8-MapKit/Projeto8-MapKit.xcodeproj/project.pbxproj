@@ -312,8 +312,8 @@
 		941DC21F18FF18060049799C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CDAFC8841909A3E200CDB343 /* baloes */,
 				CDAFC88F1909A3E200CDB343 /* icon.png */,
+				CDAFC8841909A3E200CDB343 /* baloes */,
 				CDAFC8901909A3E200CDB343 /* icones_G */,
 				C5AB4327190463020000855D /* DadosLocais.plist */,
 				941DC22018FF18060049799C /* Projeto8-MapKit-Info.plist */,
