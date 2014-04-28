@@ -22,6 +22,7 @@
     
     //Peço educadamente as permissoes
     [DadosUser permissaoFB];
+    [DadosUser login:self];
     
     //coloca o nome e a imagem de perfil do usuario
     [FBRequestConnection startForMeWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
@@ -40,10 +41,12 @@
                                  HTTPMethod:@"GET"
                           completionHandler:
      ^(FBRequestConnection *connection, id result, NSError *error) {
-         NSLog(@"%@",result);
+         NSLog(@"%@",[[[result objectForKey:@"data"] objectAtIndex:0] objectForKey:@"score"]);
+         if ([[[result objectForKey:@"data"] objectAtIndex:0] objectForKey:@"score"] == nil ) {
+             [DadosUser criarPontos];
+         }
          
          int nCurrentScore = [[[[result objectForKey:@"data"] objectAtIndex:0] objectForKey:@"score"] intValue];
-         
          
          NSString *score = [NSString stringWithFormat:@"Pontos: %d",nCurrentScore];
          [self.pontosUsuario setText:score];

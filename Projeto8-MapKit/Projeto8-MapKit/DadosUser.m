@@ -32,6 +32,8 @@
             if (user.isNew) {
                 //NSLog(@"Usuário cadastrado e logado atraves do FB!");
                 //Verifica se é um novo user
+                //[self permissaoFB];
+                [self criarPontos];
             }else{
                 //User já existe
                 //NSLog(@"Usuário logado pelo FB");
