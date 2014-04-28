@@ -51,7 +51,9 @@
     
     //[DadosUser salvarMedalha:@"primeirosPassos"];
     //[DadosUser processarIaMedalha:@"Praça Roosevelt" :@"Pracas"];
-    [DadosUser gravarDesafio:nil];
+    
+    [DadosUser existeDesafio];
+    [DadosUser gravarDesafio:@"Teste"];
     
 }
 

@@ -90,8 +90,6 @@
     //Chamo a query criada para puxar os dados
     [lugaresVisitados findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
         if (!error) {
-            NSLog(@"Consegui!");
-            
             //Pega os objetos
             for (PFObject *obj in objects) {
                 NSLog(@"%@",obj);
@@ -297,37 +295,45 @@
 }
 
 +(void)gravarDesafio:(NSString*)nomeDesafio{
-    //PFQuery *query =[PFQuery];
-    //[query whereKey:@"username" equalTo:[PFUser currentUser].username];
+    //Cria um obj para classe Dasafio
+    NSPredicate *predicado=[NSPredicate predicateWithFormat:@"userName=%@",[PFUser currentUser].username];
+    PFQuery *query=[PFQuery queryWithClassName:@"Desafio" predicate:predicado];
     
-    //PFUser *user=[[query getFirstObject]objectForKey:@"proximoDesafio"];
+    PFObject *dadosDesafio=[query getFirstObject];
     
-    
-    
-    /*
-    //Class name é como se fosse o nome da tabela no site
-    PFObject *atracaoVisitada=[PFObject objectWithClassName:@"AtracaoVisitada"];
-    
-    //a string entre colchetes é o nome do campo
-    atracaoVisitada[@"NomeAtracao"]=nomeAtracao;
-    atracaoVisitada[@"userName"]=[PFUser currentUser].username;
-    
-    */
-    //Estou usando o save Eventually para permitir que salve mesmo sem ter conexão com a internet
-    //Assim quando o disp tiver conexão e o app estiver aberto ele irá salvar se o app estiver fechado na prox vez que abrir com net ele salva
-    //[atracaoVisitada saveEventually];
+    if (nomeDesafio) {
+        if (dadosDesafio==Nil) {
+            
+            dadosDesafio=[PFObject objectWithClassName:@"Desafio"];
+            
+            dadosDesafio[@"proximoDesafio"]=nomeDesafio;
+            dadosDesafio[@"userName"]=[PFUser currentUser].username;
+            
+        }else{
+            dadosDesafio[@"proximoDesafio"]=nomeDesafio;
+            dadosDesafio[@"userName"]=[PFUser currentUser].username;
+        }
+        
+        [dadosDesafio saveInBackground];
+    }else{
+        //Nao passei desafio deleta
+        [dadosDesafio deleteInBackground];
+    }
+
+
 }
 
 +(BOOL)existeDesafio{
-    PFQuery *query =[PFUser query];
-    [query whereKey:@"username" equalTo:[PFUser currentUser].username];
     
-    NSString *proximoDesafio=[[query getFirstObject]objectForKey:@"proximoDesafio"];
+    //Cria um obj para classe Dasafio
+    NSPredicate *predicado=[NSPredicate predicateWithFormat:@"userName=%@",[PFUser currentUser].username];
+    PFQuery *query=[PFQuery queryWithClassName:@"Desafio" predicate:predicado];
+
     
-    if (proximoDesafio==Nil) {
-        return NO;
-    }else{
+    if ([query countObjects]>0) {
         return YES;
+    }else{
+        return NO;
     }
 }
 +(NSDate*)dataAtual{
