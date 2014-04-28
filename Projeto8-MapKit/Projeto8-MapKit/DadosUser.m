@@ -188,7 +188,6 @@
     
     //a string entre colchetes é o nome do campo
     medalhas[@"userName"]=[PFUser currentUser].username;
-    
     medalhas[@"maiorExplorador"]=[NSNumber numberWithInt:20];
     medalhas[@"apreciadorNatureza"]=[NSNumber numberWithInt:17];
     medalhas[@"oPasseador"]=[NSNumber numberWithInt:3];
@@ -342,7 +341,6 @@
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDateComponents *components = [calendar components:(NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit) fromDate:now];
     NSTimeZone* destinationTimeZone = [NSTimeZone systemTimeZone];
-    //int timeZoneOffset = [destinationTimeZone secondsFromGMTForDate:now] / 3600;
     
     [components setHour:0];
     [components setMinute:0];
@@ -353,7 +351,117 @@
     return morningStart;
 }
 
-+(void)adicionaPontosMedalhaFB:(int)pontoAdd {
++(void)adicionaPontosMedalhaFB:(int)pontoAdd{
+    //Requerir permissão
+    [self permissaoFB];
+    
+    [FBRequestConnection startWithGraphPath:@"me/scores"
+                                 parameters:nil
+                                 HTTPMethod:@"GET"
+                          completionHandler:
+     ^(FBRequestConnection *connection, id result, NSError *error) {
+         if (error) {
+             UIAlertView *erro = [[UIAlertView alloc]initWithTitle:@"Erro" message:@"Nao foi Possivel Enviar seus pontos" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+             [erro show];
+         }
+         else{
+             int pontosAtuais =[[[[result objectForKey:@"data"]objectAtIndex:0]objectForKey:@"score"]intValue];
+             
+             NSLog(@"%i",pontosAtuais);
+             
+             NSDictionary *pontosEnviar = [NSDictionary dictionaryWithObjectsAndKeys:[NSString stringWithFormat:@"%d",pontoAdd+ pontosAtuais],@"score",nil];
+             
+             [FBRequestConnection startWithGraphPath:@"me/scores"
+                                          parameters:pontosEnviar
+                                          HTTPMethod:@"POST"
+                                   completionHandler:
+              ^(FBRequestConnection *connection, id result, NSError *error) {
+                  if (error) {
+                      UIAlertView *erro = [[UIAlertView alloc]initWithTitle:@"Erro" message:@"Nao foi Possivel Enviar seus pontos" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+                      [erro show];
+                  }
+                  else{
+                      NSString *mensagem = [NSString stringWithFormat:@"Você ganhou %d Pontos",pontoAdd];
+                      UIAlertView *ganhouPontos = [[UIAlertView alloc]initWithTitle:@"Parabéns!" message:mensagem delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+                      [ganhouPontos show];
+                      
+                  }
+                  
+              }];
+             
+         }
+         
+     }];
+    
+}
 
++(void)permissaoFB{
+    // We will request the user's public profile and the user's birthday
+    // These are the permissions we need:
+    NSArray *permissionsNeeded = @[@"publish_actions"];
+    
+    // Request the permissions the user currently has
+    [FBRequestConnection startWithGraphPath:@"/me/permissions"
+                          completionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
+                              if (!error){
+                                  // These are the current permissions the user has:
+                                  NSDictionary *currentPermissions= [(NSArray *)[result data] objectAtIndex:0];
+                                  
+                                  // We will store here the missing permissions that we will have to request
+                                  NSMutableArray *requestPermissions = [[NSMutableArray alloc] initWithArray:@[]];
+                                  
+                                  // Check if all the permissions we need are present in the user's current permissions
+                                  // If they are not present add them to the permissions to be requested
+                                  for (NSString *permission in permissionsNeeded){
+                                      if (![currentPermissions objectForKey:permission]){
+                                          [requestPermissions addObject:permission];
+                                      }
+                                  }
+                                  
+                                  // If we have permissions to request
+                                  if ([requestPermissions count] > 0){
+                                      // Ask for the missing permissions
+                                      [FBSession.activeSession
+                                       requestNewReadPermissions:requestPermissions
+                                       completionHandler:^(FBSession *session, NSError *error) {
+                                           if (!error) {
+                                               // Permission granted
+                                               NSLog(@"new permissions %@", [FBSession.activeSession permissions]);
+                                               // We can request the user information
+                                               //[self makeRequestForUserData];
+                                           } else {
+                                               // An error occurred, we need to handle the error
+                                               // See: https://developers.facebook.com/docs/ios/errors
+                                           }
+                                       }];
+                                  } else {
+                                      // Permissions are present
+                                      // We can request the user information
+                                      //[self makeRequestForUserData];
+                                  }
+                                  
+                              } else {
+                                  // An error occurred, we need to handle the error
+                                  // See: https://developers.facebook.com/docs/ios/errors
+                              }
+                          }];
+}
++(void)criarPontos{
+    NSDictionary *pontosEnviar = [NSDictionary dictionaryWithObjectsAndKeys:@"0",@"score",nil];
+    
+    [FBRequestConnection startWithGraphPath:@"me/scores"
+                                 parameters:pontosEnviar
+                                 HTTPMethod:@"POST"
+                          completionHandler:
+     ^(FBRequestConnection *connection, id result, NSError *error) {
+         if (error) {
+             UIAlertView *erro = [[UIAlertView alloc]initWithTitle:@"Erro" message:@"Nao foi Possivel criar seus pontos" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+             [erro show];
+         }
+         else{
+         
+         }
+         
+     }];
 }
 @end

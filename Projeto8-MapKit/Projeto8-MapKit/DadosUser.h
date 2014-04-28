@@ -37,5 +37,7 @@
 +(NSDate*)dataAtual;
 +(BOOL)existeDesafio;
 +(void)gravarDesafio:(NSString*)nomeDesafio;
-
++(void)adicionaPontosMedalhaFB:(int)pontoAdd;
++(void)permissaoFB;
++(void)criarPontos;
 @end

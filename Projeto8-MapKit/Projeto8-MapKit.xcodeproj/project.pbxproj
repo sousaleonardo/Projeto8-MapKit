@@ -52,6 +52,7 @@
 		94281DAC1906F4A100A699F0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94281DAB1906F4A100A699F0 /* SystemConfiguration.framework */; };
 		94281DB51907013000A699F0 /* DadosUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 94281DB41907013000A699F0 /* DadosUser.m */; };
 		94281DBE1907065000A699F0 /* MedalhaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94281DBD1907065000A699F0 /* MedalhaViewController.m */; };
+		9430B40E190EF87800D6D3E2 /* InfoTracarRota.m in Sources */ = {isa = PBXBuildFile; fileRef = 9430B40D190EF87800D6D3E2 /* InfoTracarRota.m */; };
 		C5AA2DFC19093C5C003B55FB /* Medalha.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AA2DFB19093C5C003B55FB /* Medalha.m */; };
 		C5AB4328190463020000855D /* DadosLocais.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5AB4327190463020000855D /* DadosLocais.plist */; };
 		C5CFF1671907750900B93086 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5CFF1661907750900B93086 /* FacebookSDK.framework */; };
@@ -159,6 +160,8 @@
 		94281DB41907013000A699F0 /* DadosUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DadosUser.m; sourceTree = "<group>"; };
 		94281DBC1907065000A699F0 /* MedalhaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedalhaViewController.h; sourceTree = "<group>"; };
 		94281DBD1907065000A699F0 /* MedalhaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedalhaViewController.m; sourceTree = "<group>"; };
+		9430B40C190EF87800D6D3E2 /* InfoTracarRota.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoTracarRota.h; sourceTree = "<group>"; };
+		9430B40D190EF87800D6D3E2 /* InfoTracarRota.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoTracarRota.m; sourceTree = "<group>"; };
 		C5AA2DFA19093C5C003B55FB /* Medalha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Medalha.h; sourceTree = "<group>"; };
 		C5AA2DFB19093C5C003B55FB /* Medalha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Medalha.m; sourceTree = "<group>"; };
 		C5AB4327190463020000855D /* DadosLocais.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = DadosLocais.plist; path = ../DadosLocais.plist; sourceTree = "<group>"; };
@@ -336,6 +339,8 @@
 				C5AA2DFB19093C5C003B55FB /* Medalha.m */,
 				94281DBC1907065000A699F0 /* MedalhaViewController.h */,
 				94281DBD1907065000A699F0 /* MedalhaViewController.m */,
+				9430B40C190EF87800D6D3E2 /* InfoTracarRota.h */,
+				9430B40D190EF87800D6D3E2 /* InfoTracarRota.m */,
 				3CA491FB190455820054A01C /* MenuViewController.h */,
 				3CA491FC190455820054A01C /* MenuViewController.m */,
 				752D30C41908343100C5D81F /* OverlayAtracoes.h */,
@@ -551,6 +556,7 @@
 				2300FADC190413C300F739B6 /* ViewControllerRoleta.m in Sources */,
 				237F164C19048777004DC711 /* Categoria.m in Sources */,
 				94281DB51907013000A699F0 /* DadosUser.m in Sources */,
+				9430B40E190EF87800D6D3E2 /* InfoTracarRota.m in Sources */,
 				941DC22518FF18060049799C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

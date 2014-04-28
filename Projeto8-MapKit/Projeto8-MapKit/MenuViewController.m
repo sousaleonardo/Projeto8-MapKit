@@ -20,6 +20,9 @@
     [super viewDidLoad];
     [FBProfilePictureView class];
     
+    //Peço educadamente as permissoes
+    [DadosUser permissaoFB];
+    
     //coloca o nome e a imagem de perfil do usuario
     [FBRequestConnection startForMeWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
         if (!error) {
@@ -30,14 +33,18 @@
             
         }
     }];
+    
     //coloca a pontuacao do usuario
     [FBRequestConnection startWithGraphPath:@"me/scores"
                                  parameters:nil
                                  HTTPMethod:@"GET"
                           completionHandler:
      ^(FBRequestConnection *connection, id result, NSError *error) {
+         NSLog(@"%@",result);
+         
          int nCurrentScore = [[[[result objectForKey:@"data"] objectAtIndex:0] objectForKey:@"score"] intValue];
-
+         
+         
          NSString *score = [NSString stringWithFormat:@"Pontos: %d",nCurrentScore];
          [self.pontosUsuario setText:score];
      }];

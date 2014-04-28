@@ -12,6 +12,7 @@
 #import "Atracoes.h"
 #import "OverlayAtracoes.h"
 #import "Lugares.h"
+#import "DadosUser.h"
 
 @interface MapaViewController : ViewController <MKMapViewDelegate>
 {
