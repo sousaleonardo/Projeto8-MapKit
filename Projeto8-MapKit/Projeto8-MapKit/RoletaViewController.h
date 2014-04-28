@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DadosUser.h";
+#import "Lugares.h"
 
 @interface RoletaViewController : UIViewController
+
+@property int categoria;
+@property int atracao;
+@property Lugares *lugares;
+
 
 @end

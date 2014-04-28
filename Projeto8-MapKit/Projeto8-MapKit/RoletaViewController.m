@@ -26,7 +26,26 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    if([DadosUser existeDesafio]){
+        //mostra desafio
+        
+        
+    }
+    else{
+        //cria desafio
+    }
+}
+
+
+-(void)sorteiaCategoria
+{
+    self.categoria = arc4random() % [[self.lugares objectForKey:@"Categoria"] count];
+    NSLog(@"%i", self.categoria);
+}
+
+-(void)sorteiaAtracaoPelaCategoria
+{
+    
 }
 
 - (void)didReceiveMemoryWarning
