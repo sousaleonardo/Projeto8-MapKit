@@ -39,11 +39,18 @@
         [DadosUser login:self];
     }else{
         [DadosUser medalhasSalvas:self];
+        
     }
     
     [self.view addSubview:self.viewParte1];
     
     [self.view addSubview:self.viewParte2];
+    
+    self.medalhas=[NSMutableArray array];
+    
+    //[DadosUser salvarMedalha:@"primeirosPassos"];
+    [DadosUser processarIaMedalha:@"Praça Roosevelt" :@"Pracas"];
+    
     
 }
 
@@ -70,14 +77,7 @@
     }
 }
 
--(IBAction)salvarLugar:(id)sender{
-
-    //[DadosUser inicializaMedalhas];
-   // [DadosUser medalhasSalvas:self];
-}
-
 -(void)adicionarMedalha:(NSString*)idMEdalaha :(int)contGanharMedalha{
-    //Medalha *medalhaAdd =[[Medalha alloc]initMedalha:idMEdalaha :contGanharMedalha];
     
     float tamRect=self.viewParte1.frame.size.width/MEDALHASLINHA;
     
@@ -96,6 +96,9 @@
         self->posXUsar = self->posXUsar + tamRect + 5;
         
         self->medalhasAdicionadas ++;
+        
+        [self.medalhas addObject:medalhaAdd];
+        
     }else{
         if (self->contMedalhas==10) {
             self->posXUsar=10;
@@ -115,21 +118,16 @@
         
         [medalhaAdd setFrame:CGRectMake(posXUsar, posYUsar, tamRect, tamRect)];
         
-        [medalhaAdd setBackgroundColor:[UIColor blueColor]];
-        
         [self.viewParte2 addSubview:medalhaAdd];
         self->posXUsar = self->posXUsar + tamRect + 5;
         
         self->medalhasAdicionadas++;
+        
+        [self.medalhas addObject:medalhaAdd];
     }
     
     self->contMedalhas++;
     
     
-}
-
-//Separado para facilitar na criaçao do frame
--(void)adicionarMedalhaView:(Medalha*)medalhaAdd{
-
 }
 @end

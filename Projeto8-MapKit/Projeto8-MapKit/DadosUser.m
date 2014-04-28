@@ -88,17 +88,50 @@
 }
 
 +(void)salvarMedalha:(NSString*)idMedalha{
-    //Pega o valor atual do ID e remove 1 do contador se o contador chegar a 0 add os pontos
+    
+    //Busca o contador da medalha no Parse
+    PFQuery *query=[PFQuery queryWithClassName:@"Medalha"];
+    
+    [query whereKey:@"userName" equalTo:[PFUser currentUser].username];
+    
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        NSNumber *number=[[objects objectAtIndex:0]valueForKey:idMedalha];
+        int contMedalha=[number intValue];
+        
+        //Se estiver 0 sai do metodo
+        if (contMedalha==0) {
+            return;
+        }else{
+            //Senão tira um do contador
+            contMedalha--;
+            
+                //Ficou 0 da os pontos ao user
+            if (contMedalha==0) {
+                //Acesso a medalha e de acordo com o ID vejo qntos pontos eu adiciono
+                [self adicionaPontosMedalhaFB:[Medalha bonusMedalhaCategoria:idMedalha]];
+                
+                //Atualiza automaticamente o contador do maiorExplorador
+                if (![idMedalha isEqualToString:@"maiorExplorador"]) {
+                    [DadosUser salvarMedalha:@"maiorExplorador"];
+                }
+            }
+            
+            //salva o novo valor
+            PFObject *medalhas=[query getFirstObject];
+            medalhas[idMedalha]=[NSNumber numberWithInt:contMedalha];
+            
+            [medalhas saveInBackground];
+        }
+    }];
+    
+    
     
 }
 
 +(void)medalhasSalvas:(id)delegate{
     //Cria o predicado para usar como filtro
     NSPredicate *predicate=[NSPredicate predicateWithFormat:@"userName=%@",[PFUser currentUser].username];
-    
-    //Cria um array com os objetos recebidos
-    
-    
+
     //Cria a query que puxará os dados
     PFQuery *lugaresVisitados=[PFQuery queryWithClassName:@"Medalha" predicate:predicate];
     
@@ -178,5 +211,56 @@
     }
     
     return YES;
+}
+
++(void)processarIaMedalha:(NSString*)nomeAtracao :(NSString*)categoria{
+    NSPredicate *predicado=[NSPredicate predicateWithFormat:@"userName=%@",[PFUser currentUser].username];
+    PFQuery *query;
+    
+    //Vejo se o lugar onde esta dando checkIN e um dejafio
+    //medalha exploradorCorajoso e medalha grandeConquistador
+        //Para fazer busca na classe PADRÃO do Parse USER
+    query =[PFUser query];
+    [query whereKey:@"username" equalTo:[PFUser currentUser].username];
+    
+    NSString *proximoDesafio=[[query getFirstObject]objectForKey:@"proximoDesafio"];
+    
+    if ([nomeAtracao isEqualToString: proximoDesafio]) {
+        [self salvarMedalha:@"exploradorCorajoso"];
+        
+        [self salvarMedalha:@"grandeConquistador"];
+    }
+    
+    //Vejo se o amiguinho ja tem lugar salvo senão tiver medalha primeirosPassos
+    query=[PFQuery queryWithClassName:@"AtracaoVisitada" predicate:predicado];
+    
+    if ([query countObjects]==0) {
+        [self salvarMedalha:@"primeirosPassos"];
+    }
+    
+    //Vejo se o amiguinho ja visitou esse lugar medalha exploradorNostalgico
+    //Usando o objeto query ja configurado para pegar de AtracaoVisitada
+    [query whereKey:@"NomeAtracao" equalTo:nomeAtracao];
+    
+    if ([query countObjects]>0) {
+        [self salvarMedalha:@"exploradorNostalgico"];
+    }
+    
+    
+    [query whereKey:@"updatedAt" equalTo:[NSDate date]];
+    //Vejo quantos lugares ele ja visitou hoje de acordo c qtde medalha aprendizExplorador, exploradorMediano, superExplorador, exploradorMestre
+    
+    //Vejo se ele levou outro amiguinho
+    //IMPLEMENTAR FUTURAMENTE
+    
+    
+    //Aqui salva a medalha de acordo com a categoria do lugar parque, praça etc
+    [self salvarMedalha:[Medalha pegaIDMedalhaCategoria:categoria]];
+    
+}
+
+
++(void)adicionaPontosMedalhaFB:(int)pontoAdd {
+
 }
 @end

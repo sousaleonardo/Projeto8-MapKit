@@ -17,5 +17,7 @@
 @property int pontosGanhos;
 
 -(id)initMedalha:(NSString*)idMedalha :(int)contGanharMedalha :(CGRect)rectView;
++(int)bonusMedalhaCategoria:(NSString*)categoria;
++(NSString*)pegaIDMedalhaCategoria:(NSString*)categoria;
 
 @end

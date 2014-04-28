@@ -22,6 +22,7 @@
     float posYUsar;
 }
 
+@property NSMutableArray *medalhas;
 @property (weak, nonatomic) UIView *viewParte1;
 @property (weak, nonatomic) UIView *viewParte2;
 

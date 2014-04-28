@@ -8,11 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import <Parse/Parse.h>
+#import "Medalha.h"
+#import <FacebookSDK/FacebookSDK.h>
 
 @protocol DadosUser <NSObject>
 @optional
 -(void)dadosDidLogin:(BOOL)logado;
 -(void)adicionarMedalha:(NSString*)idMEdalaha :(int)contGanharMedalha;
+-(void)salvarBonusMedalha:(NSString*)idMedalha;
+
 @end
 
 @interface DadosUser : NSObject
@@ -27,4 +31,5 @@
 +(void)inicializaMedalhas;
 +(BOOL)userLogado;
 +(void)logout;
++(void)processarIaMedalha:(NSString*)nomeAtracao :(NSString*)categoria;
 @end

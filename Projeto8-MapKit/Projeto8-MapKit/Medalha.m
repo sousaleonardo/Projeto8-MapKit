@@ -204,4 +204,85 @@
             break;
     }
 }
+
++(NSString*)pegaIDMedalhaCategoria:(NSString*)categoria{
+
+    //Cria array com os ID`s e um array com as categorias na MESMA ordem
+    NSArray *medalhas=@[@"apreciadorNatureza",@"oPasseador",@"maquinaTempo",@"artesCenicas",@"amantesAnimais",@"grandeLeitor",@"grandeAntropologo",@"grandeHistoriador",@"exploradorIluminado",@"exploradorEcletico"];
+    
+    NSArray *categorias=@[@"Parque",@"Pracas",@"Museus",@"Teatro",@"Zoologicos",@"Biblioteca",@"EspacosCulturais",@"EdificiosReligiosos",@"Outros"];
+    
+    int num=[categorias indexOfObject:categoria];
+    
+    //Retorna a Key na tabela
+    
+    return [medalhas objectAtIndex:num];
+}
+
++(int)bonusMedalhaCategoria:(NSString*)categoria{
+    
+    NSArray *medalhas=@[@"amantesAnimais",@"grandeHistoriador",@"exploradorEcletico",@"aprendizExplorador",@"exploradorMediano",@"superExplorador",@"exploradorMestre",@"exploradorCorajoso",@"primeirosPassos",@"exploradorCompanheiro",@"exploradorNostalgico",@"maiorExplorador"];
+    
+    int contArray=[medalhas indexOfObject:categoria];
+    
+    int valorRetornar;
+    
+    switch (contArray) {
+        case 0:
+            valorRetornar=50;
+            break;
+            
+        case 1:
+            valorRetornar=120;
+            break;
+            
+        case 2:
+            valorRetornar=80;
+            break;
+            
+        case 3:
+            valorRetornar=10;
+            break;
+            
+        case 4:
+            valorRetornar=20;
+            break;
+            
+        case 5:
+            valorRetornar=30;
+            break;
+            
+        case 6:
+            valorRetornar=40;
+            break;
+            
+        case 7:
+            valorRetornar=50;
+            break;
+            
+        case 8:
+            valorRetornar=30;
+            break;
+            
+        case 9:
+            valorRetornar=40;
+            break;
+            
+        case 10:
+            valorRetornar=40;
+            break;
+            
+        case 11:
+            valorRetornar=500;
+            break;
+            
+        default:
+            valorRetornar=100;
+            break;
+    }
+    
+    return valorRetornar;
+}
+
+
 @end
