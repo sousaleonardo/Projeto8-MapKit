@@ -45,6 +45,19 @@
     }];
 }
 
++(void)salvarLugar:(NSString*)nomeAtracao{
+    //Class name é como se fosse o nome da tabela no site
+    PFObject *atracaoVisitada=[PFObject objectWithClassName:@"AtracaoVisitada"];
+    
+    //a string entre colchetes é o nome do campo
+    atracaoVisitada[@"NomeAtracao"]=nomeAtracao;
+    atracaoVisitada[@"userName"]=[PFUser currentUser].username;
+    
+    
+    //Estou usando o save Eventually para permitir que salve mesmo sem ter conexão com a internet
+    //Assim quando o disp tiver conexão e o app estiver aberto ele irá salvar se o app estiver fechado na prox vez que abrir com net ele salva
+    [atracaoVisitada saveEventually];
+}
 
 +(void)salvarLugar:(NSString*)nomeAtracao :(NSNumber*)latitude :(NSNumber*)longitude{
     //Class name é como se fosse o nome da tabela no site
@@ -120,7 +133,7 @@
             PFObject *medalhas=[query getFirstObject];
             medalhas[idMedalha]=[NSNumber numberWithInt:contMedalha];
             
-            [medalhas saveInBackground];
+            [medalhas saveEventually];
         }
     }];
     
@@ -244,18 +257,24 @@
     
     if ([query countObjects]>0) {
         [self salvarMedalha:@"exploradorNostalgico"];
+    }else{
+        // CARINHA NUNCA VISITOU ENTÃO SALVA A MEDALHA DA CATEGORIA
+        //Aqui salva a medalha de acordo com a categoria do lugar parque, praça etc
+        [self salvarMedalha:[Medalha pegaIDMedalhaCategoria:categoria]];
     }
     
+    //Salva o lugar de checkIN
+    [self salvarLugar:nomeAtracao];
     
     [query whereKey:@"updatedAt" equalTo:[NSDate date]];
+    
+    NSLog(@"%ld",(long)[query countObjects]);
     //Vejo quantos lugares ele ja visitou hoje de acordo c qtde medalha aprendizExplorador, exploradorMediano, superExplorador, exploradorMestre
     
     //Vejo se ele levou outro amiguinho
     //IMPLEMENTAR FUTURAMENTE
     
     
-    //Aqui salva a medalha de acordo com a categoria do lugar parque, praça etc
-    [self salvarMedalha:[Medalha pegaIDMedalhaCategoria:categoria]];
     
 }
 
