@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "DadosUser.h"
 
 @interface MenuViewController : ViewController
 @property (strong, nonatomic) IBOutlet FBProfilePictureView *imagemPerfil;

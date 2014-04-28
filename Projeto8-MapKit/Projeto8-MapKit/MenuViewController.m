@@ -41,6 +41,8 @@
          NSString *score = [NSString stringWithFormat:@"Pontos: %d",nCurrentScore];
          [self.pontosUsuario setText:score];
      }];
+    
+    [DadosUser login:self];
 }
 
 

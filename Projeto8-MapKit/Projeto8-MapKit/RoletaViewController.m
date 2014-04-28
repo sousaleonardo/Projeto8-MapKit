@@ -26,13 +26,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.lugares = [Lugares sharedLugares];
+    
+    [DadosUser login:self];
+    
     if([DadosUser existeDesafio]){
         //mostra desafio
         
         
     }
     else{
-        //cria desafio
+        //sorteia
+        [self sorteiaCategoria];
+        [self sorteiaAtracaoPelaCategoria];
     }
 }
 
@@ -45,7 +51,8 @@
 
 -(void)sorteiaAtracaoPelaCategoria
 {
-    
+    self.atracao = arc4random() % [[[self.lugares objectForKey:@"Categoria"] objectAtIndex:self.categoria] count];
+    NSLog(@"Categoria:%i | Atração:%i/%i", self.categoria, self.atracao, [[[self.lugares objectForKey:@"Categoria"] objectAtIndex:self.categoria] count]);
 }
 
 - (void)didReceiveMemoryWarning
