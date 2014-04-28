@@ -47,13 +47,11 @@
     [self.view addSubview:self.viewParte2];
     
     self.medalhas=[NSMutableArray array];
-    
-    
-    NSLog(@"%@",[DadosUser existeDesafio]);
+
     
     //[DadosUser salvarMedalha:@"primeirosPassos"];
     //[DadosUser processarIaMedalha:@"Praça Roosevelt" :@"Pracas"];
-
+    [DadosUser gravarDesafio:nil];
     
 }
 

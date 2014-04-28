@@ -296,6 +296,28 @@
     
 }
 
++(void)gravarDesafio:(NSString*)nomeDesafio{
+    //PFQuery *query =[PFQuery];
+    //[query whereKey:@"username" equalTo:[PFUser currentUser].username];
+    
+    //PFUser *user=[[query getFirstObject]objectForKey:@"proximoDesafio"];
+    
+    
+    
+    /*
+    //Class name é como se fosse o nome da tabela no site
+    PFObject *atracaoVisitada=[PFObject objectWithClassName:@"AtracaoVisitada"];
+    
+    //a string entre colchetes é o nome do campo
+    atracaoVisitada[@"NomeAtracao"]=nomeAtracao;
+    atracaoVisitada[@"userName"]=[PFUser currentUser].username;
+    
+    */
+    //Estou usando o save Eventually para permitir que salve mesmo sem ter conexão com a internet
+    //Assim quando o disp tiver conexão e o app estiver aberto ele irá salvar se o app estiver fechado na prox vez que abrir com net ele salva
+    //[atracaoVisitada saveEventually];
+}
+
 +(BOOL)existeDesafio{
     PFQuery *query =[PFUser query];
     [query whereKey:@"username" equalTo:[PFUser currentUser].username];

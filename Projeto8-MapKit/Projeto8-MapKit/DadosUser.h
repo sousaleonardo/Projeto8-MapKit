@@ -36,4 +36,6 @@
 +(void)processarIaMedalha:(NSString*)nomeAtracao :(NSString*)categoria;
 +(NSDate*)dataAtual;
 +(BOOL)existeDesafio;
++(void)gravarDesafio:(NSString*)nomeDesafio;
+
 @end
