@@ -48,9 +48,12 @@
     
     self.medalhas=[NSMutableArray array];
     
-    //[DadosUser salvarMedalha:@"primeirosPassos"];
-    [DadosUser processarIaMedalha:@"Praça Roosevelt" :@"Pracas"];
     
+    NSLog(@"%@",[DadosUser existeDesafio]);
+    
+    //[DadosUser salvarMedalha:@"primeirosPassos"];
+    //[DadosUser processarIaMedalha:@"Praça Roosevelt" :@"Pracas"];
+
     
 }
 

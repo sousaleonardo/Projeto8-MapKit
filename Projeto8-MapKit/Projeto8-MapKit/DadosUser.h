@@ -34,4 +34,6 @@
 +(BOOL)userLogado;
 +(void)logout;
 +(void)processarIaMedalha:(NSString*)nomeAtracao :(NSString*)categoria;
++(NSDate*)dataAtual;
++(BOOL)existeDesafio;
 @end

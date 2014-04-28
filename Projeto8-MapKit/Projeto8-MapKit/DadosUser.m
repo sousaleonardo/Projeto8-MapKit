@@ -261,15 +261,33 @@
         // CARINHA NUNCA VISITOU ENTÃO SALVA A MEDALHA DA CATEGORIA
         //Aqui salva a medalha de acordo com a categoria do lugar parque, praça etc
         [self salvarMedalha:[Medalha pegaIDMedalhaCategoria:categoria]];
+    
+        //Salva o lugar de checkIN
+        [self salvarLugar:nomeAtracao];
     }
     
-    //Salva o lugar de checkIN
-    [self salvarLugar:nomeAtracao];
+    //recria a query para eliminar os where`s anteriores
+    query=[PFQuery queryWithClassName:@"AtracaoVisitada" predicate:predicado];
+    [query whereKey:@"updatedAt" greaterThan:[self dataAtual]];
     
-    [query whereKey:@"updatedAt" equalTo:[NSDate date]];
-    
-    NSLog(@"%ld",(long)[query countObjects]);
+    //Cria contador p facilitar na leitura nossa
+    int contVisitas=[query countObjects];
     //Vejo quantos lugares ele ja visitou hoje de acordo c qtde medalha aprendizExplorador, exploradorMediano, superExplorador, exploradorMestre
+    if (contVisitas >=2) {
+        [self salvarMedalha:@"aprendizExplorador"];
+    }
+    
+    if (contVisitas >=3){
+        [self salvarMedalha:@"exploradorMediano"];
+    }
+    
+    if (contVisitas >=4){
+        [self salvarMedalha:@"superExplorador"];
+    }
+    
+    if (contVisitas >=4){
+        [self salvarMedalha:@"exploradorMestre"];
+    }
     
     //Vejo se ele levou outro amiguinho
     //IMPLEMENTAR FUTURAMENTE
@@ -278,6 +296,34 @@
     
 }
 
++(BOOL)existeDesafio{
+    PFQuery *query =[PFUser query];
+    [query whereKey:@"username" equalTo:[PFUser currentUser].username];
+    
+    NSString *proximoDesafio=[[query getFirstObject]objectForKey:@"proximoDesafio"];
+    
+    if (proximoDesafio==Nil) {
+        return NO;
+    }else{
+        return YES;
+    }
+}
++(NSDate*)dataAtual{
+    
+    NSDate *now = [NSDate date];
+    NSCalendar *calendar = [NSCalendar currentCalendar];
+    NSDateComponents *components = [calendar components:(NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit) fromDate:now];
+    NSTimeZone* destinationTimeZone = [NSTimeZone systemTimeZone];
+    //int timeZoneOffset = [destinationTimeZone secondsFromGMTForDate:now] / 3600;
+    
+    [components setHour:0];
+    [components setMinute:0];
+    [components setSecond:0];
+    
+    NSDate *morningStart = [calendar dateFromComponents:components];
+    
+    return morningStart;
+}
 
 +(void)adicionaPontosMedalhaFB:(int)pontoAdd {
 
