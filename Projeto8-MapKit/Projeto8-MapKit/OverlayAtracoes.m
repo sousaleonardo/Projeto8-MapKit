@@ -17,31 +17,36 @@
         self.anotacaoDaAtracao = self.annotation;
         switch (self.anotacaoDaAtracao.tipoDeAtracao) {
             case Parque:
-                self.image = [UIImage imageNamed:@"firstaid"];
+                self.image = [UIImage imageNamed:@"0_parques.png"];
                 break;
             case Pracas:
-                self.image = [UIImage imageNamed:@"food"];
+                self.image = [UIImage imageNamed:@"1_pracas.png"];
                 break;
             case Museus:
-                self.image = [UIImage imageNamed:@"ride"];
+                self.image = [UIImage imageNamed:@"2_museus.png"];
                 break;
             case Teatro:
-                self.image = [UIImage imageNamed:@"firstaid"];
+                self.image = [UIImage imageNamed:@"3_teatros.png"];
                 break;
             case Zoologicos:
-                self.image = [UIImage imageNamed:@"food"];
+                self.image = [UIImage imageNamed:@"4_zoologicos.png"];
                 break;
             case Biblioteca:
-                self.image = [UIImage imageNamed:@"ride"];
+                self.image = [UIImage imageNamed:@"5_bibliotecas.png"];
                 break;
             case EspacosCulturais:
-                self.image = [UIImage imageNamed:@"firstaid"];
+                self.image = [UIImage imageNamed:@"6_centrosCulturais.png"];
                 break;
             case EdificiosReligiosos:
-                self.image = [UIImage imageNamed:@"firstaid"];
+                self.image = [UIImage imageNamed:@"7_edificiosHistoricos.png"];
+                break;
+            case Igrejas:
+                self.image = [UIImage imageNamed:@"8_igrejas"];
+                break;
+            case Outros:
+                self.image = [UIImage imageNamed:@"9_outros.png"];
                 break;
             default:
-                self.image = [UIImage imageNamed:@"star"];
                 break;
         }
         

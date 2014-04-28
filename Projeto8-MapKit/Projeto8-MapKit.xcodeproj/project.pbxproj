@@ -250,7 +250,6 @@
 		752D30DC1908350200C5D81F /* Imagens */ = {
 			isa = PBXGroup;
 			children = (
-				752CA42B190EC91B004397B8 /* 8_igrejasIcone.png */,
 				CDC7A26A190EC558007B57F6 /* 0_parques.png */,
 				CDC7A256190EC502007B57F6 /* 0_parques@2x.png */,
 				CDC7A242190EC4F7007B57F6 /* 0_parquesIcone.png */,
@@ -276,6 +275,7 @@
 				CDC7A249190EC4F7007B57F6 /* 7_edificiosHistoricosIcone.png */,
 				CDC7A271190EC558007B57F6 /* 8_igrejas.PNG */,
 				CDC7A25E190EC502007B57F6 /* 8_igrejas@2x.PNG */,
+				752CA42B190EC91B004397B8 /* 8_igrejasIcone.png */,
 				CDC7A273190EC558007B57F6 /* 9_outros.png */,
 				CDC7A25F190EC502007B57F6 /* 9_outros@2x.png */,
 				CDC7A24B190EC4F7007B57F6 /* 9_outrosIcone.png */,

@@ -464,6 +464,9 @@
                                         <state key="normal" backgroundImage="0_parquesIcone.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="mudarCategoria:" destination="PYp-Xi-LLd" eventType="touchUpInside" id="q3F-HF-VgP"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gc1-qp-iQM">
                                         <rect key="frame" x="5" y="65" width="40" height="40"/>
@@ -471,6 +474,9 @@
                                         <state key="normal" backgroundImage="1_pracasIcone.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="mudarCategoria:" destination="PYp-Xi-LLd" eventType="touchUpInside" id="JVP-wf-Re1"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czd-up-DkM">
                                         <rect key="frame" x="5" y="119" width="40" height="40"/>
@@ -478,6 +484,9 @@
                                         <state key="normal" backgroundImage="2_museusIcone.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="mudarCategoria:" destination="PYp-Xi-LLd" eventType="touchUpInside" id="yOX-39-43V"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9TF-qN-psr">
                                         <rect key="frame" x="5" y="173" width="40" height="40"/>
@@ -485,6 +494,9 @@
                                         <state key="normal" backgroundImage="3_teatrosIcone.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="mudarCategoria:" destination="PYp-Xi-LLd" eventType="touchUpInside" id="i58-s0-ZKy"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ABM-7i-Ab2">
                                         <rect key="frame" x="5" y="227" width="40" height="40"/>
@@ -492,6 +504,9 @@
                                         <state key="normal" backgroundImage="4_zoologicosIcone.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="mudarCategoria:" destination="PYp-Xi-LLd" eventType="touchUpInside" id="UWH-fB-ayh"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3j6-up-iFM">
                                         <rect key="frame" x="5" y="281" width="40" height="40"/>
@@ -499,6 +514,9 @@
                                         <state key="normal" backgroundImage="5_bibliotecasIcone.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="mudarCategoria:" destination="PYp-Xi-LLd" eventType="touchUpInside" id="nUw-5n-SUD"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPo-sg-y9u">
                                         <rect key="frame" x="5" y="335" width="40" height="40"/>
@@ -506,6 +524,9 @@
                                         <state key="normal" backgroundImage="6_centrosCulturaisIcone.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="mudarCategoria:" destination="PYp-Xi-LLd" eventType="touchUpInside" id="Kvb-g1-I1e"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y2q-dx-YEd">
                                         <rect key="frame" x="5" y="389" width="40" height="40"/>
@@ -513,6 +534,9 @@
                                         <state key="normal" backgroundImage="7_edificiosHistoricosIcone.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="mudarCategoria:" destination="PYp-Xi-LLd" eventType="touchUpInside" id="glA-4v-SyU"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o7W-aQ-qp0">
                                         <rect key="frame" x="5" y="443" width="40" height="40"/>
@@ -520,6 +544,9 @@
                                         <state key="normal" backgroundImage="8_igrejasIcone.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="mudarCategoria:" destination="PYp-Xi-LLd" eventType="touchUpInside" id="cop-4p-2Bn"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D8Q-nS-d59">
                                         <rect key="frame" x="5" y="497" width="40" height="40"/>
@@ -527,6 +554,9 @@
                                         <state key="normal" backgroundImage="9_outrosIcone.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="mudarCategoria:" destination="PYp-Xi-LLd" eventType="touchUpInside" id="LRj-nu-XWs"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.66666666666666663" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>

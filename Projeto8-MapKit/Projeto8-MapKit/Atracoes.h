@@ -11,14 +11,15 @@
 
 typedef NS_ENUM(NSInteger, TipoAtracao) {
     Outros = 9,
-    Parque,
-    Pracas,
-    Museus,
-    Teatro,
-    Zoologicos,
-    Biblioteca,
-    EspacosCulturais,
-    EdificiosReligiosos,
+    Parque = 0,
+    Pracas = 1,
+    Museus = 2,
+    Teatro = 3,
+    Zoologicos = 4,
+    Biblioteca = 5,
+    EspacosCulturais = 6,
+    EdificiosReligiosos = 7,
+    Igrejas = 8
 };
 
 @interface Atracoes: NSObject <MKAnnotation>
