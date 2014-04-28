@@ -53,9 +53,12 @@
         
         
         UIButton * botaoInfo = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+        [botaoInfo setImage:[UIImage imageNamed:@"informacoes"] forState:UIControlStateNormal];
+        [botaoInfo setTintColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"informacoes"]]];
+        
         UIButton *botaoRota = [UIButton buttonWithType:UIButtonTypeInfoLight];
-        [botaoRota setImage:[UIImage imageNamed:@"star"] forState:UIControlStateNormal];
-        [botaoRota setTintColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"star"]]];
+        [botaoRota setImage:[UIImage imageNamed:@"rotas"] forState:UIControlStateNormal];
+        [botaoRota setTintColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"rotas"]]];
         
         [botaoRota addTarget:self action:@selector(rota) forControlEvents:UIControlEventTouchDown];
         [botaoInfo addTarget:self action:@selector(mostrarInfo) forControlEvents:UIControlEventTouchDown];

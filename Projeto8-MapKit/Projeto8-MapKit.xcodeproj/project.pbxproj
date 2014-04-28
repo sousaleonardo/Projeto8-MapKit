@@ -45,7 +45,6 @@
 		C5A98627190E7B1B00271CFC /* firstaid@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5A985FC190E7B1B00271CFC /* firstaid@2x.png */; };
 		C5A98628190E7B1B00271CFC /* food.png in Resources */ = {isa = PBXBuildFile; fileRef = C5A985FD190E7B1B00271CFC /* food.png */; };
 		C5A98629190E7B1B00271CFC /* food@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5A985FE190E7B1B00271CFC /* food@2x.png */; };
-		C5A98634190E7B1B00271CFC /* informacoes.png in Resources */ = {isa = PBXBuildFile; fileRef = C5A9860A190E7B1B00271CFC /* informacoes.png */; };
 		C5A98635190E7B1B00271CFC /* medalha.png in Resources */ = {isa = PBXBuildFile; fileRef = C5A9860B190E7B1B00271CFC /* medalha.png */; };
 		C5A98640190E7B1B00271CFC /* ride.png in Resources */ = {isa = PBXBuildFile; fileRef = C5A98617190E7B1B00271CFC /* ride.png */; };
 		C5A98641190E7B1B00271CFC /* ride@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C5A98618190E7B1B00271CFC /* ride@2x.png */; };
@@ -72,24 +71,24 @@
 		CDC7A253190EC4F7007B57F6 /* 7_edificiosHistoricosIcone.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A249190EC4F7007B57F6 /* 7_edificiosHistoricosIcone.png */; };
 		CDC7A255190EC4F7007B57F6 /* 9_outrosIcone.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A24B190EC4F7007B57F6 /* 9_outrosIcone.png */; };
 		CDC7A260190EC502007B57F6 /* 0_parques@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A256190EC502007B57F6 /* 0_parques@2x.png */; };
-		CDC7A261190EC502007B57F6 /* 1_pracas@2x.PNG in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A257190EC502007B57F6 /* 1_pracas@2x.PNG */; };
+		CDC7A261190EC502007B57F6 /* 1_pracas@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A257190EC502007B57F6 /* 1_pracas@2x.png */; };
 		CDC7A262190EC502007B57F6 /* 2_museus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A258190EC502007B57F6 /* 2_museus@2x.png */; };
 		CDC7A263190EC502007B57F6 /* 3_teatros@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A259190EC502007B57F6 /* 3_teatros@2x.png */; };
-		CDC7A264190EC502007B57F6 /* 4_zoologicos@2x.PNG in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A25A190EC502007B57F6 /* 4_zoologicos@2x.PNG */; };
-		CDC7A265190EC502007B57F6 /* 5_bibliotecas@2x.PNG in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A25B190EC502007B57F6 /* 5_bibliotecas@2x.PNG */; };
+		CDC7A264190EC502007B57F6 /* 4_zoologicos@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A25A190EC502007B57F6 /* 4_zoologicos@2x.png */; };
+		CDC7A265190EC502007B57F6 /* 5_bibliotecas@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A25B190EC502007B57F6 /* 5_bibliotecas@2x.png */; };
 		CDC7A267190EC502007B57F6 /* 7_edificiosHistoricos@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A25D190EC502007B57F6 /* 7_edificiosHistoricos@2x.png */; };
-		CDC7A268190EC502007B57F6 /* 8_igrejas@2x.PNG in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A25E190EC502007B57F6 /* 8_igrejas@2x.PNG */; };
+		CDC7A268190EC502007B57F6 /* 8_igrejas@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A25E190EC502007B57F6 /* 8_igrejas@2x.png */; };
 		CDC7A269190EC502007B57F6 /* 9_outros@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A25F190EC502007B57F6 /* 9_outros@2x.png */; };
 		CDC7A274190EC558007B57F6 /* 0_parques.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A26A190EC558007B57F6 /* 0_parques.png */; };
-		CDC7A275190EC558007B57F6 /* 1_pracas.PNG in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A26B190EC558007B57F6 /* 1_pracas.PNG */; };
+		CDC7A275190EC558007B57F6 /* 1_pracas.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A26B190EC558007B57F6 /* 1_pracas.png */; };
 		CDC7A276190EC558007B57F6 /* 2_museus.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A26C190EC558007B57F6 /* 2_museus.png */; };
 		CDC7A277190EC558007B57F6 /* 3_teatros.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A26D190EC558007B57F6 /* 3_teatros.png */; };
-		CDC7A278190EC558007B57F6 /* 4_zoologicos.PNG in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A26E190EC558007B57F6 /* 4_zoologicos.PNG */; };
-		CDC7A279190EC558007B57F6 /* 5_bibliotecas.PNG in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A26F190EC558007B57F6 /* 5_bibliotecas.PNG */; };
-		CDC7A27B190EC558007B57F6 /* 8_igrejas.PNG in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A271190EC558007B57F6 /* 8_igrejas.PNG */; };
+		CDC7A278190EC558007B57F6 /* 4_zoologicos.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A26E190EC558007B57F6 /* 4_zoologicos.png */; };
+		CDC7A279190EC558007B57F6 /* 5_bibliotecas.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A26F190EC558007B57F6 /* 5_bibliotecas.png */; };
+		CDC7A27B190EC558007B57F6 /* 8_igrejas.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A271190EC558007B57F6 /* 8_igrejas.png */; };
 		CDC7A27D190EC558007B57F6 /* 9_outros.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A273190EC558007B57F6 /* 9_outros.png */; };
-		CDC7A283190EC720007B57F6 /* 6_centrosCulturais.PNG in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A280190EC720007B57F6 /* 6_centrosCulturais.PNG */; };
-		CDC7A284190EC720007B57F6 /* 6_centrosCulturais@2x.PNG in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A281190EC720007B57F6 /* 6_centrosCulturais@2x.PNG */; };
+		CDC7A283190EC720007B57F6 /* 6_centrosCulturais.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A280190EC720007B57F6 /* 6_centrosCulturais.png */; };
+		CDC7A284190EC720007B57F6 /* 6_centrosCulturais@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A281190EC720007B57F6 /* 6_centrosCulturais@2x.png */; };
 		CDC7A285190EC720007B57F6 /* 6_centrosCulturaisIcone.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A282190EC720007B57F6 /* 6_centrosCulturaisIcone.png */; };
 		CDFB5E471900678500B1246D /* ControleRoleta.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB5E461900678500B1246D /* ControleRoleta.m */; };
 		CDFB5E491900722C00B1246D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFB5E481900722C00B1246D /* QuartzCore.framework */; };
@@ -161,7 +160,6 @@
 		C5A985FC190E7B1B00271CFC /* firstaid@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "firstaid@2x.png"; path = "imagens turistando/firstaid@2x.png"; sourceTree = "<group>"; };
 		C5A985FD190E7B1B00271CFC /* food.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = food.png; path = "imagens turistando/food.png"; sourceTree = "<group>"; };
 		C5A985FE190E7B1B00271CFC /* food@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "food@2x.png"; path = "imagens turistando/food@2x.png"; sourceTree = "<group>"; };
-		C5A9860A190E7B1B00271CFC /* informacoes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = informacoes.png; path = "imagens turistando/informacoes.png"; sourceTree = "<group>"; };
 		C5A9860B190E7B1B00271CFC /* medalha.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = medalha.png; path = "imagens turistando/medalha.png"; sourceTree = "<group>"; };
 		C5A98617190E7B1B00271CFC /* ride.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ride.png; path = "imagens turistando/ride.png"; sourceTree = "<group>"; };
 		C5A98618190E7B1B00271CFC /* ride@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ride@2x.png"; path = "imagens turistando/ride@2x.png"; sourceTree = "<group>"; };
@@ -189,24 +187,24 @@
 		CDC7A249190EC4F7007B57F6 /* 7_edificiosHistoricosIcone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7_edificiosHistoricosIcone.png; sourceTree = "<group>"; };
 		CDC7A24B190EC4F7007B57F6 /* 9_outrosIcone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9_outrosIcone.png; sourceTree = "<group>"; };
 		CDC7A256190EC502007B57F6 /* 0_parques@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "0_parques@2x.png"; sourceTree = "<group>"; };
-		CDC7A257190EC502007B57F6 /* 1_pracas@2x.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1_pracas@2x.PNG"; sourceTree = "<group>"; };
+		CDC7A257190EC502007B57F6 /* 1_pracas@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1_pracas@2x.png"; sourceTree = "<group>"; };
 		CDC7A258190EC502007B57F6 /* 2_museus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2_museus@2x.png"; sourceTree = "<group>"; };
 		CDC7A259190EC502007B57F6 /* 3_teatros@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3_teatros@2x.png"; sourceTree = "<group>"; };
-		CDC7A25A190EC502007B57F6 /* 4_zoologicos@2x.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4_zoologicos@2x.PNG"; sourceTree = "<group>"; };
-		CDC7A25B190EC502007B57F6 /* 5_bibliotecas@2x.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "5_bibliotecas@2x.PNG"; sourceTree = "<group>"; };
+		CDC7A25A190EC502007B57F6 /* 4_zoologicos@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4_zoologicos@2x.png"; sourceTree = "<group>"; };
+		CDC7A25B190EC502007B57F6 /* 5_bibliotecas@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "5_bibliotecas@2x.png"; sourceTree = "<group>"; };
 		CDC7A25D190EC502007B57F6 /* 7_edificiosHistoricos@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "7_edificiosHistoricos@2x.png"; sourceTree = "<group>"; };
-		CDC7A25E190EC502007B57F6 /* 8_igrejas@2x.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "8_igrejas@2x.PNG"; sourceTree = "<group>"; };
+		CDC7A25E190EC502007B57F6 /* 8_igrejas@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "8_igrejas@2x.png"; sourceTree = "<group>"; };
 		CDC7A25F190EC502007B57F6 /* 9_outros@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "9_outros@2x.png"; sourceTree = "<group>"; };
 		CDC7A26A190EC558007B57F6 /* 0_parques.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0_parques.png; sourceTree = "<group>"; };
-		CDC7A26B190EC558007B57F6 /* 1_pracas.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1_pracas.PNG; sourceTree = "<group>"; };
+		CDC7A26B190EC558007B57F6 /* 1_pracas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1_pracas.png; sourceTree = "<group>"; };
 		CDC7A26C190EC558007B57F6 /* 2_museus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2_museus.png; sourceTree = "<group>"; };
 		CDC7A26D190EC558007B57F6 /* 3_teatros.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3_teatros.png; sourceTree = "<group>"; };
-		CDC7A26E190EC558007B57F6 /* 4_zoologicos.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4_zoologicos.PNG; sourceTree = "<group>"; };
-		CDC7A26F190EC558007B57F6 /* 5_bibliotecas.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5_bibliotecas.PNG; sourceTree = "<group>"; };
-		CDC7A271190EC558007B57F6 /* 8_igrejas.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8_igrejas.PNG; sourceTree = "<group>"; };
+		CDC7A26E190EC558007B57F6 /* 4_zoologicos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4_zoologicos.png; sourceTree = "<group>"; };
+		CDC7A26F190EC558007B57F6 /* 5_bibliotecas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5_bibliotecas.png; sourceTree = "<group>"; };
+		CDC7A271190EC558007B57F6 /* 8_igrejas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8_igrejas.png; sourceTree = "<group>"; };
 		CDC7A273190EC558007B57F6 /* 9_outros.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9_outros.png; sourceTree = "<group>"; };
-		CDC7A280190EC720007B57F6 /* 6_centrosCulturais.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6_centrosCulturais.PNG; sourceTree = "<group>"; };
-		CDC7A281190EC720007B57F6 /* 6_centrosCulturais@2x.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "6_centrosCulturais@2x.PNG"; sourceTree = "<group>"; };
+		CDC7A280190EC720007B57F6 /* 6_centrosCulturais.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6_centrosCulturais.png; sourceTree = "<group>"; };
+		CDC7A281190EC720007B57F6 /* 6_centrosCulturais@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "6_centrosCulturais@2x.png"; sourceTree = "<group>"; };
 		CDC7A282190EC720007B57F6 /* 6_centrosCulturaisIcone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6_centrosCulturaisIcone.png; sourceTree = "<group>"; };
 		CDFB5E43190066B700B1246D /* RoletaProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RoletaProtocol.h; path = ../RoletaProtocol.h; sourceTree = "<group>"; };
 		CDFB5E451900678500B1246D /* ControleRoleta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControleRoleta.h; sourceTree = "<group>"; };
@@ -253,8 +251,8 @@
 				CDC7A26A190EC558007B57F6 /* 0_parques.png */,
 				CDC7A256190EC502007B57F6 /* 0_parques@2x.png */,
 				CDC7A242190EC4F7007B57F6 /* 0_parquesIcone.png */,
-				CDC7A26B190EC558007B57F6 /* 1_pracas.PNG */,
-				CDC7A257190EC502007B57F6 /* 1_pracas@2x.PNG */,
+				CDC7A26B190EC558007B57F6 /* 1_pracas.png */,
+				CDC7A257190EC502007B57F6 /* 1_pracas@2x.png */,
 				CDC7A243190EC4F7007B57F6 /* 1_pracasIcone.png */,
 				CDC7A26C190EC558007B57F6 /* 2_museus.png */,
 				CDC7A258190EC502007B57F6 /* 2_museus@2x.png */,
@@ -262,19 +260,19 @@
 				CDC7A26D190EC558007B57F6 /* 3_teatros.png */,
 				CDC7A259190EC502007B57F6 /* 3_teatros@2x.png */,
 				CDC7A245190EC4F7007B57F6 /* 3_teatrosIcone.png */,
-				CDC7A26E190EC558007B57F6 /* 4_zoologicos.PNG */,
-				CDC7A25A190EC502007B57F6 /* 4_zoologicos@2x.PNG */,
+				CDC7A26E190EC558007B57F6 /* 4_zoologicos.png */,
+				CDC7A25A190EC502007B57F6 /* 4_zoologicos@2x.png */,
 				CDC7A246190EC4F7007B57F6 /* 4_zoologicosIcone.png */,
-				CDC7A26F190EC558007B57F6 /* 5_bibliotecas.PNG */,
-				CDC7A25B190EC502007B57F6 /* 5_bibliotecas@2x.PNG */,
+				CDC7A26F190EC558007B57F6 /* 5_bibliotecas.png */,
+				CDC7A25B190EC502007B57F6 /* 5_bibliotecas@2x.png */,
 				CDC7A247190EC4F7007B57F6 /* 5_bibliotecasIcone.png */,
-				CDC7A280190EC720007B57F6 /* 6_centrosCulturais.PNG */,
-				CDC7A281190EC720007B57F6 /* 6_centrosCulturais@2x.PNG */,
+				CDC7A280190EC720007B57F6 /* 6_centrosCulturais.png */,
+				CDC7A281190EC720007B57F6 /* 6_centrosCulturais@2x.png */,
 				CDC7A282190EC720007B57F6 /* 6_centrosCulturaisIcone.png */,
 				CDC7A25D190EC502007B57F6 /* 7_edificiosHistoricos@2x.png */,
 				CDC7A249190EC4F7007B57F6 /* 7_edificiosHistoricosIcone.png */,
-				CDC7A271190EC558007B57F6 /* 8_igrejas.PNG */,
-				CDC7A25E190EC502007B57F6 /* 8_igrejas@2x.PNG */,
+				CDC7A271190EC558007B57F6 /* 8_igrejas.png */,
+				CDC7A25E190EC502007B57F6 /* 8_igrejas@2x.png */,
 				752CA42B190EC91B004397B8 /* 8_igrejasIcone.png */,
 				CDC7A273190EC558007B57F6 /* 9_outros.png */,
 				CDC7A25F190EC502007B57F6 /* 9_outros@2x.png */,
@@ -286,7 +284,6 @@
 				C5A985FD190E7B1B00271CFC /* food.png */,
 				C5A985FE190E7B1B00271CFC /* food@2x.png */,
 				CDC7A234190EC4DC007B57F6 /* fundo.png */,
-				C5A9860A190E7B1B00271CFC /* informacoes.png */,
 				CDC7A235190EC4DC007B57F6 /* informacoes.png */,
 				CDC7A236190EC4DC007B57F6 /* logo.png */,
 				CDC7A237190EC4DC007B57F6 /* mapa.png */,
@@ -506,36 +503,35 @@
 				752CA42C190EC91B004397B8 /* 8_igrejasIcone.png in Resources */,
 				CDC7A255190EC4F7007B57F6 /* 9_outrosIcone.png in Resources */,
 				C5A98640190E7B1B00271CFC /* ride.png in Resources */,
-				CDC7A265190EC502007B57F6 /* 5_bibliotecas@2x.PNG in Resources */,
+				CDC7A265190EC502007B57F6 /* 5_bibliotecas@2x.png in Resources */,
 				CDC7A23C190EC4DC007B57F6 /* fundo.png in Resources */,
 				CDC7A23F190EC4DC007B57F6 /* mapa.png in Resources */,
 				CDC7A267190EC502007B57F6 /* 7_edificiosHistoricos@2x.png in Resources */,
 				CDC7A262190EC502007B57F6 /* 2_museus@2x.png in Resources */,
 				CDC7A24D190EC4F7007B57F6 /* 1_pracasIcone.png in Resources */,
 				CDC7A27D190EC558007B57F6 /* 9_outros.png in Resources */,
-				CDC7A284190EC720007B57F6 /* 6_centrosCulturais@2x.PNG in Resources */,
+				CDC7A284190EC720007B57F6 /* 6_centrosCulturais@2x.png in Resources */,
 				941DC23418FF18060049799C /* Images.xcassets in Resources */,
 				C5A98644190E7B1B00271CFC /* star@2x.png in Resources */,
 				CDC7A24C190EC4F7007B57F6 /* 0_parquesIcone.png in Resources */,
 				CDC7A253190EC4F7007B57F6 /* 7_edificiosHistoricosIcone.png in Resources */,
 				CDC7A269190EC502007B57F6 /* 9_outros@2x.png in Resources */,
-				C5A98634190E7B1B00271CFC /* informacoes.png in Resources */,
-				CDC7A283190EC720007B57F6 /* 6_centrosCulturais.PNG in Resources */,
+				CDC7A283190EC720007B57F6 /* 6_centrosCulturais.png in Resources */,
 				C5A98643190E7B1B00271CFC /* star.png in Resources */,
-				CDC7A278190EC558007B57F6 /* 4_zoologicos.PNG in Resources */,
+				CDC7A278190EC558007B57F6 /* 4_zoologicos.png in Resources */,
 				C5A98635190E7B1B00271CFC /* medalha.png in Resources */,
 				941DC22C18FF18060049799C /* Main_iPhone.storyboard in Resources */,
 				CDC7A23B190EC4DC007B57F6 /* desafio.png in Resources */,
 				CDC7A23E190EC4DC007B57F6 /* logo.png in Resources */,
-				CDC7A275190EC558007B57F6 /* 1_pracas.PNG in Resources */,
+				CDC7A275190EC558007B57F6 /* 1_pracas.png in Resources */,
 				CDC7A260190EC502007B57F6 /* 0_parques@2x.png in Resources */,
 				941DC22318FF18060049799C /* InfoPlist.strings in Resources */,
 				CDC7A23D190EC4DC007B57F6 /* informacoes.png in Resources */,
-				CDC7A27B190EC558007B57F6 /* 8_igrejas.PNG in Resources */,
+				CDC7A27B190EC558007B57F6 /* 8_igrejas.png in Resources */,
 				CDC7A24F190EC4F7007B57F6 /* 3_teatrosIcone.png in Resources */,
 				C5A98641190E7B1B00271CFC /* ride@2x.png in Resources */,
 				CDC7A250190EC4F7007B57F6 /* 4_zoologicosIcone.png in Resources */,
-				CDC7A279190EC558007B57F6 /* 5_bibliotecas.PNG in Resources */,
+				CDC7A279190EC558007B57F6 /* 5_bibliotecas.png in Resources */,
 				C5A98627190E7B1B00271CFC /* firstaid@2x.png in Resources */,
 				CDC7A274190EC558007B57F6 /* 0_parques.png in Resources */,
 				CDC7A285190EC720007B57F6 /* 6_centrosCulturaisIcone.png in Resources */,
@@ -544,9 +540,9 @@
 				CDC7A277190EC558007B57F6 /* 3_teatros.png in Resources */,
 				CDAFC8A51909A3E200CDB343 /* icon.png in Resources */,
 				C5AB4328190463020000855D /* DadosLocais.plist in Resources */,
-				CDC7A268190EC502007B57F6 /* 8_igrejas@2x.PNG in Resources */,
-				CDC7A261190EC502007B57F6 /* 1_pracas@2x.PNG in Resources */,
-				CDC7A264190EC502007B57F6 /* 4_zoologicos@2x.PNG in Resources */,
+				CDC7A268190EC502007B57F6 /* 8_igrejas@2x.png in Resources */,
+				CDC7A261190EC502007B57F6 /* 1_pracas@2x.png in Resources */,
+				CDC7A264190EC502007B57F6 /* 4_zoologicos@2x.png in Resources */,
 				CDC7A251190EC4F7007B57F6 /* 5_bibliotecasIcone.png in Resources */,
 				CDC7A241190EC4DC007B57F6 /* rotas.png in Resources */,
 				CDC7A276190EC558007B57F6 /* 2_museus.png in Resources */,
