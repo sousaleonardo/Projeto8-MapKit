@@ -56,7 +56,7 @@
         [botaoInfo setImage:[UIImage imageNamed:@"informacoes"] forState:UIControlStateNormal];
         [botaoInfo setTintColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"informacoes"]]];
         
-        UIButton *botaoRota = [UIButton buttonWithType:UIButtonTypeInfoLight];
+        UIButton *botaoRota = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
         [botaoRota setImage:[UIImage imageNamed:@"rotas"] forState:UIControlStateNormal];
         [botaoRota setTintColor:[UIColor colorWithPatternImage:[UIImage imageNamed:@"rotas"]]];
         

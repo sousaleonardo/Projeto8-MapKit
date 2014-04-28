@@ -306,7 +306,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fundo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qkk-F4-In4">
+                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qkk-F4-In4">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -386,9 +386,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Qkk-F4-In4" firstAttribute="top" secondItem="jja-SF-yzQ" secondAttribute="top" id="06U-I7-jNf"/>
+                            <constraint firstItem="bYM-vq-LMq" firstAttribute="top" secondItem="Qkk-F4-In4" secondAttribute="bottom" id="5A9-dF-nPA"/>
                             <constraint firstItem="uv8-iL-rvX" firstAttribute="width" secondItem="7cI-Rq-3wh" secondAttribute="width" id="G05-Jp-EOA"/>
                             <constraint firstItem="bYM-vq-LMq" firstAttribute="top" secondItem="7cI-Rq-3wh" secondAttribute="bottom" constant="20" id="HX8-el-dec"/>
+                            <constraint firstItem="Qkk-F4-In4" firstAttribute="leading" secondItem="jja-SF-yzQ" secondAttribute="leading" id="OqW-mR-boz"/>
                             <constraint firstItem="uv8-iL-rvX" firstAttribute="top" secondItem="12p-Kn-adj" secondAttribute="bottom" constant="8" id="bex-YU-bxt"/>
+                            <constraint firstAttribute="trailing" secondItem="Qkk-F4-In4" secondAttribute="trailing" id="mRQ-xT-GtL"/>
                             <constraint firstItem="uv8-iL-rvX" firstAttribute="leading" secondItem="jja-SF-yzQ" secondAttribute="leading" constant="35" id="svZ-I5-vGk"/>
                             <constraint firstAttribute="trailing" secondItem="7cI-Rq-3wh" secondAttribute="trailing" constant="34" id="svm-rE-Zws"/>
                         </constraints>
