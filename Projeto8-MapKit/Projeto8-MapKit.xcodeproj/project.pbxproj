@@ -56,6 +56,11 @@
 		C5AA2DFC19093C5C003B55FB /* Medalha.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AA2DFB19093C5C003B55FB /* Medalha.m */; };
 		C5AB4328190463020000855D /* DadosLocais.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5AB4327190463020000855D /* DadosLocais.plist */; };
 		C5CFF1671907750900B93086 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5CFF1661907750900B93086 /* FacebookSDK.framework */; };
+		CD97CA6C190EFCE900CB55FA /* tituloDesafio.png in Resources */ = {isa = PBXBuildFile; fileRef = CD97CA69190EFCE900CB55FA /* tituloDesafio.png */; };
+		CD97CA6D190EFCE900CB55FA /* tituloMedalhas.png in Resources */ = {isa = PBXBuildFile; fileRef = CD97CA6A190EFCE900CB55FA /* tituloMedalhas.png */; };
+		CD97CA6E190EFCE900CB55FA /* tituloRanking.png in Resources */ = {isa = PBXBuildFile; fileRef = CD97CA6B190EFCE900CB55FA /* tituloRanking.png */; };
+		CD97CA71190EFD6A00CB55FA /* bussula.png in Resources */ = {isa = PBXBuildFile; fileRef = CD97CA6F190EFD6A00CB55FA /* bussula.png */; };
+		CD97CA72190EFD6A00CB55FA /* ponteiro.png in Resources */ = {isa = PBXBuildFile; fileRef = CD97CA70190EFD6A00CB55FA /* ponteiro.png */; };
 		CDAFC8A51909A3E200CDB343 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CDAFC88F1909A3E200CDB343 /* icon.png */; };
 		CDC7A23A190EC4DC007B57F6 /* conquistas.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A232190EC4DC007B57F6 /* conquistas.png */; };
 		CDC7A23B190EC4DC007B57F6 /* desafio.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A233190EC4DC007B57F6 /* desafio.png */; };
@@ -166,6 +171,11 @@
 		C5AA2DFB19093C5C003B55FB /* Medalha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Medalha.m; sourceTree = "<group>"; };
 		C5AB4327190463020000855D /* DadosLocais.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = DadosLocais.plist; path = ../DadosLocais.plist; sourceTree = "<group>"; };
 		C5CFF1661907750900B93086 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		CD97CA69190EFCE900CB55FA /* tituloDesafio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tituloDesafio.png; sourceTree = "<group>"; };
+		CD97CA6A190EFCE900CB55FA /* tituloMedalhas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tituloMedalhas.png; sourceTree = "<group>"; };
+		CD97CA6B190EFCE900CB55FA /* tituloRanking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tituloRanking.png; sourceTree = "<group>"; };
+		CD97CA6F190EFD6A00CB55FA /* bussula.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bussula.png; sourceTree = "<group>"; };
+		CD97CA70190EFD6A00CB55FA /* ponteiro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ponteiro.png; sourceTree = "<group>"; };
 		CDAFC88F1909A3E200CDB343 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		CDC7A232190EC4DC007B57F6 /* conquistas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = conquistas.png; sourceTree = "<group>"; };
 		CDC7A233190EC4DC007B57F6 /* desafio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = desafio.png; sourceTree = "<group>"; };
@@ -236,18 +246,8 @@
 		752D30DC1908350200C5D81F /* Imagens */ = {
 			isa = PBXGroup;
 			children = (
-				752CA445190ED350004397B8 /* 4_zoologicos.png */,
-				752CA446190ED350004397B8 /* 4_zoologicos@2x.png */,
-				752CA447190ED350004397B8 /* 4_zoologicosIcone.png */,
-				752CA448190ED350004397B8 /* 5_bibliotecas.png */,
-				752CA449190ED350004397B8 /* 5_bibliotecas@2x.png */,
-				752CA44A190ED350004397B8 /* 5_bibliotecasIcone.png */,
-				752CA44B190ED350004397B8 /* 6_centrosCulturais.png */,
-				752CA44C190ED350004397B8 /* 6_centrosCulturais@2x.png */,
-				752CA44D190ED350004397B8 /* 6_centrosCulturaisIcone.png */,
-				752CA44E190ED350004397B8 /* 8_igrejas.png */,
-				752CA44F190ED350004397B8 /* 8_igrejas@2x.png */,
-				752CA450190ED350004397B8 /* 8_igrejasIcone.png */,
+				CD97CA6F190EFD6A00CB55FA /* bussula.png */,
+				CD97CA70190EFD6A00CB55FA /* ponteiro.png */,
 				CDC7A26A190EC558007B57F6 /* 0_parques.png */,
 				CDC7A256190EC502007B57F6 /* 0_parques@2x.png */,
 				CDC7A242190EC4F7007B57F6 /* 0_parquesIcone.png */,
@@ -260,8 +260,20 @@
 				CDC7A26D190EC558007B57F6 /* 3_teatros.png */,
 				CDC7A259190EC502007B57F6 /* 3_teatros@2x.png */,
 				CDC7A245190EC4F7007B57F6 /* 3_teatrosIcone.png */,
+				752CA445190ED350004397B8 /* 4_zoologicos.png */,
+				752CA446190ED350004397B8 /* 4_zoologicos@2x.png */,
+				752CA447190ED350004397B8 /* 4_zoologicosIcone.png */,
+				752CA448190ED350004397B8 /* 5_bibliotecas.png */,
+				752CA449190ED350004397B8 /* 5_bibliotecas@2x.png */,
+				752CA44A190ED350004397B8 /* 5_bibliotecasIcone.png */,
+				752CA44B190ED350004397B8 /* 6_centrosCulturais.png */,
+				752CA44C190ED350004397B8 /* 6_centrosCulturais@2x.png */,
+				752CA44D190ED350004397B8 /* 6_centrosCulturaisIcone.png */,
 				CDC7A25D190EC502007B57F6 /* 7_edificiosHistoricos@2x.png */,
 				CDC7A249190EC4F7007B57F6 /* 7_edificiosHistoricosIcone.png */,
+				752CA44E190ED350004397B8 /* 8_igrejas.png */,
+				752CA44F190ED350004397B8 /* 8_igrejas@2x.png */,
+				752CA450190ED350004397B8 /* 8_igrejasIcone.png */,
 				CDC7A273190EC558007B57F6 /* 9_outros.png */,
 				CDC7A25F190EC502007B57F6 /* 9_outros@2x.png */,
 				CDC7A24B190EC4F7007B57F6 /* 9_outrosIcone.png */,
@@ -273,6 +285,9 @@
 				CDC7A237190EC4DC007B57F6 /* mapa.png */,
 				CDC7A238190EC4DC007B57F6 /* medalhas.png */,
 				CDC7A239190EC4DC007B57F6 /* rotas.png */,
+				CD97CA69190EFCE900CB55FA /* tituloDesafio.png */,
+				CD97CA6A190EFCE900CB55FA /* tituloMedalhas.png */,
+				CD97CA6B190EFCE900CB55FA /* tituloRanking.png */,
 			);
 			name = Imagens;
 			sourceTree = "<group>";
@@ -483,6 +498,7 @@
 				CDC7A24E190EC4F7007B57F6 /* 2_museusIcone.png in Resources */,
 				752CA455190ED350004397B8 /* 5_bibliotecas@2x.png in Resources */,
 				CDC7A240190EC4DC007B57F6 /* medalhas.png in Resources */,
+				CD97CA6C190EFCE900CB55FA /* tituloDesafio.png in Resources */,
 				752CA45A190ED350004397B8 /* 8_igrejas.png in Resources */,
 				752CA453190ED350004397B8 /* 4_zoologicosIcone.png in Resources */,
 				CDC7A255190EC4F7007B57F6 /* 9_outrosIcone.png in Resources */,
@@ -492,7 +508,9 @@
 				CDC7A267190EC502007B57F6 /* 7_edificiosHistoricos@2x.png in Resources */,
 				CDC7A262190EC502007B57F6 /* 2_museus@2x.png in Resources */,
 				CDC7A24D190EC4F7007B57F6 /* 1_pracasIcone.png in Resources */,
+				CD97CA71190EFD6A00CB55FA /* bussula.png in Resources */,
 				CDC7A27D190EC558007B57F6 /* 9_outros.png in Resources */,
+				CD97CA6D190EFCE900CB55FA /* tituloMedalhas.png in Resources */,
 				941DC23418FF18060049799C /* Images.xcassets in Resources */,
 				752CA454190ED350004397B8 /* 5_bibliotecas.png in Resources */,
 				CDC7A24C190EC4F7007B57F6 /* 0_parquesIcone.png in Resources */,
@@ -512,6 +530,7 @@
 				CDC7A274190EC558007B57F6 /* 0_parques.png in Resources */,
 				CDC7A263190EC502007B57F6 /* 3_teatros@2x.png in Resources */,
 				CDC7A277190EC558007B57F6 /* 3_teatros.png in Resources */,
+				CD97CA6E190EFCE900CB55FA /* tituloRanking.png in Resources */,
 				CDAFC8A51909A3E200CDB343 /* icon.png in Resources */,
 				C5AB4328190463020000855D /* DadosLocais.plist in Resources */,
 				CDC7A261190EC502007B57F6 /* 1_pracas@2x.png in Resources */,
@@ -522,6 +541,7 @@
 				CDC7A276190EC558007B57F6 /* 2_museus.png in Resources */,
 				752CA451190ED350004397B8 /* 4_zoologicos.png in Resources */,
 				CDC7A23A190EC4DC007B57F6 /* conquistas.png in Resources */,
+				CD97CA72190EFD6A00CB55FA /* ponteiro.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

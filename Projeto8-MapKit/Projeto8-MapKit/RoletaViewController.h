@@ -15,6 +15,12 @@
 @property int categoria;
 @property int atracao;
 @property Lugares *lugares;
+@property NSString *desafio;
 
+@property (weak, nonatomic) IBOutlet UIButton *btnSortear;
+@property (weak, nonatomic) IBOutlet UIImageView *imgCategoria;
+@property (weak, nonatomic) IBOutlet UILabel *lblNomeAtracao;
+@property (weak, nonatomic) IBOutlet UILabel *lblEnderecoAtracao;
+@property (weak, nonatomic) IBOutlet UITextView *txtDescricaoAtracao;
 
 @end

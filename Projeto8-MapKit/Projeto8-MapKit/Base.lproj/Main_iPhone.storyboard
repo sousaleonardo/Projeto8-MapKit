@@ -633,8 +633,84 @@
                     <view key="view" contentMode="scaleToFill" id="NGf-gS-UrK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.20000000298023224" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo.png" translatesAutoresizingMaskIntoConstraints="NO" id="7De-BP-CdQ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tituloDesafio.png" translatesAutoresizingMaskIntoConstraints="NO" id="SLA-bR-CvI">
+                                <rect key="frame" x="20" y="32" width="280" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bussula.png" translatesAutoresizingMaskIntoConstraints="NO" id="IK1-Ib-q4N">
+                                <rect key="frame" x="20" y="150" width="280" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mzM-Ft-Yl7">
+                                <rect key="frame" x="136" y="292" width="48" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="sortear">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="sortear:" destination="HuC-rO-CaY" eventType="touchUpInside" id="Rds-sY-9aK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w97-1e-Qcf">
+                                <rect key="frame" x="266" y="532" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="voltar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="UqW-1j-RPo" kind="modal" id="pEj-EH-WDu"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ponteiro.png" translatesAutoresizingMaskIntoConstraints="NO" id="djB-ce-L6A">
+                                <rect key="frame" x="79" y="165" width="162" height="119"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="0_parquesIcone.png" translatesAutoresizingMaskIntoConstraints="NO" id="c9w-iN-aVf">
+                                <rect key="frame" x="20" y="354" width="156" height="149"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="lugar" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3lJ-gw-fP0">
+                                <rect key="frame" x="64" y="482" width="234" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="endereço" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSz-LO-GoP">
+                                <rect key="frame" x="31" y="503" width="267" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EtN-Uz-6NI">
+                                <rect key="frame" x="176" y="362" width="122" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7De-BP-CdQ" firstAttribute="top" secondItem="NGf-gS-UrK" secondAttribute="top" id="IX1-Od-Zje"/>
+                            <constraint firstItem="7De-BP-CdQ" firstAttribute="leading" secondItem="NGf-gS-UrK" secondAttribute="leading" id="XaS-Qd-trP"/>
+                            <constraint firstItem="YTJ-L1-NWz" firstAttribute="top" secondItem="7De-BP-CdQ" secondAttribute="bottom" id="hhW-6m-IqI"/>
+                            <constraint firstAttribute="trailing" secondItem="7De-BP-CdQ" secondAttribute="trailing" id="rBz-NB-iqJ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btnSortear" destination="mzM-Ft-Yl7" id="QaL-Pv-SE6"/>
+                        <outlet property="imgCategoria" destination="c9w-iN-aVf" id="adJ-hv-ABv"/>
+                        <outlet property="lblEnderecoAtracao" destination="SSz-LO-GoP" id="d18-jn-sET"/>
+                        <outlet property="lblNomeAtracao" destination="3lJ-gw-fP0" id="j9r-NX-ccX"/>
+                        <outlet property="txtDescricaoAtracao" destination="EtN-Uz-6NI" id="WVz-qe-Pw9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vZA-Du-dVH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -652,11 +728,14 @@
         <image name="7_edificiosHistoricosIcone.png" width="478" height="481"/>
         <image name="8_igrejasIcone.png" width="478" height="481"/>
         <image name="9_outrosIcone.png" width="478" height="481"/>
+        <image name="bussula.png" width="600" height="602"/>
         <image name="conquistas.png" width="400" height="400"/>
         <image name="desafio.png" width="400" height="400"/>
         <image name="fundo.png" width="800" height="800"/>
         <image name="mapa.png" width="400" height="400"/>
         <image name="medalhas.png" width="400" height="400"/>
+        <image name="ponteiro.png" width="600" height="602"/>
+        <image name="tituloDesafio.png" width="692" height="172"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -664,7 +743,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="pEj-EH-WDu"/>
         <segue reference="eh8-NS-3wX"/>
-        <segue reference="8QT-4W-CJ2"/>
     </inferredMetricsTieBreakers>
 </document>
