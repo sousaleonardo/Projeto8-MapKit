@@ -591,10 +591,10 @@
             </objects>
             <point key="canvasLocation" x="812" y="-1062"/>
         </scene>
-        <!--View Controller Roleta - Desafio-->
+        <!--Roleta View Controller - Desafio-->
         <scene sceneID="MiL-qU-7Wg">
             <objects>
-                <viewController title="Desafio" id="HuC-rO-CaY" customClass="ViewControllerRoleta" sceneMemberID="viewController">
+                <viewController title="Desafio" id="HuC-rO-CaY" customClass="RoletaViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="iaV-83-gCY"/>
                         <viewControllerLayoutGuide type="bottom" id="YTJ-L1-NWz"/>
@@ -602,30 +602,8 @@
                     <view key="view" contentMode="scaleToFill" id="NGf-gS-UrK">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Selecione uma categoria" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2b-k6-JPP">
-                                <rect key="frame" x="65" y="70" width="190" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0H-oY-El6">
-                                <rect key="frame" x="261" y="518" width="39" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Voltar">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="YTJ-L1-NWz" firstAttribute="top" secondItem="h0H-oY-El6" secondAttribute="bottom" constant="20" id="K1z-EJ-5om"/>
-                            <constraint firstAttribute="trailing" secondItem="h0H-oY-El6" secondAttribute="trailing" constant="20" id="MNv-Jx-zYE"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="lblCategoriaAtual" destination="Q2b-k6-JPP" id="PJ3-TU-1oD"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vZA-Du-dVH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
