@@ -342,7 +342,6 @@
     NSDate *now = [NSDate date];
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDateComponents *components = [calendar components:(NSYearCalendarUnit | NSMonthCalendarUnit | NSDayCalendarUnit) fromDate:now];
-    NSTimeZone* destinationTimeZone = [NSTimeZone systemTimeZone];
     
     [components setHour:0];
     [components setMinute:0];

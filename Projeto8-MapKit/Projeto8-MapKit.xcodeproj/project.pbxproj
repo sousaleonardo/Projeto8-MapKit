@@ -320,15 +320,17 @@
 		941DC21E18FF18060049799C /* Projeto8-MapKit */ = {
 			isa = PBXGroup;
 			children = (
-				752D30DC1908350200C5D81F /* Imagens */,
 				941DC22718FF18060049799C /* AppDelegate.h */,
 				941DC22818FF18060049799C /* AppDelegate.m */,
 				752D30C61908343100C5D81F /* Atracoes.h */,
 				752D30C71908343100C5D81F /* Atracoes.m */,
 				94281DB31907013000A699F0 /* DadosUser.h */,
 				94281DB41907013000A699F0 /* DadosUser.m */,
+				752D30DC1908350200C5D81F /* Imagens */,
 				75FEE665190851490023D9BB /* InformacoesViewController.h */,
 				75FEE666190851490023D9BB /* InformacoesViewController.m */,
+				9430B40C190EF87800D6D3E2 /* InfoTracarRota.h */,
+				9430B40D190EF87800D6D3E2 /* InfoTracarRota.m */,
 				75FEE668190852860023D9BB /* Lugares.h */,
 				75FEE669190852860023D9BB /* Lugares.m */,
 				941DC22D18FF18060049799C /* Main_iPad.storyboard */,
@@ -339,20 +341,18 @@
 				C5AA2DFB19093C5C003B55FB /* Medalha.m */,
 				94281DBC1907065000A699F0 /* MedalhaViewController.h */,
 				94281DBD1907065000A699F0 /* MedalhaViewController.m */,
-				9430B40C190EF87800D6D3E2 /* InfoTracarRota.h */,
-				9430B40D190EF87800D6D3E2 /* InfoTracarRota.m */,
 				3CA491FB190455820054A01C /* MenuViewController.h */,
 				3CA491FC190455820054A01C /* MenuViewController.m */,
 				752D30C41908343100C5D81F /* OverlayAtracoes.h */,
 				752D30C51908343100C5D81F /* OverlayAtracoes.m */,
 				3C3A51E31904AA2A00ADFB46 /* RankingViewController.h */,
 				3C3A51E41904AA2A00ADFB46 /* RankingViewController.m */,
+				CDFB5E44190066BC00B1246D /* Roleta Desafio */,
 				CDCABFC3190EE84B0047A32A /* RoletaViewController.h */,
 				CDCABFC4190EE84B0047A32A /* RoletaViewController.m */,
+				941DC21F18FF18060049799C /* Supporting Files */,
 				941DC23018FF18060049799C /* ViewController.h */,
 				941DC23118FF18060049799C /* ViewController.m */,
-				CDFB5E44190066BC00B1246D /* Roleta Desafio */,
-				941DC21F18FF18060049799C /* Supporting Files */,
 			);
 			path = "Projeto8-MapKit";
 			sourceTree = "<group>";

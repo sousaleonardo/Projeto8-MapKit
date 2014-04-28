@@ -197,6 +197,12 @@
 }
 -(void)mandarPontos {
     
+    //Salva o lugar usando o DadosUser
+    NSString *nomeAtracao=[self->atracaoSelecionada title];
+    NSString *categoriaAtracao=[self->atracaoSelecionada tipoDeAtracao];
+    
+    [DadosUser processarIaMedalha:nomeAtracao :categoriaAtracao];
+    
     [FBRequestConnection startWithGraphPath:@"me/scores"
                                  parameters:nil
                                  HTTPMethod:@"GET"
