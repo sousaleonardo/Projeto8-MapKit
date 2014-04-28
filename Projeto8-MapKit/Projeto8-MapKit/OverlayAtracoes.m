@@ -41,7 +41,7 @@
                 self.image = [UIImage imageNamed:@"7_edificiosHistoricos.png"];
                 break;
             case Igrejas:
-                self.image = [UIImage imageNamed:@"8_igrejas"];
+                self.image = [UIImage imageNamed:@"8_igrejas.png"];
                 break;
             case Outros:
                 self.image = [UIImage imageNamed:@"9_outros.png"];
