@@ -81,6 +81,7 @@
 		CDC7A276190EC558007B57F6 /* 2_museus.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A26C190EC558007B57F6 /* 2_museus.png */; };
 		CDC7A277190EC558007B57F6 /* 3_teatros.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A26D190EC558007B57F6 /* 3_teatros.png */; };
 		CDC7A27D190EC558007B57F6 /* 9_outros.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A273190EC558007B57F6 /* 9_outros.png */; };
+		CDCABFC5190EE84B0047A32A /* RoletaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCABFC4190EE84B0047A32A /* RoletaViewController.m */; };
 		CDFB5E471900678500B1246D /* ControleRoleta.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB5E461900678500B1246D /* ControleRoleta.m */; };
 		CDFB5E491900722C00B1246D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFB5E481900722C00B1246D /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
@@ -188,6 +189,8 @@
 		CDC7A26C190EC558007B57F6 /* 2_museus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2_museus.png; sourceTree = "<group>"; };
 		CDC7A26D190EC558007B57F6 /* 3_teatros.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3_teatros.png; sourceTree = "<group>"; };
 		CDC7A273190EC558007B57F6 /* 9_outros.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9_outros.png; sourceTree = "<group>"; };
+		CDCABFC3190EE84B0047A32A /* RoletaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoletaViewController.h; sourceTree = "<group>"; };
+		CDCABFC4190EE84B0047A32A /* RoletaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoletaViewController.m; sourceTree = "<group>"; };
 		CDFB5E43190066B700B1246D /* RoletaProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RoletaProtocol.h; path = ../RoletaProtocol.h; sourceTree = "<group>"; };
 		CDFB5E451900678500B1246D /* ControleRoleta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControleRoleta.h; sourceTree = "<group>"; };
 		CDFB5E461900678500B1246D /* ControleRoleta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControleRoleta.m; sourceTree = "<group>"; };
@@ -339,6 +342,8 @@
 				752D30C31908343100C5D81F /* MapaViewController.m */,
 				94281DB31907013000A699F0 /* DadosUser.h */,
 				94281DB41907013000A699F0 /* DadosUser.m */,
+				CDCABFC3190EE84B0047A32A /* RoletaViewController.h */,
+				CDCABFC4190EE84B0047A32A /* RoletaViewController.m */,
 				CDFB5E44190066BC00B1246D /* Roleta Desafio */,
 				941DC21F18FF18060049799C /* Supporting Files */,
 				3CA491FB190455820054A01C /* MenuViewController.h */,
@@ -541,6 +546,7 @@
 				752D30CB1908343100C5D81F /* Atracoes.m in Sources */,
 				75FEE667190851490023D9BB /* InformacoesViewController.m in Sources */,
 				3C3A51E51904AA2A00ADFB46 /* RankingViewController.m in Sources */,
+				CDCABFC5190EE84B0047A32A /* RoletaViewController.m in Sources */,
 				941DC22918FF18060049799C /* AppDelegate.m in Sources */,
 				2300FADC190413C300F739B6 /* ViewControllerRoleta.m in Sources */,
 				237F164C19048777004DC711 /* Categoria.m in Sources */,
