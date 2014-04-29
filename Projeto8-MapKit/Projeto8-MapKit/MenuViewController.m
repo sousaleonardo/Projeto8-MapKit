@@ -22,7 +22,7 @@
     
     //Peço educadamente as permissoes
     [DadosUser permissaoFB];
-    [DadosUser login:self];
+    [DadosUser login:nil];
     
     //coloca o nome e a imagem de perfil do usuario
     [FBRequestConnection startForMeWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
@@ -51,8 +51,7 @@
          NSString *score = [NSString stringWithFormat:@"Pontos: %d",nCurrentScore];
          [self.pontosUsuario setText:score];
      }];
-    
-    [DadosUser login:self];
+
 }
 
 

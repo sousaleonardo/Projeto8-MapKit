@@ -199,7 +199,43 @@
     
     //Salva o lugar usando o DadosUser
     NSString *nomeAtracao=[self->atracaoSelecionada title];
-    NSString *categoriaAtracao=[self->atracaoSelecionada tipoDeAtracao];
+    NSString *categoriaAtracao = [[NSString alloc]init];
+    switch (self->categoriaSelecionada) {
+        case 0:
+            categoriaAtracao = @"Parque";
+            break;
+        case 1:
+            categoriaAtracao = @"Pracas";
+            break;
+        case 2:
+            categoriaAtracao = @"Museus";
+            break;
+        case 3:
+            categoriaAtracao = @"Teatro";
+            break;
+        case 4:
+            categoriaAtracao = @"Zoologicos";
+            break;
+        case 5:
+            categoriaAtracao = @"Biblioteca";
+            break;
+        case 6:
+            categoriaAtracao = @"Espacos Culturais";
+            break;
+        case 7:
+            categoriaAtracao = @"Edificios Religiosos";
+            break;
+        case 8:
+            categoriaAtracao = @"Igrejas";
+            break;
+        case 9:
+            categoriaAtracao = @"Outros";
+            break;
+            
+        default:
+            break;
+    }
+   
     
     [DadosUser processarIaMedalha:nomeAtracao :categoriaAtracao];
     

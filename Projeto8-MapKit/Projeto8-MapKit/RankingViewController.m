@@ -38,7 +38,7 @@
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return self.scores.count;
+    return [[self.scores objectForKey:@"data"]count];
     
 }
 
@@ -63,7 +63,7 @@
     
     NSString *idDoUsuario= [[[[self.scores objectForKey:@"data"]objectAtIndex:indexPath.row] objectForKey:@"user"]objectForKey:@"id"];
     
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://graph.facebook.com/%@/picture?width=200&height=200", idDoUsuario]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"http://graph.facebook.com/%@/picture?width=100&height=100", idDoUsuario]];
     
     
     NSData *data = [NSData dataWithContentsOfURL:url];

@@ -158,7 +158,10 @@
             
             //Cria array com
             //Removemos a chave do user name pq não nos interessa ela
+            NSLog(@"%@",objects);
+            
             [[objects objectAtIndex:0]removeObjectForKey:@"userName"];
+            
             
             for(NSString *key in [[objects objectAtIndex:0]allKeys]){
 
