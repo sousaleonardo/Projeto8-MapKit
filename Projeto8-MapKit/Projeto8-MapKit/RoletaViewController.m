@@ -28,8 +28,9 @@
     [super viewDidLoad];
     self.lugares = [Lugares sharedLugares];
     
+    //Estava apagando o lugar do desafio
     //para tirar o local de sorteio
-    [DadosUser gravarDesafio:nil];
+    //[DadosUser gravarDesafio:nil];
     
     
     if([DadosUser existeDesafio]){

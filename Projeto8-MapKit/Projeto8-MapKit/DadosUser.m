@@ -237,8 +237,9 @@
     //Vejo se o lugar onde esta dando checkIN e um dejafio
     //medalha exploradorCorajoso e medalha grandeConquistador
         //Para fazer busca na classe PADRÃO do Parse USER
-    query =[PFUser query];
-    [query whereKey:@"username" equalTo:[PFUser currentUser].username];
+    //query =[PFUser query];
+    query=[PFQuery queryWithClassName:@"Desafio"];
+    [query whereKey:@"userName" equalTo:[PFUser currentUser].username];
     
     NSString *proximoDesafio=[[query getFirstObject]objectForKey:@"proximoDesafio"];
     
