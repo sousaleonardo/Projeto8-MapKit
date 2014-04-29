@@ -206,10 +206,10 @@
     medalhas[@"grandeHistoriador"]=[NSNumber numberWithInt:12];
     medalhas[@"exploradorIluminado"]=[NSNumber numberWithInt:7];
     medalhas[@"exploradorEcletico"]=[NSNumber numberWithInt:20];
-    medalhas[@"aprendizExplorador"]=[NSNumber numberWithInt:2];
-    medalhas[@"exploradorMediano"]=[NSNumber numberWithInt:3];
-    medalhas[@"superExplorador"]=[NSNumber numberWithInt:4];
-    medalhas[@"exploradorMestre"]=[NSNumber numberWithInt:5];
+    medalhas[@"aprendizExplorador"]=[NSNumber numberWithInt:1];
+    medalhas[@"exploradorMediano"]=[NSNumber numberWithInt:1];
+    medalhas[@"superExplorador"]=[NSNumber numberWithInt:1];
+    medalhas[@"exploradorMestre"]=[NSNumber numberWithInt:1];
     medalhas[@"exploradorCorajoso"]=[NSNumber numberWithInt:1];
     medalhas[@"primeirosPassos"]=[NSNumber numberWithInt:1];
     medalhas[@"exploradorCompanheiro"]=[NSNumber numberWithInt:1];
