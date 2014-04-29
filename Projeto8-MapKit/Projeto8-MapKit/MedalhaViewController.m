@@ -46,14 +46,6 @@
     
     [self.view addSubview:self.viewParte2];
     
-    self.medalhas=[NSMutableArray array];
-
-    
-    //[DadosUser salvarMedalha:@"primeirosPassos"];
-    //[DadosUser processarIaMedalha:@"Praça Roosevelt" :@"Pracas"];
-    
-    [DadosUser adicionaPontosMedalhaFB:10];
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -65,6 +57,9 @@
 -(void)dadosDidLogin:(BOOL)logado{
     if (logado) {
         NSLog(@"Logado");
+        
+        //Carrega as medalhas padrão
+        [DadosUser inicializaMedalhas];
         
         //Busca pelas informações das medalhas do user no PARSE
         [DadosUser medalhasSalvas:self];
