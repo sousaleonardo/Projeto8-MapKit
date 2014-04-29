@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
@@ -783,8 +783,8 @@
                                 <rect key="frame" x="40" y="275" width="241" height="221"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="-" translatesAutoresizingMaskIntoConstraints="NO" id="EtN-Uz-6NI">
-                                        <rect key="frame" x="119" y="12" width="122" height="117"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="-" translatesAutoresizingMaskIntoConstraints="NO" id="EtN-Uz-6NI">
+                                        <rect key="frame" x="119" y="-1" width="122" height="108"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -793,24 +793,14 @@
                                         <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w97-1e-Qcf">
-                                        <rect key="frame" x="182" y="187" width="39" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Voltar">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                        </state>
-                                        <connections>
-                                            <segue destination="UqW-1j-RPo" kind="modal" id="pEj-EH-WDu"/>
-                                        </connections>
-                                    </button>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="-" translatesAutoresizingMaskIntoConstraints="NO" id="YeW-bi-rwq">
-                                        <rect key="frame" x="20" y="137" width="154" height="29"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" editable="NO" text="-" translatesAutoresizingMaskIntoConstraints="NO" id="YeW-bi-rwq">
+                                        <rect key="frame" x="5" y="115" width="236" height="29"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="-" translatesAutoresizingMaskIntoConstraints="NO" id="bXa-am-7NM">
-                                        <rect key="frame" x="20" y="174" width="154" height="29"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" fixedFrame="YES" editable="NO" text="-" translatesAutoresizingMaskIntoConstraints="NO" id="bXa-am-7NM">
+                                        <rect key="frame" x="5" y="152" width="236" height="69"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -821,6 +811,16 @@
                                     <constraint firstAttribute="width" constant="241" id="dNq-4D-aH1"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w97-1e-Qcf">
+                                <rect key="frame" x="242" y="504" width="39" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Voltar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="UqW-1j-RPo" kind="modal" id="pEj-EH-WDu"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -829,8 +829,10 @@
                             <constraint firstItem="im0-7i-SU7" firstAttribute="top" secondItem="NGf-gS-UrK" secondAttribute="top" constant="20" id="UW8-BQ-1uj"/>
                             <constraint firstItem="7De-BP-CdQ" firstAttribute="leading" secondItem="NGf-gS-UrK" secondAttribute="leading" id="XaS-Qd-trP"/>
                             <constraint firstItem="YTJ-L1-NWz" firstAttribute="top" secondItem="7De-BP-CdQ" secondAttribute="bottom" id="hhW-6m-IqI"/>
+                            <constraint firstAttribute="trailing" secondItem="w97-1e-Qcf" secondAttribute="trailing" constant="39" id="joW-fy-kFc"/>
                             <constraint firstItem="im0-7i-SU7" firstAttribute="leading" secondItem="NGf-gS-UrK" secondAttribute="leading" constant="40" id="mUC-PD-scO"/>
                             <constraint firstItem="YTJ-L1-NWz" firstAttribute="top" secondItem="Ang-Sb-SQX" secondAttribute="bottom" constant="72" id="n9k-DS-lxE"/>
+                            <constraint firstItem="YTJ-L1-NWz" firstAttribute="top" secondItem="w97-1e-Qcf" secondAttribute="bottom" constant="34" id="qRj-6Z-Z8Y"/>
                             <constraint firstAttribute="trailing" secondItem="7De-BP-CdQ" secondAttribute="trailing" id="rBz-NB-iqJ"/>
                         </constraints>
                     </view>
@@ -838,6 +840,8 @@
                         <outlet property="btnSortear" destination="mzM-Ft-Yl7" id="QaL-Pv-SE6"/>
                         <outlet property="imgCategoria" destination="c9w-iN-aVf" id="adJ-hv-ABv"/>
                         <outlet property="txtDescricaoAtracao" destination="EtN-Uz-6NI" id="WVz-qe-Pw9"/>
+                        <outlet property="txtEnderecoAtracao" destination="bXa-am-7NM" id="SiP-Yq-G1X"/>
+                        <outlet property="txtNomeAtracao" destination="YeW-bi-rwq" id="rX6-Fr-i6N"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vZA-Du-dVH" userLabel="First Responder" sceneMemberID="firstResponder"/>
