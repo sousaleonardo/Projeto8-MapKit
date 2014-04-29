@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2300FADC190413C300F739B6 /* ViewControllerRoleta.m in Sources */ = {isa = PBXBuildFile; fileRef = 2300FADB190413C300F739B6 /* ViewControllerRoleta.m */; };
+		23016AFE190FE04C0087FB80 /* entrar.png in Resources */ = {isa = PBXBuildFile; fileRef = 23016AFD190FE04C0087FB80 /* entrar.png */; };
 		237F164C19048777004DC711 /* Categoria.m in Sources */ = {isa = PBXBuildFile; fileRef = 237F164B19048777004DC711 /* Categoria.m */; };
 		3C3A51E51904AA2A00ADFB46 /* RankingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3A51E41904AA2A00ADFB46 /* RankingViewController.m */; };
 		3CA491FD190455820054A01C /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA491FC190455820054A01C /* MenuViewController.m */; };
@@ -106,6 +107,7 @@
 /* Begin PBXFileReference section */
 		2300FADA190413C300F739B6 /* ViewControllerRoleta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerRoleta.h; sourceTree = "<group>"; };
 		2300FADB190413C300F739B6 /* ViewControllerRoleta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerRoleta.m; sourceTree = "<group>"; };
+		23016AFD190FE04C0087FB80 /* entrar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = entrar.png; sourceTree = "<group>"; };
 		237F164A19048777004DC711 /* Categoria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Categoria.h; sourceTree = "<group>"; };
 		237F164B19048777004DC711 /* Categoria.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Categoria.m; sourceTree = "<group>"; };
 		3C3A51E31904AA2A00ADFB46 /* RankingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankingViewController.h; sourceTree = "<group>"; };
@@ -248,6 +250,7 @@
 		752D30DC1908350200C5D81F /* Imagens */ = {
 			isa = PBXGroup;
 			children = (
+				23016AFD190FE04C0087FB80 /* entrar.png */,
 				3CAB50C9190F624A00DCB4A1 /* logo.png */,
 				CD97CA6F190EFD6A00CB55FA /* bussula.png */,
 				CD97CA70190EFD6A00CB55FA /* ponteiro.png */,
@@ -502,6 +505,7 @@
 				752CA455190ED350004397B8 /* 5_bibliotecas@2x.png in Resources */,
 				CDC7A240190EC4DC007B57F6 /* medalhas.png in Resources */,
 				CD97CA6C190EFCE900CB55FA /* tituloDesafio.png in Resources */,
+				23016AFE190FE04C0087FB80 /* entrar.png in Resources */,
 				752CA45A190ED350004397B8 /* 8_igrejas.png in Resources */,
 				752CA453190ED350004397B8 /* 4_zoologicosIcone.png in Resources */,
 				CDC7A255190EC4F7007B57F6 /* 9_outrosIcone.png in Resources */,
