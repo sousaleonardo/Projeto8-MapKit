@@ -324,31 +324,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="an9-ba-4tc">
-                                <rect key="frame" x="40" y="0.0" width="241" height="250"/>
+                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fundo.png" translatesAutoresizingMaskIntoConstraints="NO" id="WWr-J1-0Rv">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="an9-ba-4tc">
+                                <rect key="frame" x="30" y="20" width="251" height="247"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="250" id="khi-nR-3yZ"/>
-                                    <constraint firstAttribute="width" constant="241" id="wM3-xH-gzb"/>
+                                    <constraint firstAttribute="height" constant="247" id="khi-nR-3yZ"/>
+                                    <constraint firstAttribute="width" constant="251" id="wM3-xH-gzb"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uVY-dr-Ic2">
-                                <rect key="frame" x="40" y="307" width="241" height="250"/>
+                                <rect key="frame" x="30" y="283" width="251" height="265"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="241" id="2Hu-Z9-WTm"/>
-                                    <constraint firstAttribute="height" constant="250" id="xqV-Bt-QMj"/>
+                                    <constraint firstAttribute="width" constant="251" id="2Hu-Z9-WTm"/>
+                                    <constraint firstAttribute="height" constant="265" id="xqV-Bt-QMj"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="an9-ba-4tc" firstAttribute="leading" secondItem="Yhq-dz-lYl" secondAttribute="leading" constant="40" id="Hcu-1D-1DW"/>
-                            <constraint firstItem="Rnw-zs-8XW" firstAttribute="top" secondItem="uVY-dr-Ic2" secondAttribute="bottom" constant="11" id="Na5-ll-lYz"/>
+                            <constraint firstItem="an9-ba-4tc" firstAttribute="leading" secondItem="Yhq-dz-lYl" secondAttribute="leading" constant="30" id="Hcu-1D-1DW"/>
+                            <constraint firstItem="Rnw-zs-8XW" firstAttribute="top" secondItem="uVY-dr-Ic2" secondAttribute="bottom" constant="20" id="Na5-ll-lYz"/>
                             <constraint firstAttribute="trailing" secondItem="uVY-dr-Ic2" secondAttribute="trailing" constant="39" id="Ws3-YH-YjJ"/>
-                            <constraint firstItem="an9-ba-4tc" firstAttribute="top" secondItem="Yhq-dz-lYl" secondAttribute="top" id="fs5-lS-V98"/>
+                            <constraint firstItem="an9-ba-4tc" firstAttribute="top" secondItem="Yhq-dz-lYl" secondAttribute="top" constant="20" id="fs5-lS-V98"/>
                         </constraints>
                     </view>
                     <connections>
@@ -383,7 +385,7 @@
                                     <constraint firstAttribute="width" constant="251" id="6eB-kb-hDg"/>
                                     <constraint firstAttribute="height" constant="265" id="bQX-sm-tty"/>
                                 </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -770,7 +772,7 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EtN-Uz-6NI">
                                         <rect key="frame" x="119" y="12" width="122" height="117"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -861,6 +863,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="8QT-4W-CJ2"/>
-        <segue reference="Ius-Zw-PTH"/>
+        <segue reference="eh8-NS-3wX"/>
     </inferredMetricsTieBreakers>
 </document>

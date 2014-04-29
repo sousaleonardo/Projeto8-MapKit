@@ -19,6 +19,7 @@
     [super viewDidLoad];
     [FBProfilePictureView class];
 	self.loginView.readPermissions = @[@"basic_info", @"email"];
+    
 }
 
 - (void)didReceiveMemoryWarning

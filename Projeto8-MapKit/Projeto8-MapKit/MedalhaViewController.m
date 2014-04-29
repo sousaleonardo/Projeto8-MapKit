@@ -26,6 +26,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     //inicia sem medalhas e acrescenta ao rodar
     self->contMedalhas=0;
     self->medalhasAdicionadas=0;
