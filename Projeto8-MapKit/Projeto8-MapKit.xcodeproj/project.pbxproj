@@ -11,6 +11,7 @@
 		237F164C19048777004DC711 /* Categoria.m in Sources */ = {isa = PBXBuildFile; fileRef = 237F164B19048777004DC711 /* Categoria.m */; };
 		3C3A51E51904AA2A00ADFB46 /* RankingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3A51E41904AA2A00ADFB46 /* RankingViewController.m */; };
 		3CA491FD190455820054A01C /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA491FC190455820054A01C /* MenuViewController.m */; };
+		3CAB50CA190F624A00DCB4A1 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CAB50C9190F624A00DCB4A1 /* logo.png */; };
 		752CA451190ED350004397B8 /* 4_zoologicos.png in Resources */ = {isa = PBXBuildFile; fileRef = 752CA445190ED350004397B8 /* 4_zoologicos.png */; };
 		752CA452190ED350004397B8 /* 4_zoologicos@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 752CA446190ED350004397B8 /* 4_zoologicos@2x.png */; };
 		752CA453190ED350004397B8 /* 4_zoologicosIcone.png in Resources */ = {isa = PBXBuildFile; fileRef = 752CA447190ED350004397B8 /* 4_zoologicosIcone.png */; };
@@ -111,6 +112,7 @@
 		3C3A51E41904AA2A00ADFB46 /* RankingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankingViewController.m; sourceTree = "<group>"; };
 		3CA491FB190455820054A01C /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		3CA491FC190455820054A01C /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		3CAB50C9190F624A00DCB4A1 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		752CA445190ED350004397B8 /* 4_zoologicos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4_zoologicos.png; sourceTree = "<group>"; };
 		752CA446190ED350004397B8 /* 4_zoologicos@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4_zoologicos@2x.png"; sourceTree = "<group>"; };
 		752CA447190ED350004397B8 /* 4_zoologicosIcone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4_zoologicosIcone.png; sourceTree = "<group>"; };
@@ -246,6 +248,7 @@
 		752D30DC1908350200C5D81F /* Imagens */ = {
 			isa = PBXGroup;
 			children = (
+				3CAB50C9190F624A00DCB4A1 /* logo.png */,
 				CD97CA6F190EFD6A00CB55FA /* bussula.png */,
 				CD97CA70190EFD6A00CB55FA /* ponteiro.png */,
 				CDC7A26A190EC558007B57F6 /* 0_parques.png */,
@@ -540,6 +543,7 @@
 				752CA457190ED350004397B8 /* 6_centrosCulturais.png in Resources */,
 				CDC7A276190EC558007B57F6 /* 2_museus.png in Resources */,
 				752CA451190ED350004397B8 /* 4_zoologicos.png in Resources */,
+				3CAB50CA190F624A00DCB4A1 /* logo.png in Resources */,
 				CDC7A23A190EC4DC007B57F6 /* conquistas.png in Resources */,
 				CD97CA72190EFD6A00CB55FA /* ponteiro.png in Resources */,
 			);

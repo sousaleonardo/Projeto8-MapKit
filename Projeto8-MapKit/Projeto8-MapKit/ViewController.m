@@ -37,7 +37,9 @@
 }
 // Logged-in user experience
 - (void)loginViewShowingLoggedInUser:(FBLoginView *)loginView {
-    [self.statusLabel setText:@"You're logged in as"];
+    [self.statusLabel setText:@"Você está logado como:"];
+    [self.entrarMenu setEnabled:YES];
+    
     
     
 }
@@ -45,8 +47,8 @@
 - (void)loginViewShowingLoggedOutUser:(FBLoginView *)loginView {
     self.profilePictureView.profileID = nil;
     [self.nameLabel setText:@""];
-    
-    [self.statusLabel setText:@"You're not logged in!"];
+    [self.statusLabel setText:@"Você não está logado!"];
+    [self.entrarMenu setEnabled:NO];
     
     
 }
