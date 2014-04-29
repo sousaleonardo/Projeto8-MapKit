@@ -60,6 +60,7 @@
     
     //teste para ver se está pegando o nome
     self.desafio = [[[[[self.lugares objectForKey:@"Categoria"] objectAtIndex:self.categoria] objectForKey:@"Lugares"]objectAtIndex:self.atracao] objectForKey:@"Nome"];
+    
     NSLog(@"%@", self.desafio);
     
     //mostra informações do local

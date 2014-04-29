@@ -31,8 +31,8 @@
     self->contMedalhas=0;
     self->medalhasAdicionadas=0;
     
-    self->posXUsar=self.viewParte1.frame.origin.x +10;
-    self->posYUsar=self.viewParte1.frame.origin.y +20;
+    self->posXUsar=self.viewParte1.frame.origin.x +0;
+    self->posYUsar=self.viewParte1.frame.origin.y +0;
     
     //verifica se ja esta logado, para diminuir as requisiçoes ao site ;)
     if (![DadosUser userLogado]) {
@@ -83,7 +83,7 @@
     if (self->contMedalhas<10) {
         
         if (self->medalhasAdicionadas==4) {
-            self->posXUsar=self.viewParte1.frame.origin.x +10;
+            self->posXUsar=self.viewParte1.frame.origin.x;
             self->posYUsar= self->posYUsar + 74;
             self->medalhasAdicionadas=0;
         }
@@ -99,22 +99,20 @@
         
     }else{
         if (self->contMedalhas==10) {
-            self->posXUsar=10;
-            self->posYUsar=10;
+            self->posXUsar=0;
+            self->posYUsar=0;
             
             self->medalhasAdicionadas=0;
         }
         
         if (self->medalhasAdicionadas==4) {
-            self->posXUsar=self.viewParte2.frame.origin.x +10;
+            self->posXUsar=0;
             self->posYUsar= self->posYUsar + 74;
             
             self->medalhasAdicionadas=0;
         }
         
         Medalha *medalhaAdd =[[Medalha alloc]initMedalha:idMEdalaha :contGanharMedalha :CGRectMake(posXUsar, posYUsar, tamRect, tamRect)];
-        
-        [medalhaAdd setFrame:CGRectMake(posXUsar, posYUsar, tamRect, tamRect)];
         
         [self.viewParte2 addSubview:medalhaAdd];
         self->posXUsar = self->posXUsar + tamRect + 5;
@@ -126,6 +124,11 @@
     
     self->contMedalhas++;
     
-    
 }
+
+-(void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation{
+    NSLog(@"%f",self.view.frame.size.height);
+        NSLog(@"%f",self.view.frame.size.height);
+}
+
 @end

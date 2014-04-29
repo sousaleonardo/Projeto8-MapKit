@@ -23,7 +23,10 @@
     //Peço educadamente as permissoes
     [DadosUser permissaoFB];
     [DadosUser login:nil];
-    [DadosUser inicializaMedalhas];
+   
+    if ([DadosUser userLogado]) {
+        [DadosUser inicializaMedalhas];
+    }
     
     //coloca o nome e a imagem de perfil do usuario
     [FBRequestConnection startForMeWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
@@ -43,6 +46,7 @@
                           completionHandler:
      ^(FBRequestConnection *connection, id result, NSError *error) {
          NSLog(@"%@",[[[result objectForKey:@"data"] objectAtIndex:0] objectForKey:@"score"]);
+         
          if ([[[result objectForKey:@"data"] objectAtIndex:0] objectForKey:@"score"] == nil ) {
              [DadosUser criarPontos];
          }
