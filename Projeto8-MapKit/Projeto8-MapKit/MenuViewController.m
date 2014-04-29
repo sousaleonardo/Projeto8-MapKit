@@ -23,6 +23,7 @@
     //Peço educadamente as permissoes
     [DadosUser permissaoFB];
     [DadosUser login:nil];
+    [DadosUser inicializaMedalhas];
     
     //coloca o nome e a imagem de perfil do usuario
     [FBRequestConnection startForMeWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
