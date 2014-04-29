@@ -324,7 +324,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fundo.png" translatesAutoresizingMaskIntoConstraints="NO" id="WWr-J1-0Rv">
+                            <imageView userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fundo.png" translatesAutoresizingMaskIntoConstraints="NO" id="WWr-J1-0Rv">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -347,10 +347,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="WWr-J1-0Rv" secondAttribute="trailing" id="6HM-7q-taJ"/>
                             <constraint firstItem="an9-ba-4tc" firstAttribute="leading" secondItem="Yhq-dz-lYl" secondAttribute="leading" constant="30" id="Hcu-1D-1DW"/>
+                            <constraint firstItem="WWr-J1-0Rv" firstAttribute="top" secondItem="Yhq-dz-lYl" secondAttribute="top" id="Lc4-fM-YtT"/>
                             <constraint firstItem="Rnw-zs-8XW" firstAttribute="top" secondItem="uVY-dr-Ic2" secondAttribute="bottom" constant="20" id="Na5-ll-lYz"/>
                             <constraint firstAttribute="trailing" secondItem="uVY-dr-Ic2" secondAttribute="trailing" constant="39" id="Ws3-YH-YjJ"/>
                             <constraint firstItem="an9-ba-4tc" firstAttribute="top" secondItem="Yhq-dz-lYl" secondAttribute="top" constant="20" id="fs5-lS-V98"/>
+                            <constraint firstItem="Rnw-zs-8XW" firstAttribute="top" secondItem="WWr-J1-0Rv" secondAttribute="bottom" id="ga4-4T-auX"/>
+                            <constraint firstItem="WWr-J1-0Rv" firstAttribute="leading" secondItem="Yhq-dz-lYl" secondAttribute="leading" id="sOB-ta-e2o"/>
                         </constraints>
                     </view>
                     <connections>
@@ -385,7 +389,7 @@
                                     <constraint firstAttribute="width" constant="251" id="6eB-kb-hDg"/>
                                     <constraint firstAttribute="height" constant="265" id="bQX-sm-tty"/>
                                 </constraints>
-                                <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
