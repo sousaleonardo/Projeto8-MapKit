@@ -8,10 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import <Parse/Parse.h>
+#import "Medalha.h"
+#import <FacebookSDK/FacebookSDK.h>
 
 @protocol DadosUser <NSObject>
 @optional
 -(void)dadosDidLogin:(BOOL)logado;
+-(void)adicionarMedalha:(NSString*)idMEdalaha :(int)contGanharMedalha;
+-(void)salvarBonusMedalha:(NSString*)idMedalha;
+
 @end
 
 @interface DadosUser : NSObject
@@ -19,8 +24,20 @@
 +(void)login:(id<DadosUser>)delegate;
 
 +(void)salvarLugar:(NSString*)nomeAtracao :(NSNumber*)latitude :(NSNumber*)longitude;
++(void)salvarLugar:(NSString*)nomeAtracao;
+
 +(void)lugaresVisitados;
 +(void)salvarMedalha:(NSString*)nomeMedalha;
-+(void)medalhasSalvas;
++(void)medalhasSalvas:(id)delegate;
 
++(void)inicializaMedalhas;
++(BOOL)userLogado;
++(void)logout;
++(void)processarIaMedalha:(NSString*)nomeAtracao :(NSString*)categoria;
++(NSDate*)dataAtual;
++(BOOL)existeDesafio;
++(void)gravarDesafio:(NSString*)nomeDesafio;
++(void)adicionaPontosMedalhaFB:(int)pontoAdd;
++(void)permissaoFB;
++(void)criarPontos;
 @end

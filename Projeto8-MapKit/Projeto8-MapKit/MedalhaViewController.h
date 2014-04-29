@@ -8,7 +8,22 @@
 
 #import "ViewController.h"
 #import "DadosUser.h"
+#import "Medalha.h"
+
+#define MEDALHASLINHA 5;
 
 @interface MedalhaViewController : ViewController <DadosUser>
+
+
+{
+    int contMedalhas;
+    int medalhasAdicionadas;
+    float posXUsar;
+    float posYUsar;
+}
+
+@property NSMutableArray *medalhas;
+@property (weak, nonatomic) UIView *viewParte1;
+@property (weak, nonatomic) UIView *viewParte2;
 
 @end

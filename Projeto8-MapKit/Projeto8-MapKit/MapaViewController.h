@@ -8,11 +8,36 @@
 
 #import "ViewController.h"
 #import <MapKit/MapKit.h>
+<<<<<<< HEAD
 
 @interface MapaViewController : ViewController 
 {
     int categoriaSelecionada;
 }
 @property (strong, nonatomic) IBOutlet MKMapView *mapView;
+=======
+#import "InformacoesViewController.h"
+#import "Atracoes.h"
+#import "OverlayAtracoes.h"
+#import "Lugares.h"
+#import "DadosUser.h"
+
+@interface MapaViewController : ViewController <MKMapViewDelegate>
+{
+    NSInteger categoriaSelecionada;
+    Atracoes *atracaoSelecionada;
+    int pontosGanhos;
+}
+@property CLLocationCoordinate2D localizacaoAtual;
+@property (strong, nonatomic) IBOutlet MKMapView *mapView;
+@property MKMapItem *inicio;
+@property MKMapItem *destino;
+@property MKPolylineRenderer * renderer;
+@property NSThread *verifandoLugar;
+
+
+
+
+>>>>>>> Branch-do-Leo-vai-q-neh
 
 @end

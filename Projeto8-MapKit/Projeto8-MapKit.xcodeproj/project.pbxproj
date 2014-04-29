@@ -8,11 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		2300FADC190413C300F739B6 /* ViewControllerRoleta.m in Sources */ = {isa = PBXBuildFile; fileRef = 2300FADB190413C300F739B6 /* ViewControllerRoleta.m */; };
+<<<<<<< HEAD
 		2300FADE190416BC00F739B6 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2300FADD190416BC00F739B6 /* FacebookSDK.framework */; };
+=======
+		23016AFE190FE04C0087FB80 /* entrar.png in Resources */ = {isa = PBXBuildFile; fileRef = 23016AFD190FE04C0087FB80 /* entrar.png */; };
+>>>>>>> Branch-do-Leo-vai-q-neh
 		237F164C19048777004DC711 /* Categoria.m in Sources */ = {isa = PBXBuildFile; fileRef = 237F164B19048777004DC711 /* Categoria.m */; };
 		3C3A51E51904AA2A00ADFB46 /* RankingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3A51E41904AA2A00ADFB46 /* RankingViewController.m */; };
-		3C607F0E1905A79A00BE1458 /* MapaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C607F0D1905A79A00BE1458 /* MapaViewController.m */; };
 		3CA491FD190455820054A01C /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CA491FC190455820054A01C /* MenuViewController.m */; };
+		3CAB50CA190F624A00DCB4A1 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CAB50C9190F624A00DCB4A1 /* logo.png */; };
+		752CA451190ED350004397B8 /* 4_zoologicos.png in Resources */ = {isa = PBXBuildFile; fileRef = 752CA445190ED350004397B8 /* 4_zoologicos.png */; };
+		752CA452190ED350004397B8 /* 4_zoologicos@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 752CA446190ED350004397B8 /* 4_zoologicos@2x.png */; };
+		752CA453190ED350004397B8 /* 4_zoologicosIcone.png in Resources */ = {isa = PBXBuildFile; fileRef = 752CA447190ED350004397B8 /* 4_zoologicosIcone.png */; };
+		752CA454190ED350004397B8 /* 5_bibliotecas.png in Resources */ = {isa = PBXBuildFile; fileRef = 752CA448190ED350004397B8 /* 5_bibliotecas.png */; };
+		752CA455190ED350004397B8 /* 5_bibliotecas@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 752CA449190ED350004397B8 /* 5_bibliotecas@2x.png */; };
+		752CA456190ED350004397B8 /* 5_bibliotecasIcone.png in Resources */ = {isa = PBXBuildFile; fileRef = 752CA44A190ED350004397B8 /* 5_bibliotecasIcone.png */; };
+		752CA457190ED350004397B8 /* 6_centrosCulturais.png in Resources */ = {isa = PBXBuildFile; fileRef = 752CA44B190ED350004397B8 /* 6_centrosCulturais.png */; };
+		752CA458190ED350004397B8 /* 6_centrosCulturais@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 752CA44C190ED350004397B8 /* 6_centrosCulturais@2x.png */; };
+		752CA459190ED350004397B8 /* 6_centrosCulturaisIcone.png in Resources */ = {isa = PBXBuildFile; fileRef = 752CA44D190ED350004397B8 /* 6_centrosCulturaisIcone.png */; };
+		752CA45A190ED350004397B8 /* 8_igrejas.png in Resources */ = {isa = PBXBuildFile; fileRef = 752CA44E190ED350004397B8 /* 8_igrejas.png */; };
+		752CA45B190ED350004397B8 /* 8_igrejas@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 752CA44F190ED350004397B8 /* 8_igrejas@2x.png */; };
+		752CA45C190ED350004397B8 /* 8_igrejasIcone.png in Resources */ = {isa = PBXBuildFile; fileRef = 752CA450190ED350004397B8 /* 8_igrejasIcone.png */; };
+		752D30C91908343100C5D81F /* MapaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 752D30C31908343100C5D81F /* MapaViewController.m */; };
+		752D30CA1908343100C5D81F /* OverlayAtracoes.m in Sources */ = {isa = PBXBuildFile; fileRef = 752D30C51908343100C5D81F /* OverlayAtracoes.m */; };
+		752D30CB1908343100C5D81F /* Atracoes.m in Sources */ = {isa = PBXBuildFile; fileRef = 752D30C71908343100C5D81F /* Atracoes.m */; };
+		752FD3B81909853D00EF4EFD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 752FD3B71909853D00EF4EFD /* CoreLocation.framework */; };
+		75FEE667190851490023D9BB /* InformacoesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FEE666190851490023D9BB /* InformacoesViewController.m */; };
+		75FEE66A190852860023D9BB /* Lugares.m in Sources */ = {isa = PBXBuildFile; fileRef = 75FEE669190852860023D9BB /* Lugares.m */; };
 		941DC21918FF18060049799C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941DC21818FF18060049799C /* Foundation.framework */; };
 		941DC21B18FF18060049799C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941DC21A18FF18060049799C /* CoreGraphics.framework */; };
 		941DC21D18FF18060049799C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 941DC21C18FF18060049799C /* UIKit.framework */; };
@@ -30,7 +52,53 @@
 		941DC24718FF18060049799C /* Projeto8_MapKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 941DC24618FF18060049799C /* Projeto8_MapKitTests.m */; };
 		94281D9A1906EECF00A699F0 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94281D991906EECF00A699F0 /* FacebookSDK.framework */; };
 		94281D9E1906EF5B00A699F0 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94281D9D1906EF5B00A699F0 /* Parse.framework */; };
+<<<<<<< HEAD
 		C5AB4328190463020000855D /* DadosLocais.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5AB4327190463020000855D /* DadosLocais.plist */; };
+=======
+		94281DA21906F43B00A699F0 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94281DA11906F43B00A699F0 /* CFNetwork.framework */; };
+		94281DA41906F45F00A699F0 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94281DA31906F45F00A699F0 /* MobileCoreServices.framework */; };
+		94281DA61906F47D00A699F0 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 94281DA51906F47D00A699F0 /* libz.dylib */; };
+		94281DA81906F48B00A699F0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94281DA71906F48B00A699F0 /* Security.framework */; };
+		94281DAC1906F4A100A699F0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94281DAB1906F4A100A699F0 /* SystemConfiguration.framework */; };
+		94281DB51907013000A699F0 /* DadosUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 94281DB41907013000A699F0 /* DadosUser.m */; };
+		94281DBE1907065000A699F0 /* MedalhaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94281DBD1907065000A699F0 /* MedalhaViewController.m */; };
+		9430B40E190EF87800D6D3E2 /* InfoTracarRota.m in Sources */ = {isa = PBXBuildFile; fileRef = 9430B40D190EF87800D6D3E2 /* InfoTracarRota.m */; };
+		C5AA2DFC19093C5C003B55FB /* Medalha.m in Sources */ = {isa = PBXBuildFile; fileRef = C5AA2DFB19093C5C003B55FB /* Medalha.m */; };
+		C5AB4328190463020000855D /* DadosLocais.plist in Resources */ = {isa = PBXBuildFile; fileRef = C5AB4327190463020000855D /* DadosLocais.plist */; };
+		C5CFF1671907750900B93086 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5CFF1661907750900B93086 /* FacebookSDK.framework */; };
+		CD97CA6C190EFCE900CB55FA /* tituloDesafio.png in Resources */ = {isa = PBXBuildFile; fileRef = CD97CA69190EFCE900CB55FA /* tituloDesafio.png */; };
+		CD97CA6D190EFCE900CB55FA /* tituloMedalhas.png in Resources */ = {isa = PBXBuildFile; fileRef = CD97CA6A190EFCE900CB55FA /* tituloMedalhas.png */; };
+		CD97CA6E190EFCE900CB55FA /* tituloRanking.png in Resources */ = {isa = PBXBuildFile; fileRef = CD97CA6B190EFCE900CB55FA /* tituloRanking.png */; };
+		CD97CA71190EFD6A00CB55FA /* bussula.png in Resources */ = {isa = PBXBuildFile; fileRef = CD97CA6F190EFD6A00CB55FA /* bussula.png */; };
+		CD97CA72190EFD6A00CB55FA /* ponteiro.png in Resources */ = {isa = PBXBuildFile; fileRef = CD97CA70190EFD6A00CB55FA /* ponteiro.png */; };
+		CDAFC8A51909A3E200CDB343 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CDAFC88F1909A3E200CDB343 /* icon.png */; };
+		CDC7A23A190EC4DC007B57F6 /* conquistas.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A232190EC4DC007B57F6 /* conquistas.png */; };
+		CDC7A23B190EC4DC007B57F6 /* desafio.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A233190EC4DC007B57F6 /* desafio.png */; };
+		CDC7A23C190EC4DC007B57F6 /* fundo.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A234190EC4DC007B57F6 /* fundo.png */; };
+		CDC7A23D190EC4DC007B57F6 /* informacoes.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A235190EC4DC007B57F6 /* informacoes.png */; };
+		CDC7A23E190EC4DC007B57F6 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A236190EC4DC007B57F6 /* logo.png */; };
+		CDC7A23F190EC4DC007B57F6 /* mapa.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A237190EC4DC007B57F6 /* mapa.png */; };
+		CDC7A240190EC4DC007B57F6 /* medalhas.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A238190EC4DC007B57F6 /* medalhas.png */; };
+		CDC7A241190EC4DC007B57F6 /* rotas.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A239190EC4DC007B57F6 /* rotas.png */; };
+		CDC7A24C190EC4F7007B57F6 /* 0_parquesIcone.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A242190EC4F7007B57F6 /* 0_parquesIcone.png */; };
+		CDC7A24D190EC4F7007B57F6 /* 1_pracasIcone.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A243190EC4F7007B57F6 /* 1_pracasIcone.png */; };
+		CDC7A24E190EC4F7007B57F6 /* 2_museusIcone.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A244190EC4F7007B57F6 /* 2_museusIcone.png */; };
+		CDC7A24F190EC4F7007B57F6 /* 3_teatrosIcone.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A245190EC4F7007B57F6 /* 3_teatrosIcone.png */; };
+		CDC7A253190EC4F7007B57F6 /* 7_edificiosHistoricosIcone.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A249190EC4F7007B57F6 /* 7_edificiosHistoricosIcone.png */; };
+		CDC7A255190EC4F7007B57F6 /* 9_outrosIcone.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A24B190EC4F7007B57F6 /* 9_outrosIcone.png */; };
+		CDC7A260190EC502007B57F6 /* 0_parques@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A256190EC502007B57F6 /* 0_parques@2x.png */; };
+		CDC7A261190EC502007B57F6 /* 1_pracas@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A257190EC502007B57F6 /* 1_pracas@2x.png */; };
+		CDC7A262190EC502007B57F6 /* 2_museus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A258190EC502007B57F6 /* 2_museus@2x.png */; };
+		CDC7A263190EC502007B57F6 /* 3_teatros@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A259190EC502007B57F6 /* 3_teatros@2x.png */; };
+		CDC7A267190EC502007B57F6 /* 7_edificiosHistoricos@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A25D190EC502007B57F6 /* 7_edificiosHistoricos@2x.png */; };
+		CDC7A269190EC502007B57F6 /* 9_outros@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A25F190EC502007B57F6 /* 9_outros@2x.png */; };
+		CDC7A274190EC558007B57F6 /* 0_parques.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A26A190EC558007B57F6 /* 0_parques.png */; };
+		CDC7A275190EC558007B57F6 /* 1_pracas.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A26B190EC558007B57F6 /* 1_pracas.png */; };
+		CDC7A276190EC558007B57F6 /* 2_museus.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A26C190EC558007B57F6 /* 2_museus.png */; };
+		CDC7A277190EC558007B57F6 /* 3_teatros.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A26D190EC558007B57F6 /* 3_teatros.png */; };
+		CDC7A27D190EC558007B57F6 /* 9_outros.png in Resources */ = {isa = PBXBuildFile; fileRef = CDC7A273190EC558007B57F6 /* 9_outros.png */; };
+		CDCABFC5190EE84B0047A32A /* RoletaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDCABFC4190EE84B0047A32A /* RoletaViewController.m */; };
+>>>>>>> Branch-do-Leo-vai-q-neh
 		CDFB5E471900678500B1246D /* ControleRoleta.m in Sources */ = {isa = PBXBuildFile; fileRef = CDFB5E461900678500B1246D /* ControleRoleta.m */; };
 		CDFB5E491900722C00B1246D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDFB5E481900722C00B1246D /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
@@ -48,15 +116,41 @@
 /* Begin PBXFileReference section */
 		2300FADA190413C300F739B6 /* ViewControllerRoleta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerRoleta.h; sourceTree = "<group>"; };
 		2300FADB190413C300F739B6 /* ViewControllerRoleta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerRoleta.m; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		2300FADD190416BC00F739B6 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+=======
+		23016AFD190FE04C0087FB80 /* entrar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = entrar.png; sourceTree = "<group>"; };
+>>>>>>> Branch-do-Leo-vai-q-neh
 		237F164A19048777004DC711 /* Categoria.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Categoria.h; sourceTree = "<group>"; };
 		237F164B19048777004DC711 /* Categoria.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Categoria.m; sourceTree = "<group>"; };
 		3C3A51E31904AA2A00ADFB46 /* RankingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RankingViewController.h; sourceTree = "<group>"; };
 		3C3A51E41904AA2A00ADFB46 /* RankingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RankingViewController.m; sourceTree = "<group>"; };
-		3C607F0C1905A79A00BE1458 /* MapaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapaViewController.h; sourceTree = "<group>"; };
-		3C607F0D1905A79A00BE1458 /* MapaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapaViewController.m; sourceTree = "<group>"; };
 		3CA491FB190455820054A01C /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
 		3CA491FC190455820054A01C /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		3CAB50C9190F624A00DCB4A1 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		752CA445190ED350004397B8 /* 4_zoologicos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4_zoologicos.png; sourceTree = "<group>"; };
+		752CA446190ED350004397B8 /* 4_zoologicos@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "4_zoologicos@2x.png"; sourceTree = "<group>"; };
+		752CA447190ED350004397B8 /* 4_zoologicosIcone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 4_zoologicosIcone.png; sourceTree = "<group>"; };
+		752CA448190ED350004397B8 /* 5_bibliotecas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5_bibliotecas.png; sourceTree = "<group>"; };
+		752CA449190ED350004397B8 /* 5_bibliotecas@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "5_bibliotecas@2x.png"; sourceTree = "<group>"; };
+		752CA44A190ED350004397B8 /* 5_bibliotecasIcone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 5_bibliotecasIcone.png; sourceTree = "<group>"; };
+		752CA44B190ED350004397B8 /* 6_centrosCulturais.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6_centrosCulturais.png; sourceTree = "<group>"; };
+		752CA44C190ED350004397B8 /* 6_centrosCulturais@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "6_centrosCulturais@2x.png"; sourceTree = "<group>"; };
+		752CA44D190ED350004397B8 /* 6_centrosCulturaisIcone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6_centrosCulturaisIcone.png; sourceTree = "<group>"; };
+		752CA44E190ED350004397B8 /* 8_igrejas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8_igrejas.png; sourceTree = "<group>"; };
+		752CA44F190ED350004397B8 /* 8_igrejas@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "8_igrejas@2x.png"; sourceTree = "<group>"; };
+		752CA450190ED350004397B8 /* 8_igrejasIcone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 8_igrejasIcone.png; sourceTree = "<group>"; };
+		752D30C31908343100C5D81F /* MapaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapaViewController.m; sourceTree = "<group>"; };
+		752D30C41908343100C5D81F /* OverlayAtracoes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayAtracoes.h; sourceTree = "<group>"; };
+		752D30C51908343100C5D81F /* OverlayAtracoes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayAtracoes.m; sourceTree = "<group>"; };
+		752D30C61908343100C5D81F /* Atracoes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Atracoes.h; sourceTree = "<group>"; };
+		752D30C71908343100C5D81F /* Atracoes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Atracoes.m; sourceTree = "<group>"; };
+		752D30C81908343100C5D81F /* MapaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapaViewController.h; sourceTree = "<group>"; };
+		752FD3B71909853D00EF4EFD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		75FEE665190851490023D9BB /* InformacoesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InformacoesViewController.h; sourceTree = "<group>"; };
+		75FEE666190851490023D9BB /* InformacoesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InformacoesViewController.m; sourceTree = "<group>"; };
+		75FEE668190852860023D9BB /* Lugares.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lugares.h; sourceTree = "<group>"; };
+		75FEE669190852860023D9BB /* Lugares.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lugares.m; sourceTree = "<group>"; };
 		941DC21518FF18060049799C /* Turistando.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Turistando.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		941DC21818FF18060049799C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		941DC21A18FF18060049799C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -79,7 +173,59 @@
 		941DC24618FF18060049799C /* Projeto8_MapKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Projeto8_MapKitTests.m; sourceTree = "<group>"; };
 		94281D991906EECF00A699F0 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		94281D9D1906EF5B00A699F0 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		C5AB4327190463020000855D /* DadosLocais.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DadosLocais.plist; sourceTree = "<group>"; };
+=======
+		94281D9F1906F2AF00A699F0 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		94281DA11906F43B00A699F0 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		94281DA31906F45F00A699F0 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		94281DA51906F47D00A699F0 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		94281DA71906F48B00A699F0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		94281DAB1906F4A100A699F0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		94281DB31907013000A699F0 /* DadosUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DadosUser.h; sourceTree = "<group>"; };
+		94281DB41907013000A699F0 /* DadosUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DadosUser.m; sourceTree = "<group>"; };
+		94281DBC1907065000A699F0 /* MedalhaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MedalhaViewController.h; sourceTree = "<group>"; };
+		94281DBD1907065000A699F0 /* MedalhaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MedalhaViewController.m; sourceTree = "<group>"; };
+		9430B40C190EF87800D6D3E2 /* InfoTracarRota.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoTracarRota.h; sourceTree = "<group>"; };
+		9430B40D190EF87800D6D3E2 /* InfoTracarRota.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoTracarRota.m; sourceTree = "<group>"; };
+		C5AA2DFA19093C5C003B55FB /* Medalha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Medalha.h; sourceTree = "<group>"; };
+		C5AA2DFB19093C5C003B55FB /* Medalha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Medalha.m; sourceTree = "<group>"; };
+		C5AB4327190463020000855D /* DadosLocais.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = DadosLocais.plist; path = ../DadosLocais.plist; sourceTree = "<group>"; };
+		C5CFF1661907750900B93086 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		CD97CA69190EFCE900CB55FA /* tituloDesafio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tituloDesafio.png; sourceTree = "<group>"; };
+		CD97CA6A190EFCE900CB55FA /* tituloMedalhas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tituloMedalhas.png; sourceTree = "<group>"; };
+		CD97CA6B190EFCE900CB55FA /* tituloRanking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tituloRanking.png; sourceTree = "<group>"; };
+		CD97CA6F190EFD6A00CB55FA /* bussula.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bussula.png; sourceTree = "<group>"; };
+		CD97CA70190EFD6A00CB55FA /* ponteiro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ponteiro.png; sourceTree = "<group>"; };
+		CDAFC88F1909A3E200CDB343 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		CDC7A232190EC4DC007B57F6 /* conquistas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = conquistas.png; sourceTree = "<group>"; };
+		CDC7A233190EC4DC007B57F6 /* desafio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = desafio.png; sourceTree = "<group>"; };
+		CDC7A234190EC4DC007B57F6 /* fundo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fundo.png; sourceTree = "<group>"; };
+		CDC7A235190EC4DC007B57F6 /* informacoes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = informacoes.png; sourceTree = "<group>"; };
+		CDC7A236190EC4DC007B57F6 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		CDC7A237190EC4DC007B57F6 /* mapa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapa.png; sourceTree = "<group>"; };
+		CDC7A238190EC4DC007B57F6 /* medalhas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = medalhas.png; sourceTree = "<group>"; };
+		CDC7A239190EC4DC007B57F6 /* rotas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rotas.png; sourceTree = "<group>"; };
+		CDC7A242190EC4F7007B57F6 /* 0_parquesIcone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0_parquesIcone.png; sourceTree = "<group>"; };
+		CDC7A243190EC4F7007B57F6 /* 1_pracasIcone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1_pracasIcone.png; sourceTree = "<group>"; };
+		CDC7A244190EC4F7007B57F6 /* 2_museusIcone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2_museusIcone.png; sourceTree = "<group>"; };
+		CDC7A245190EC4F7007B57F6 /* 3_teatrosIcone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3_teatrosIcone.png; sourceTree = "<group>"; };
+		CDC7A249190EC4F7007B57F6 /* 7_edificiosHistoricosIcone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 7_edificiosHistoricosIcone.png; sourceTree = "<group>"; };
+		CDC7A24B190EC4F7007B57F6 /* 9_outrosIcone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9_outrosIcone.png; sourceTree = "<group>"; };
+		CDC7A256190EC502007B57F6 /* 0_parques@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "0_parques@2x.png"; sourceTree = "<group>"; };
+		CDC7A257190EC502007B57F6 /* 1_pracas@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1_pracas@2x.png"; sourceTree = "<group>"; };
+		CDC7A258190EC502007B57F6 /* 2_museus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2_museus@2x.png"; sourceTree = "<group>"; };
+		CDC7A259190EC502007B57F6 /* 3_teatros@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "3_teatros@2x.png"; sourceTree = "<group>"; };
+		CDC7A25D190EC502007B57F6 /* 7_edificiosHistoricos@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "7_edificiosHistoricos@2x.png"; sourceTree = "<group>"; };
+		CDC7A25F190EC502007B57F6 /* 9_outros@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "9_outros@2x.png"; sourceTree = "<group>"; };
+		CDC7A26A190EC558007B57F6 /* 0_parques.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 0_parques.png; sourceTree = "<group>"; };
+		CDC7A26B190EC558007B57F6 /* 1_pracas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1_pracas.png; sourceTree = "<group>"; };
+		CDC7A26C190EC558007B57F6 /* 2_museus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2_museus.png; sourceTree = "<group>"; };
+		CDC7A26D190EC558007B57F6 /* 3_teatros.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3_teatros.png; sourceTree = "<group>"; };
+		CDC7A273190EC558007B57F6 /* 9_outros.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9_outros.png; sourceTree = "<group>"; };
+		CDCABFC3190EE84B0047A32A /* RoletaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoletaViewController.h; sourceTree = "<group>"; };
+		CDCABFC4190EE84B0047A32A /* RoletaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoletaViewController.m; sourceTree = "<group>"; };
+>>>>>>> Branch-do-Leo-vai-q-neh
 		CDFB5E43190066B700B1246D /* RoletaProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RoletaProtocol.h; path = ../RoletaProtocol.h; sourceTree = "<group>"; };
 		CDFB5E451900678500B1246D /* ControleRoleta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControleRoleta.h; sourceTree = "<group>"; };
 		CDFB5E461900678500B1246D /* ControleRoleta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControleRoleta.m; sourceTree = "<group>"; };
@@ -91,14 +237,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				752CF93F19070AA5002288E4 /* MapKit.framework in Frameworks */,
+=======
+				752FD3B81909853D00EF4EFD /* CoreLocation.framework in Frameworks */,
+				94281DAC1906F4A100A699F0 /* SystemConfiguration.framework in Frameworks */,
+				94281DA81906F48B00A699F0 /* Security.framework in Frameworks */,
+				94281DA61906F47D00A699F0 /* libz.dylib in Frameworks */,
+				94281DA41906F45F00A699F0 /* MobileCoreServices.framework in Frameworks */,
+				94281DA21906F43B00A699F0 /* CFNetwork.framework in Frameworks */,
+>>>>>>> Branch-do-Leo-vai-q-neh
 				CDFB5E491900722C00B1246D /* QuartzCore.framework in Frameworks */,
 				2300FADE190416BC00F739B6 /* FacebookSDK.framework in Frameworks */,
 				941DC21B18FF18060049799C /* CoreGraphics.framework in Frameworks */,
 				941DC21D18FF18060049799C /* UIKit.framework in Frameworks */,
 				941DC21918FF18060049799C /* Foundation.framework in Frameworks */,
 				94281D9E1906EF5B00A699F0 /* Parse.framework in Frameworks */,
+<<<<<<< HEAD
 				94281D9A1906EECF00A699F0 /* FacebookSDK.framework in Frameworks */,
+=======
+>>>>>>> Branch-do-Leo-vai-q-neh
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,10 +273,60 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		752D30DC1908350200C5D81F /* Imagens */ = {
+			isa = PBXGroup;
+			children = (
+				23016AFD190FE04C0087FB80 /* entrar.png */,
+				3CAB50C9190F624A00DCB4A1 /* logo.png */,
+				CD97CA6F190EFD6A00CB55FA /* bussula.png */,
+				CD97CA70190EFD6A00CB55FA /* ponteiro.png */,
+				CDC7A26A190EC558007B57F6 /* 0_parques.png */,
+				CDC7A256190EC502007B57F6 /* 0_parques@2x.png */,
+				CDC7A242190EC4F7007B57F6 /* 0_parquesIcone.png */,
+				CDC7A26B190EC558007B57F6 /* 1_pracas.png */,
+				CDC7A257190EC502007B57F6 /* 1_pracas@2x.png */,
+				CDC7A243190EC4F7007B57F6 /* 1_pracasIcone.png */,
+				CDC7A26C190EC558007B57F6 /* 2_museus.png */,
+				CDC7A258190EC502007B57F6 /* 2_museus@2x.png */,
+				CDC7A244190EC4F7007B57F6 /* 2_museusIcone.png */,
+				CDC7A26D190EC558007B57F6 /* 3_teatros.png */,
+				CDC7A259190EC502007B57F6 /* 3_teatros@2x.png */,
+				CDC7A245190EC4F7007B57F6 /* 3_teatrosIcone.png */,
+				752CA445190ED350004397B8 /* 4_zoologicos.png */,
+				752CA446190ED350004397B8 /* 4_zoologicos@2x.png */,
+				752CA447190ED350004397B8 /* 4_zoologicosIcone.png */,
+				752CA448190ED350004397B8 /* 5_bibliotecas.png */,
+				752CA449190ED350004397B8 /* 5_bibliotecas@2x.png */,
+				752CA44A190ED350004397B8 /* 5_bibliotecasIcone.png */,
+				752CA44B190ED350004397B8 /* 6_centrosCulturais.png */,
+				752CA44C190ED350004397B8 /* 6_centrosCulturais@2x.png */,
+				752CA44D190ED350004397B8 /* 6_centrosCulturaisIcone.png */,
+				CDC7A25D190EC502007B57F6 /* 7_edificiosHistoricos@2x.png */,
+				CDC7A249190EC4F7007B57F6 /* 7_edificiosHistoricosIcone.png */,
+				752CA44E190ED350004397B8 /* 8_igrejas.png */,
+				752CA44F190ED350004397B8 /* 8_igrejas@2x.png */,
+				752CA450190ED350004397B8 /* 8_igrejasIcone.png */,
+				CDC7A273190EC558007B57F6 /* 9_outros.png */,
+				CDC7A25F190EC502007B57F6 /* 9_outros@2x.png */,
+				CDC7A24B190EC4F7007B57F6 /* 9_outrosIcone.png */,
+				CDC7A232190EC4DC007B57F6 /* conquistas.png */,
+				CDC7A233190EC4DC007B57F6 /* desafio.png */,
+				CDC7A234190EC4DC007B57F6 /* fundo.png */,
+				CDC7A235190EC4DC007B57F6 /* informacoes.png */,
+				CDC7A236190EC4DC007B57F6 /* logo.png */,
+				CDC7A237190EC4DC007B57F6 /* mapa.png */,
+				CDC7A238190EC4DC007B57F6 /* medalhas.png */,
+				CDC7A239190EC4DC007B57F6 /* rotas.png */,
+				CD97CA69190EFCE900CB55FA /* tituloDesafio.png */,
+				CD97CA6A190EFCE900CB55FA /* tituloMedalhas.png */,
+				CD97CA6B190EFCE900CB55FA /* tituloRanking.png */,
+			);
+			name = Imagens;
+			sourceTree = "<group>";
+		};
 		941DC20C18FF18060049799C = {
 			isa = PBXGroup;
 			children = (
-				C5AB4327190463020000855D /* DadosLocais.plist */,
 				941DC21E18FF18060049799C /* Projeto8-MapKit */,
 				941DC24018FF18060049799C /* Projeto8-MapKitTests */,
 				941DC21718FF18060049799C /* Frameworks */,
@@ -138,6 +346,17 @@
 		941DC21718FF18060049799C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
+=======
+				752FD3B71909853D00EF4EFD /* CoreLocation.framework */,
+				C5CFF1661907750900B93086 /* FacebookSDK.framework */,
+				94281DAB1906F4A100A699F0 /* SystemConfiguration.framework */,
+				94281DA71906F48B00A699F0 /* Security.framework */,
+				94281DA51906F47D00A699F0 /* libz.dylib */,
+				94281DA31906F45F00A699F0 /* MobileCoreServices.framework */,
+				94281DA11906F43B00A699F0 /* CFNetwork.framework */,
+				94281D9F1906F2AF00A699F0 /* FacebookSDK.framework */,
+>>>>>>> Branch-do-Leo-vai-q-neh
 				94281D9D1906EF5B00A699F0 /* Parse.framework */,
 				94281D991906EECF00A699F0 /* FacebookSDK.framework */,
 				2300FADD190416BC00F739B6 /* FacebookSDK.framework */,
@@ -155,14 +374,36 @@
 			children = (
 				941DC22718FF18060049799C /* AppDelegate.h */,
 				941DC22818FF18060049799C /* AppDelegate.m */,
-				941DC22A18FF18060049799C /* Main_iPhone.storyboard */,
+				752D30C61908343100C5D81F /* Atracoes.h */,
+				752D30C71908343100C5D81F /* Atracoes.m */,
+				94281DB31907013000A699F0 /* DadosUser.h */,
+				94281DB41907013000A699F0 /* DadosUser.m */,
+				752D30DC1908350200C5D81F /* Imagens */,
+				75FEE665190851490023D9BB /* InformacoesViewController.h */,
+				75FEE666190851490023D9BB /* InformacoesViewController.m */,
+				9430B40C190EF87800D6D3E2 /* InfoTracarRota.h */,
+				9430B40D190EF87800D6D3E2 /* InfoTracarRota.m */,
+				75FEE668190852860023D9BB /* Lugares.h */,
+				75FEE669190852860023D9BB /* Lugares.m */,
 				941DC22D18FF18060049799C /* Main_iPad.storyboard */,
-				941DC23018FF18060049799C /* ViewController.h */,
-				941DC23118FF18060049799C /* ViewController.m */,
+				941DC22A18FF18060049799C /* Main_iPhone.storyboard */,
+				752D30C81908343100C5D81F /* MapaViewController.h */,
+				752D30C31908343100C5D81F /* MapaViewController.m */,
+				C5AA2DFA19093C5C003B55FB /* Medalha.h */,
+				C5AA2DFB19093C5C003B55FB /* Medalha.m */,
+				94281DBC1907065000A699F0 /* MedalhaViewController.h */,
+				94281DBD1907065000A699F0 /* MedalhaViewController.m */,
+				3CA491FB190455820054A01C /* MenuViewController.h */,
+				3CA491FC190455820054A01C /* MenuViewController.m */,
+				752D30C41908343100C5D81F /* OverlayAtracoes.h */,
+				752D30C51908343100C5D81F /* OverlayAtracoes.m */,
 				3C3A51E31904AA2A00ADFB46 /* RankingViewController.h */,
 				3C3A51E41904AA2A00ADFB46 /* RankingViewController.m */,
 				CDFB5E44190066BC00B1246D /* Roleta Desafio */,
+				CDCABFC3190EE84B0047A32A /* RoletaViewController.h */,
+				CDCABFC4190EE84B0047A32A /* RoletaViewController.m */,
 				941DC21F18FF18060049799C /* Supporting Files */,
+<<<<<<< HEAD
 				3CA491FB190455820054A01C /* MenuViewController.h */,
 				3CA491FC190455820054A01C /* MenuViewController.m */,
 				3C607F0C1905A79A00BE1458 /* MapaViewController.h */,
@@ -171,6 +412,10 @@
 				752CF9391906F3A5002288E4 /* OverlayAtracoes.h */,
 				752CF93A1906F3A5002288E4 /* OverlayAtracoes.m */,
 				752CF9371906F1F6002288E4 /* Atracoes.m */,
+=======
+				941DC23018FF18060049799C /* ViewController.h */,
+				941DC23118FF18060049799C /* ViewController.m */,
+>>>>>>> Branch-do-Leo-vai-q-neh
 			);
 			path = "Projeto8-MapKit";
 			sourceTree = "<group>";
@@ -178,6 +423,8 @@
 		941DC21F18FF18060049799C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CDAFC88F1909A3E200CDB343 /* icon.png */,
+				C5AB4327190463020000855D /* DadosLocais.plist */,
 				941DC22018FF18060049799C /* Projeto8-MapKit-Info.plist */,
 				941DC22118FF18060049799C /* InfoPlist.strings */,
 				941DC22418FF18060049799C /* main.m */,
@@ -296,10 +543,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				941DC22F18FF18060049799C /* Main_iPad.storyboard in Resources */,
+				CDC7A24E190EC4F7007B57F6 /* 2_museusIcone.png in Resources */,
+				752CA455190ED350004397B8 /* 5_bibliotecas@2x.png in Resources */,
+				CDC7A240190EC4DC007B57F6 /* medalhas.png in Resources */,
+				CD97CA6C190EFCE900CB55FA /* tituloDesafio.png in Resources */,
+				23016AFE190FE04C0087FB80 /* entrar.png in Resources */,
+				752CA45A190ED350004397B8 /* 8_igrejas.png in Resources */,
+				752CA453190ED350004397B8 /* 4_zoologicosIcone.png in Resources */,
+				CDC7A255190EC4F7007B57F6 /* 9_outrosIcone.png in Resources */,
+				CDC7A23C190EC4DC007B57F6 /* fundo.png in Resources */,
+				CDC7A23F190EC4DC007B57F6 /* mapa.png in Resources */,
+				752CA452190ED350004397B8 /* 4_zoologicos@2x.png in Resources */,
+				CDC7A267190EC502007B57F6 /* 7_edificiosHistoricos@2x.png in Resources */,
+				CDC7A262190EC502007B57F6 /* 2_museus@2x.png in Resources */,
+				CDC7A24D190EC4F7007B57F6 /* 1_pracasIcone.png in Resources */,
+				CD97CA71190EFD6A00CB55FA /* bussula.png in Resources */,
+				CDC7A27D190EC558007B57F6 /* 9_outros.png in Resources */,
+				CD97CA6D190EFCE900CB55FA /* tituloMedalhas.png in Resources */,
 				941DC23418FF18060049799C /* Images.xcassets in Resources */,
+				752CA454190ED350004397B8 /* 5_bibliotecas.png in Resources */,
+				CDC7A24C190EC4F7007B57F6 /* 0_parquesIcone.png in Resources */,
+				752CA456190ED350004397B8 /* 5_bibliotecasIcone.png in Resources */,
+				CDC7A253190EC4F7007B57F6 /* 7_edificiosHistoricosIcone.png in Resources */,
+				752CA458190ED350004397B8 /* 6_centrosCulturais@2x.png in Resources */,
+				CDC7A269190EC502007B57F6 /* 9_outros@2x.png in Resources */,
 				941DC22C18FF18060049799C /* Main_iPhone.storyboard in Resources */,
+				CDC7A23B190EC4DC007B57F6 /* desafio.png in Resources */,
+				CDC7A23E190EC4DC007B57F6 /* logo.png in Resources */,
+				CDC7A275190EC558007B57F6 /* 1_pracas.png in Resources */,
+				CDC7A260190EC502007B57F6 /* 0_parques@2x.png in Resources */,
 				941DC22318FF18060049799C /* InfoPlist.strings in Resources */,
+				CDC7A23D190EC4DC007B57F6 /* informacoes.png in Resources */,
+				752CA459190ED350004397B8 /* 6_centrosCulturaisIcone.png in Resources */,
+				CDC7A24F190EC4F7007B57F6 /* 3_teatrosIcone.png in Resources */,
+				CDC7A274190EC558007B57F6 /* 0_parques.png in Resources */,
+				CDC7A263190EC502007B57F6 /* 3_teatros@2x.png in Resources */,
+				CDC7A277190EC558007B57F6 /* 3_teatros.png in Resources */,
+				CD97CA6E190EFCE900CB55FA /* tituloRanking.png in Resources */,
+				CDAFC8A51909A3E200CDB343 /* icon.png in Resources */,
 				C5AB4328190463020000855D /* DadosLocais.plist in Resources */,
+				CDC7A261190EC502007B57F6 /* 1_pracas@2x.png in Resources */,
+				CDC7A241190EC4DC007B57F6 /* rotas.png in Resources */,
+				752CA45B190ED350004397B8 /* 8_igrejas@2x.png in Resources */,
+				752CA45C190ED350004397B8 /* 8_igrejasIcone.png in Resources */,
+				752CA457190ED350004397B8 /* 6_centrosCulturais.png in Resources */,
+				CDC7A276190EC558007B57F6 /* 2_museus.png in Resources */,
+				752CA451190ED350004397B8 /* 4_zoologicos.png in Resources */,
+				3CAB50CA190F624A00DCB4A1 /* logo.png in Resources */,
+				CDC7A23A190EC4DC007B57F6 /* conquistas.png in Resources */,
+				CD97CA72190EFD6A00CB55FA /* ponteiro.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,16 +610,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5AA2DFC19093C5C003B55FB /* Medalha.m in Sources */,
 				CDFB5E471900678500B1246D /* ControleRoleta.m in Sources */,
+<<<<<<< HEAD
 				752CF93B1906F3A5002288E4 /* OverlayAtracoes.m in Sources */,
 				752CF9381906F1F6002288E4 /* Atracoes.m in Sources */,
+=======
+				94281DBE1907065000A699F0 /* MedalhaViewController.m in Sources */,
+				752D30C91908343100C5D81F /* MapaViewController.m in Sources */,
+>>>>>>> Branch-do-Leo-vai-q-neh
 				3CA491FD190455820054A01C /* MenuViewController.m in Sources */,
-				3C607F0E1905A79A00BE1458 /* MapaViewController.m in Sources */,
+				752D30CA1908343100C5D81F /* OverlayAtracoes.m in Sources */,
+				75FEE66A190852860023D9BB /* Lugares.m in Sources */,
 				941DC23218FF18060049799C /* ViewController.m in Sources */,
+				752D30CB1908343100C5D81F /* Atracoes.m in Sources */,
+				75FEE667190851490023D9BB /* InformacoesViewController.m in Sources */,
 				3C3A51E51904AA2A00ADFB46 /* RankingViewController.m in Sources */,
+				CDCABFC5190EE84B0047A32A /* RoletaViewController.m in Sources */,
 				941DC22918FF18060049799C /* AppDelegate.m in Sources */,
 				2300FADC190413C300F739B6 /* ViewControllerRoleta.m in Sources */,
 				237F164C19048777004DC711 /* Categoria.m in Sources */,
+<<<<<<< HEAD
+=======
+				94281DB51907013000A699F0 /* DadosUser.m in Sources */,
+				9430B40E190EF87800D6D3E2 /* InfoTracarRota.m in Sources */,
+>>>>>>> Branch-do-Leo-vai-q-neh
 				941DC22518FF18060049799C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,7 +809,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Projeto8-MapKit.app/Projeto8-MapKit";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Turistando.app/Turistando";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -525,7 +832,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Projeto8-MapKit.app/Projeto8-MapKit";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Turistando.app/Turistando";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

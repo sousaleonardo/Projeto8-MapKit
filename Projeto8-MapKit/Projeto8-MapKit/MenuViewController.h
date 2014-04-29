@@ -7,10 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "DadosUser.h"
 
-@interface MenuViewController : ViewController
+@interface MenuViewController : ViewController  
 @property (strong, nonatomic) IBOutlet FBProfilePictureView *imagemPerfil;
-@property (strong, nonatomic) IBOutlet UILabel *nome;
-@property (strong, nonatomic) IBOutlet UILabel *pontosUsuario;
+@property (strong, nonatomic) IBOutlet UITextView *nome;
+@property (strong, nonatomic) IBOutlet UITextView *pontosUsuario;
 
 @end
