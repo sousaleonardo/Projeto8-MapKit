@@ -42,7 +42,7 @@
     //alterar caso queira imagens diferentes p cada medalha
     //self.imagem=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"icon"]];
     
-    UIImage *imagemAdd = [self redimencionarImagem:[UIImage imageNamed:@"conquistas"] escalaSize:CGSizeMake(self.frame.size.width, self.frame.size.height)];
+    UIImage *imagemAdd = [self redimencionarImagem:[UIImage imageNamed:@"medalhas"] escalaSize:CGSizeMake(self.frame.size.width, self.frame.size.height)];
     
     
     self.imagem=[[UIImageView alloc]initWithImage:imagemAdd];
