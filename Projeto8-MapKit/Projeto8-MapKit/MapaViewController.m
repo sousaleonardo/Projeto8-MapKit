@@ -19,7 +19,7 @@
     CFTimeInterval startTime = CACurrentMediaTime();
     CFTimeInterval elapsedTime;
 
-    while ([self.mapView.userLocation.location distanceFromLocation:self.destino.placemark.location] < 7000) {
+    while ([self.mapView.userLocation.location distanceFromLocation:self.destino.placemark.location] < 1000) {
         
         elapsedTime = CACurrentMediaTime() - startTime;
         if (elapsedTime >10) {
@@ -144,7 +144,7 @@
      }];
 
 
-    if (self.destino != nil && [self.mapView.userLocation.location distanceFromLocation:self.destino.placemark.location] < 7000) {
+    if (self.destino != nil && [self.mapView.userLocation.location distanceFromLocation:self.destino.placemark.location] < 1000) {
         self.verifandoLugar = [[NSThread alloc]initWithTarget:self selector:@selector(verifandoSeIraGanharPontos) object:nil];
         [self.verifandoLugar start];
         
@@ -190,7 +190,7 @@
     self.mapView.region = MKCoordinateRegionMake(userLocation.location.coordinate, MKCoordinateSpanMake(0.1, 0.1));
     
     self.localizacaoAtual = userLocation.location.coordinate;
-    if (self.destino != nil && [self.mapView.userLocation.location distanceFromLocation:self.destino.placemark.location] < 7000) {
+    if (self.destino != nil && [self.mapView.userLocation.location distanceFromLocation:self.destino.placemark.location] < 1000) {
         self.verifandoLugar = [[NSThread alloc]initWithTarget:self selector:@selector(verifandoSeIraGanharPontos) object:nil];
         [self.verifandoLugar start];
     }
