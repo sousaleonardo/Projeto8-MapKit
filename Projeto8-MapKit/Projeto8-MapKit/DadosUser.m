@@ -160,7 +160,7 @@
             
             //Cria array com
             //Removemos a chave do user name pq não nos interessa ela
-            NSLog(@"%@",objects);
+            //NSLog(@"%@",objects);
             
             [[objects objectAtIndex:0]removeObjectForKey:@"userName"];
             
