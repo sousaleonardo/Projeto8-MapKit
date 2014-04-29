@@ -43,6 +43,8 @@
             if ([delegate respondsToSelector:@selector(dadosDidLogin:)]) {
                 [delegate dadosDidLogin:YES];
             }
+            
+            [self criarPontos];
         }
     }];
 }
@@ -451,7 +453,7 @@
                           }];
 }
 +(void)criarPontos{
-    NSDictionary *pontosEnviar = [NSDictionary dictionaryWithObjectsAndKeys:@"0",@"score",nil];
+    NSDictionary *pontosEnviar = [NSDictionary dictionaryWithObjectsAndKeys:@"10",@"score",nil];
     
     [FBRequestConnection startWithGraphPath:@"me/scores"
                                  parameters:pontosEnviar
@@ -463,7 +465,7 @@
              [erro show];
          }
          else{
-         
+            
          }
          
      }];
